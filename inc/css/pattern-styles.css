@@ -1,3 +1,7 @@
 .mbp-buttons {
     border: 25px solid teal;
 }
+
+.is-style-fancy-quote {
+    color: red;
+}

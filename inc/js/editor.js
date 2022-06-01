@@ -4,6 +4,5 @@ wp.blocks.registerBlockStyle('core/quote', {
 });
 
 wp.domReady(function() {
-    alert("loaded");
     wp.blocks.unregisterBlockStyle('core/quote', 'large');
 });

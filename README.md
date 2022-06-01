@@ -20,9 +20,9 @@ https://repo.code.ubc.ca/ctlt-plugins/ubc-block-patterns
 
 
 # Design Resources
-__As of May 4 2022__
+__As of May 17 2022__
 UBC MedNet Styles, Specs, and Components:
-https://xd.adobe.com/view/b1638687-bb37-47d3-af6c-9686408b911a-e430/grid
+https://xd.adobe.com/view/5c0081c8-3bec-44ce-9840-957600ca0e82-0953/grid
 
 Page designs:
 https://xd.adobe.com/view/421d1120-ee14-4971-8996-b2f4e1ecbd1b-174e/grid
