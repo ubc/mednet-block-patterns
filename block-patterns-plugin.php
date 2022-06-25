@@ -1,11 +1,15 @@
 <?php
 /**
- * Plugin Name: Mednet block patterns
- * Description: Block pattern for block editors
- * Version: 1.0.0
- * Author: Pegah Panahandeh
+ * UBC Tab Block
  *
- * @package MedNet
+ * @package     MedNet
+ * @author      Pegah Panahandeh
+ *
+ * @wordpress-plugin
+ * Plugin Name: Mednet Block Patterns
+ * Description: list of custom block patterns for UBC
+ * Version:     1.0.0
+ * Author:      Pegah Panahandeh
  */
 
 if ( ! defined( 'WPINC' ) ) {
@@ -34,10 +38,7 @@ add_action( 'enqueue_block_editor_assets', 'mednet_patterns_add_styles' );
 
 
 require_once 'inc/patterns.php';
-
-
-
-
+require_once 'inc/categories.php';
 
 /**
  * Gutenberg scripts and styles
@@ -70,3 +71,17 @@ function myguten_enqueue() {
 	);
 }
 add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
+
+/**
+ * Gutenberg scripts
+ */
+function wpb_hook_javascript() {
+	?>
+		<script>
+			function closeAlert(){
+				document.querySelector('.alert-banner').style.display="none";
+			} 
+		</script>
+	<?php
+}
+add_action( 'wp_head', 'wpb_hook_javascript' );
