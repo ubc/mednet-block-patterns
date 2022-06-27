@@ -1,13 +1,14 @@
 <?php
 /**
- * UBC Tab Block
+ * Mednet Block Patterns
  *
  * @package     MedNet
  * @author      Pegah Panahandeh
+ * @copyright   2022 Pegah Panahandeh
  *
  * @wordpress-plugin
  * Plugin Name: Mednet Block Patterns
- * Description: list of custom block patterns for UBC
+ * Description: list of custom block patterns for UBC Mednet
  * Version:     1.0.0
  * Author:      Pegah Panahandeh
  */
@@ -73,7 +74,7 @@ function myguten_enqueue() {
 add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
 
 /**
- * Gutenberg scripts
+ * Gutenberg script
  */
 function wpb_hook_javascript() {
 	?>
