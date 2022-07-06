@@ -1766,6 +1766,12 @@ h2 > a {
     margin-left: -15px;
     margin-right: -15px;
   }
+
+  /*Mednet patterns pages*/
+  /*What's New - Page*/
+  .what_is_new_page .wp-block-group__inner-container .has-medium-font-size {
+    line-height: 30px;
+  }
   .contact_block > div > div > div:nth-child(1) .wp-block-image figure {
     margin-left: 0;
   }
@@ -1838,17 +1844,3 @@ h2 > a {
     display: inline-table;
   }
 }
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .spotlight_cards
-    > div
-    > div
-    > div:nth-child(2)
-    > div
-    > ul
-    li
-    .wp-block-post-featured-image {
-    width: auto;
-    height: auto;
-    border: 1px solid red;
-  }
-} */
