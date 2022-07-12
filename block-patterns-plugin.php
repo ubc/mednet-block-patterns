@@ -26,6 +26,7 @@ define( 'MBP_VERSION', '1.0.0' );
 add_action( 'init', 'mbp_register_assets' );
 add_action( 'wp_enqueue_scripts', 'mbp_load_assets' );
 add_action( 'enqueue_block_editor_assets', 'mbp_load_editor_assets' );
+
 /**
  * Enqueue assets to frontend pages.
  *
@@ -35,6 +36,7 @@ function mbp_load_assets() {
 	wp_enqueue_script( 'mbp-front-end-script' );
 	wp_enqueue_style( 'mbp-pattern-styles' );
 }
+
 /**
  * Enqueue assets for editing.
  *
@@ -44,6 +46,7 @@ function mbp_load_editor_assets() {
 	wp_enqueue_script( 'mbp-editor-script' );
 	wp_enqueue_script( 'mbp-style-variations' );
 	wp_enqueue_style( 'mbp-pattern-styles' );
+	wp_enqueue_style( 'mbp-editor-styles' );
 }
 
 /**
@@ -98,24 +101,14 @@ function mbp_register_assets() {
 		array( 'wp-editor' ),
 		filemtime( plugin_dir_path( __FILE__ ) . 'inc/css/pattern-styles.css' )
 	);
+	wp_register_style(
+		'mbp-editor-styles',
+		plugins_url( '/inc/css/editor.css', __FILE__ ),
+		array( 'wp-editor' ),
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/css/editor.css' )
+	);
 }
 
 
 require_once 'inc/patterns.php';
 require_once 'inc/categories.php';
-
-
-
-/**
- * Gutenberg script
- */
-function wpb_hook_javascript() {
-	?>
-		<script>
-			function closeAlert(){
-				document.querySelector('.alert-banner').style.display="none";
-			} 
-		</script>
-	<?php
-}
-add_action( 'wp_head', 'wpb_hook_javascript' );
