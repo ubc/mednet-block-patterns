@@ -64,7 +64,7 @@ function mednet_register_block_patterns() {
 				'content'     => $three_col_block_with_blue_feature_box,
 				'keywords'    => array( 'column', 'list' ),
 			),
-			'mednet-block-patterns/blue_feature_blocks'   => array(
+			'mednet-block-patterns/blue_feature_blocks'    => array(
 				'title'       => __( 'Blue Feature Blocks ', 'mednet-block-patterns' ),
 				'description' => ( 'Blue Feature Blocks' ),
 				'categories'  => array( 'MedNet_Components' ),
@@ -78,35 +78,35 @@ function mednet_register_block_patterns() {
 				'content'     => $announcement_feed_small,
 				'keywords'    => array( 'query' ),
 			),
-			'mednet-block-patterns/quick_link_list'       => array(
+			'mednet-block-patterns/quick_link_list'        => array(
 				'title'       => __( 'Quick Link List', 'mednet-block-patterns' ),
 				'description' => ( 'Quick Link List' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $quick_link_list,
 				'keywords'    => array( 'link', 'list' ),
 			),
-			'mednet-block-patterns/featured_resource'     => array(
+			'mednet-block-patterns/featured_resource'      => array(
 				'title'       => __( 'Featured Resource', 'mednet-block-patterns' ),
 				'description' => ( 'Featured Resource' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $featured_resource,
 				'keywords'    => array( 'text' ),
 			),
-			'mednet-block-patterns/events_list'          => array(
+			'mednet-block-patterns/events_list'            => array(
 				'title'       => __( 'Events List', 'mednet-block-patterns' ),
 				'description' => ( 'Events List' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $events_list,
 				'keywords'    => array( 'text', 'events' ),
 			),
-			'mednet-block-patterns/spotlight_cards'     => array(
+			'mednet-block-patterns/spotlight_cards'        => array(
 				'title'       => __( 'Spotlight Cards  ', 'mednet-block-patterns' ),
 				'description' => ( 'Spotlight Cards' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $spotlight_cards,
 				'keywords'    => array( 'query', 'spotlight' ),
 			),
-			'mednet-block-patterns/contact_block'       => array(
+			'mednet-block-patterns/contact_block'          => array(
 				'title'       => __( 'Contact Block', 'mednet-block-patterns' ),
 				'description' => ( 'Contact Block' ),
 				'categories'  => array( 'MedNet_Components' ),
@@ -155,6 +155,48 @@ function mednet_register_block_patterns() {
 				'content'     => $pathways_feature_block,
 				'keywords'    => array( 'block', 'image' ),
 			),
+			'mednet-block-patterns/quick_links_one_col '   => array(
+				'title'       => __( 'Quick Links One Column', 'mednet-block-patterns' ),
+				'description' => ( 'Quick Links One Column' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $quick_links_one_col,
+				'keywords'    => array( 'block', 'image' ),
+			),
+			'mednet-block-patterns/quick_links_two_columns' => array(
+				'title'       => __( 'Quick Links Two Column', 'mednet-block-patterns' ),
+				'description' => ( 'Quick Links Two Column' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $quick_links_two_columns,
+				'keywords'    => array( 'list' ),
+			),
+			'mednet-block-patterns/quick_links_three_columns' => array(
+				'title'       => __( 'Quick Links Three Column', 'mednet-block-patterns' ),
+				'description' => ( 'Quick Links Three Column' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $quick_links_three_columns,
+				'keywords'    => array( 'list' ),
+			),
+			'mednet-block-patterns/sidebar_block'          => array(
+				'title'       => __( 'Sidebar Block', 'mednet-block-patterns' ),
+				'description' => ( 'Sidebar Block' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $sidebar_block,
+				'keywords'    => array( 'block' ),
+			),
+			'mednet-block-patterns/pathway_pages'          => array(
+				'title'       => __( 'Pathway Pages', 'mednet-block-patterns' ),
+				'description' => ( 'Pathway Pages' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $pathway_pages,
+				'keywords'    => array( 'columns' ),
+			),
+			'mednet-block-patterns/overview_pages'         => array(
+				'title'       => __( 'Overview Pages', 'mednet-block-patterns' ),
+				'description' => ( 'Overview Pages' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $overview_pages,
+				'keywords'    => array( 'columns' ),
+			),
 			'mednet-block-patterns/$all_announcements_page' => array(
 				'title'       => __( 'All Announcements Page', 'mednet-block-patterns' ),
 				'description' => ( 'All Announcements Page' ),
@@ -198,10 +240,45 @@ function mednet_register_block_patterns() {
 				'keywords'    => array( 'page' ),
 			),
 			'mednet-block-patterns/$educational_activity_form_page' => array(
-				'title'       => __( 'Educational Activity Form & Resources page ', 'mednet-block-patterns' ),
+				'title'       => __( 'Educational Activity Form & Resources page', 'mednet-block-patterns' ),
 				'description' => ( 'Educational Activity Form & Resources Page' ),
 				'categories'  => array( 'MedNet_Page_Pattern' ),
 				'content'     => $educational_activity_form_page,
+				'keywords'    => array( 'page' ),
+			),
+			'mednet-block-patterns/$services_resources_page' => array(
+				'title'       => __( 'Services & Resources Page', 'mednet-block-patterns' ),
+				'description' => ( 'Services & Resources Page' ),
+				'categories'  => array( 'MedNet_Page_Pattern' ),
+				'content'     => $services_resources_page,
+				'keywords'    => array( 'page' ),
+			),
+			'mednet-block-patterns/$facilities_page'       => array(
+				'title'       => __( 'Facilities Page', 'mednet-block-patterns' ),
+				'description' => ( 'Facilities Page' ),
+				'categories'  => array( 'MedNet_Page_Pattern' ),
+				'content'     => $facilities_page,
+				'keywords'    => array( 'page' ),
+			),
+			'mednet-block-patterns/$staff_spotlight_page'  => array(
+				'title'       => __( 'Staff Spotlight Page', 'mednet-block-patterns' ),
+				'description' => ( 'Staff Spotlight Page' ),
+				'categories'  => array( 'MedNet_Page_Pattern' ),
+				'content'     => $staff_spotlight_page,
+				'keywords'    => array( 'page' ),
+			),
+			'mednet-block-patterns/$spotlight_title_with_big_bio_photo_page' => array(
+				'title'       => __( 'Spotlight Title With Big Bio Photo Page', 'mednet-block-patterns' ),
+				'description' => ( 'Spotlight Title With Big Bio Photo Page' ),
+				'categories'  => array( 'MedNet_Page_Pattern' ),
+				'content'     => $spotlight_title_with_big_bio_photo_page,
+				'keywords'    => array( 'page' ),
+			),
+			'mednet-block-patterns/$spotlight_title_with_side_by_side_bio_page' => array(
+				'title'       => __( 'Spotlight Title With Side By Side Bio Page', 'mednet-block-patterns' ),
+				'description' => ( 'Spotlight Title With Side By Side Bio Page' ),
+				'categories'  => array( 'MedNet_Page_Pattern' ),
+				'content'     => $spotlight_title_with_side_by_side_bio_page,
 				'keywords'    => array( 'page' ),
 			),
 		);

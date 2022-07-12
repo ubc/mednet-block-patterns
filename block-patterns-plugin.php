@@ -41,6 +41,7 @@ add_action( 'enqueue_block_editor_assets', 'mednet_patterns_add_styles' );
 require_once 'inc/patterns.php';
 require_once 'inc/categories.php';
 
+
 /**
  * Gutenberg scripts and styles
  *
