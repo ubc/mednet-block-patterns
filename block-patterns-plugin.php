@@ -23,87 +23,92 @@ if ( ! defined( 'WPINC' ) ) {
 define( 'MBP_VERSION', '1.0.0' );
 
 
-/**
- * Plugin URL
- */
-define( 'MBPURL', plugin_dir_url( __FILE__ ) );
+add_action( 'init', 'mbp_register_assets' );
+add_action( 'wp_enqueue_scripts', 'mbp_load_assets' );
+add_action( 'enqueue_block_editor_assets', 'mbp_load_editor_assets' );
 
 /**
- * Add styles
+ * Enqueue assets to frontend pages.
+ *
+ * @return void
  */
-function mednet_patterns_add_styles() {
-	wp_enqueue_style( 'mbp-styles', MBPURL . 'inc/css/pattern-styles.css', array(), '1.0.0' );
+function mbp_load_assets() {
+	wp_enqueue_script( 'mbp-front-end-script' );
+	wp_enqueue_style( 'mbp-pattern-styles' );
 }
-add_action( 'wp_enqueue_scripts', 'mednet_patterns_add_styles' );
-add_action( 'enqueue_block_editor_assets', 'mednet_patterns_add_styles' );
+
+/**
+ * Enqueue assets for editing.
+ *
+ * @return void
+ */
+function mbp_load_editor_assets() {
+	wp_enqueue_script( 'mbp-editor-script' );
+	wp_enqueue_script( 'mbp-style-variations' );
+	wp_enqueue_style( 'mbp-pattern-styles' );
+	wp_enqueue_style( 'mbp-editor-styles' );
+}
+
+/**
+ * Register assets for patterns.
+ *
+ * @return void
+ */
+function mbp_register_assets() {
+	wp_register_script(
+		'mbp-editor-script',
+		plugins_url( 'inc/js/editor.js', __FILE__ ),
+		array(
+			'wp-blocks',
+			'wp-i18n',
+			'wp-element',
+			'wp-editor',
+			'wp-plugins',
+			'wp-edit-post',
+		),
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/js/editor.js' ),
+		true
+	);
+	wp_register_script(
+		'mbp-front-end-script',
+		plugins_url( 'inc/js/front-end.js', __FILE__ ),
+		array(
+			'wp-blocks',
+			'wp-i18n',
+			'wp-element',
+			'wp-plugins',
+		),
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/js/front-end.js' ),
+		true
+	);
+	wp_register_script(
+		'mbp-style-variations',
+		plugins_url( 'inc/js/block-style-variations.js', __FILE__ ),
+		array(
+			'wp-blocks',
+			'wp-i18n',
+			'wp-element',
+			'wp-editor',
+			'wp-plugins',
+			'wp-edit-post',
+		),
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/js/block-style-variations.js' ),
+		true
+	);
+	wp_register_style(
+		'mbp-pattern-styles',
+		plugins_url( '/inc/css/pattern-styles.css', __FILE__ ),
+		array( 'wp-editor' ),
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/css/pattern-styles.css' )
+	);
+	wp_register_style(
+		'mbp-editor-styles',
+		plugins_url( '/inc/css/editor.css', __FILE__ ),
+		array( 'wp-editor' ),
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/css/editor.css' )
+	);
+}
 
 
 require_once 'inc/patterns.php';
 require_once 'inc/categories.php';
-
-
-/**
- * Gutenberg scripts and styles
- *
- * @link https://www.billerickson.net/block-styles-in-gutenberg/
- */
-function be_gutenberg_scripts() {
-
-	wp_enqueue_script(
-		'be-editor',
-		MBPURL . 'inc/js/editor.js',
-		array( 'wp-blocks', 'wp-dom' ),
-		filemtime( MBPURL . 'inc/js/editor.js' ),
-		true
-	);
-}
-
-/**
- * Gutenberg scripts and styles
- *
- * @link https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/
- */
-function myguten_enqueue() {
-	wp_enqueue_script(
-		'myguten-script',
-		plugin_dir_url( __FILE__ ) . 'inc/js/editor.js',
-		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
-		filemtime( plugin_dir_path( __FILE__ ) . 'inc/js/editor.js' ),
-		true
-	);
-}
-add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
-
-/**
- * Gutenberg script
- */
-function wpb_hook_javascript() {
-	?>
-		<script>
-			function closeAlert(){
-				document.querySelector('.alert-banner').style.display="none";
-			}
-			function expandAll(){
-					const accordionItems = document.querySelectorAll('.c-accordion__item');
-					const accordionContentBlocks = document.querySelectorAll('.c-accordion__content');
-					for (let i = 0; i <accordionItems.length; i++) {
-						accordionItems[i].classList.add("is-open");
-					}
-					for (let j = 0; j <accordionContentBlocks.length; j++) {
-						accordionContentBlocks[j].style.display="block";
-					}
-				}
-				function collapseAll(){
-					const accordionItems = document.querySelectorAll('.c-accordion__item');
-					const accordionContentBlocks = document.querySelectorAll('.c-accordion__content');
-					for (let i = 0; i <accordionItems.length; i++) {
-						accordionItems[i].classList.remove("is-open");
-					}
-					for (let j = 0; j <accordionContentBlocks.length; j++) {
-						accordionContentBlocks[j].style.display="none";
-					}
-				}
-	</script>
-	<?php
-}
-add_action( 'wp_head', 'wpb_hook_javascript' );
