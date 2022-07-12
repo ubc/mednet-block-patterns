@@ -22,8 +22,8 @@ function mednet_register_block_patterns() {
 				'content'     => $alert_banner,
 				'keywords'    => array( 'banner', 'alert' ),
 			),
-			'mednet-block-patterns/$announcements_block '  => array(
-				'title'       => __( 'Announcements Block ', 'mednet-block-patterns' ),
+			'mednet-block-patterns/$announcements_block'   => array(
+				'title'       => __( 'Announcements Block', 'mednet-block-patterns' ),
 				'description' => ( 'Announcements Block' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $announcements_block,
@@ -43,15 +43,15 @@ function mednet_register_block_patterns() {
 				'content'     => $announcement_card_small,
 				'keywords'    => array( 'list' ),
 			),
-			'mednet-block-patterns/content_card '          => array(
-				'title'       => __( 'Content Card ', 'mednet-block-patterns' ),
+			'mednet-block-patterns/content_card'           => array(
+				'title'       => __( 'Content Card', 'mednet-block-patterns' ),
 				'description' => ( 'Content Card' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $content_card,
 				'keywords'    => array( 'image', 'card' ),
 			),
-			'mednet-block-patterns/content_card_with_overlay ' => array(
-				'title'       => __( 'Content Card With Overlay ', 'mednet-block-patterns' ),
+			'mednet-block-patterns/content_card_with_overlay' => array(
+				'title'       => __( 'Content Card With Overlay', 'mednet-block-patterns' ),
 				'description' => ( 'Content Card With Overlay' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $content_card_with_overlay,
@@ -128,7 +128,7 @@ function mednet_register_block_patterns() {
 				'keywords'    => array( 'table' ),
 			),
 			'mednet-block-patterns/table_option_2'         => array(
-				'title'       => __( 'Table Option 2  ', 'mednet-block-patterns' ),
+				'title'       => __( 'Table Option 2', 'mednet-block-patterns' ),
 				'description' => ( 'Table Option 2' ),
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $table_option_2,
@@ -155,7 +155,7 @@ function mednet_register_block_patterns() {
 				'content'     => $pathways_feature_block,
 				'keywords'    => array( 'block', 'image' ),
 			),
-			'mednet-block-patterns/quick_links_one_col '   => array(
+			'mednet-block-patterns/quick_links_one_col'    => array(
 				'title'       => __( 'Quick Links One Column', 'mednet-block-patterns' ),
 				'description' => ( 'Quick Links One Column' ),
 				'categories'  => array( 'MedNet_Components' ),
@@ -233,7 +233,7 @@ function mednet_register_block_patterns() {
 				'keywords'    => array( 'page' ),
 			),
 			'mednet-block-patterns/$icon_page'             => array(
-				'title'       => __( 'Icon Page ', 'mednet-block-patterns' ),
+				'title'       => __( 'Icon Page', 'mednet-block-patterns' ),
 				'description' => ( 'Icon Page' ),
 				'categories'  => array( 'MedNet_Page_Pattern' ),
 				'content'     => $icon_page,
