@@ -109,6 +109,13 @@ function mbp_register_assets() {
 	);
 }
 
+/**
+ * Remove core patterns
+ */
+function remove_core_patterns() {
+	remove_theme_support( 'core-block-patterns' );
+}
+add_action( 'after_setup_theme', 'remove_core_patterns' );
 
 require_once 'inc/patterns.php';
 require_once 'inc/categories.php';
