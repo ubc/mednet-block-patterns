@@ -113,6 +113,13 @@ function mednet_register_block_patterns() {
 				'content'     => $contact_block,
 				'keywords'    => array( 'card' ),
 			),
+			'mednet-block-patterns/contact_block_1_4_width' => array(
+				'title'       => __( 'Contact Block - 1/4 Width', 'mednet-block-patterns' ),
+				'description' => ( 'Contact Block - 1/4 Width' ),
+				'categories'  => array( 'MedNet_Components' ),
+				'content'     => $contact_block_1_4_width,
+				'keywords'    => array( 'card' ),
+			),
 			'mednet-block-patterns/accordion_block'        => array(
 				'title'       => __( 'Accordion Block', 'mednet-block-patterns' ),
 				'description' => ( 'Accordion Block' ),
