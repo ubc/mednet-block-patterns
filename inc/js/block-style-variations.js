@@ -14,3 +14,7 @@ wp.blocks.registerBlockStyle('core/group', {
     name: '1-4-width',
     label: '1/4 Width',
 });
+wp.blocks.registerBlockStyle('core/group', {
+    name: '1-2-width',
+    label: '1/2 Width',
+});
