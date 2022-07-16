@@ -1,1 +1,24 @@
 /* CSS to apply to the editor. Improve the editing experience */
+.mednet_pagination_block .wp-block-query-pagination-previous > span:after {
+  content: "<<";
+  border: 1px solid var(--gray_2);
+  background-color: var(--gray_2);
+  padding: 3px;
+  font-size: 14px;
+  color: var(--blue_2);
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
+
+.mednet_pagination_block .wp-block-query-pagination-next > span:after {
+  content: ">>";
+  border: 1px solid var(--gray_2);
+  background-color: var(--gray_2);
+  padding: 3px;
+  font-size: 14px;
+  color: var(--blue_2);
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
