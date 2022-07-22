@@ -1,0 +1,45 @@
+* {
+	font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+  }
+  #ubc7-unit-name {
+	font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+  }
+  
+  /* Full Width CLF
+  -------------------------------*/
+  
+  .full-width .full-width-container .expand {
+	max-width: 1170px;
+	position: relative;
+	margin: 0 auto;
+  }
+  .full-width {
+	background: #FFF;
+	
+  }
+  
+  @media screen and (min-width: 769px) {
+	.page #utility-after-content .widget_subpages_navigation{
+		display: none;
+	}
+  }
+
+/* CLF Overrides*/
+.has-medium-font-size {
+	line-height: 1.2;
+}
+:root {
+	font-size: 16px;
+}
+p {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--blue_2);
+}
+h1 {
+	font-size: 2.25rem;
+	line-height: 1.16;
+}
+h2 {
+	font-size: 1.875rem
+}

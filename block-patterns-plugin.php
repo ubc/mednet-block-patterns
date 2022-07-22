@@ -1,14 +1,14 @@
 <?php
 /**
- * Mednet Block Patterns
+ * MedNet Block Patterns
  *
  * @package     MedNet
  * @author      Pegah Panahandeh
  * @copyright   2022 Pegah Panahandeh
  *
  * @wordpress-plugin
- * Plugin Name: Mednet Block Patterns
- * Description: list of custom block patterns for UBC Mednet
+ * Plugin Name: MedNet Block Patterns
+ * Description: List of custom block patterns for UBC MedNet.
  * Version:     1.0.0
  * Author:      Pegah Panahandeh
  */
@@ -34,7 +34,7 @@ add_action( 'enqueue_block_editor_assets', 'mbp_load_editor_assets' );
  */
 function mbp_load_assets() {
 	wp_enqueue_script( 'mbp-front-end-script' );
-	wp_enqueue_style( 'mbp-pattern-styles' );
+	wp_enqueue_style( 'mbp-site-styles' );
 }
 
 /**
@@ -45,7 +45,7 @@ function mbp_load_assets() {
 function mbp_load_editor_assets() {
 	wp_enqueue_script( 'mbp-editor-script' );
 	wp_enqueue_script( 'mbp-style-variations' );
-	wp_enqueue_style( 'mbp-pattern-styles' );
+	wp_enqueue_style( 'mbp-site-styles' );
 	wp_enqueue_style( 'mbp-editor-styles' );
 }
 
@@ -96,10 +96,10 @@ function mbp_register_assets() {
 		true
 	);
 	wp_register_style(
-		'mbp-pattern-styles',
-		plugins_url( '/inc/css/pattern-styles.css', __FILE__ ),
+		'mbp-site-styles',
+		plugins_url( '/inc/css/public.css', __FILE__ ),
 		array( 'wp-editor' ),
-		filemtime( plugin_dir_path( __FILE__ ) . 'inc/css/pattern-styles.css' )
+		filemtime( plugin_dir_path( __FILE__ ) . 'inc/css/public.css' )
 	);
 	wp_register_style(
 		'mbp-editor-styles',

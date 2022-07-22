@@ -17,7 +17,7 @@ function mednet_register_block_categories() {
 
 		register_block_pattern_category(
 			'MedNet_Page_Pattern',
-			array( 'label' => _x( 'Mednet Page Patterns', 'Block pattern category', 'mednet-block-patterns' ) )
+			array( 'label' => _x( 'MedNet Page Patterns', 'Block pattern category', 'mednet-block-patterns' ) )
 		);
 
 	}

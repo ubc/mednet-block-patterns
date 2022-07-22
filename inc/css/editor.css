@@ -22,3 +22,7 @@
   display: block;
   line-height: initial;
 }
+
+.wp-block-embed__wrapper {
+  background: #b4b4b2;
+}
