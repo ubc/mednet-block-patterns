@@ -10,3 +10,18 @@
 .is-style-1-4-width {
   width: 30%;
 }
+
+.is-style-blue-quote,
+.is-style-blue-quote p {
+	border: none;
+	color: var(--blue_1);
+	font-size: 1.625rem;
+	line-height: 1.38;
+}
+.is-style-blue-quote cite:before {
+    content: '— ';
+    display: inline-block;
+}
+.is-style-blue-quote cite {
+	font-size: 1.125rem;
+}

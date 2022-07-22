@@ -18,3 +18,9 @@ wp.blocks.registerBlockStyle('core/group', {
     name: '1-2-width',
     label: '1/2 Width',
 });
+
+wp.blocks.registerBlockStyle(
+    'core/quote', {
+        name: 'blue-quote',
+        label: 'MedNet Quote',
+    });
