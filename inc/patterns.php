@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Mednet block patterns
+ * Plugin Name: MedNet block patterns
  * Description: Block pattern for block editors
  * Version: 1.0.0
  * Author: Pegah Panahandeh
@@ -21,6 +21,7 @@ function mednet_register_block_patterns() {
 				'categories'  => array( 'MedNet_Components' ),
 				'content'     => $alert_banner,
 				'keywords'    => array( 'banner', 'alert' ),
+				'viewportHeight' => 250,
 			),
 			'mednet-block-patterns/$announcements_block'   => array(
 				'title'       => __( 'Announcements Block', 'mednet-block-patterns' ),
@@ -212,15 +213,15 @@ function mednet_register_block_patterns() {
 				'keywords'    => array( 'page' ),
 			),
 			'mednet-block-patterns/$what_is_new_page'      => array(
-				'title'       => __( 'What Is New Page', 'mednet-block-patterns' ),
-				'description' => ( 'What Is New Page' ),
+				'title'       => __( 'What\'s New Page', 'mednet-block-patterns' ),
+				'description' => ( 'What\'s New Page' ),
 				'categories'  => array( 'MedNet_Page_Pattern' ),
 				'content'     => $what_is_new_page,
 				'keywords'    => array( 'page' ),
 			),
 			'mednet-block-patterns/$ubc_broadcast_page'    => array(
-				'title'       => __( 'UBC Broadcast Page', 'mednet-block-patterns' ),
-				'description' => ( 'UBC Broadcast Page' ),
+				'title'       => __( 'Announcement Post', 'mednet-block-patterns' ),
+				'description' => ( 'Announcement Post' ),
 				'categories'  => array( 'MedNet_Page_Pattern' ),
 				'content'     => $ubc_broadcast_page,
 				'keywords'    => array( 'page' ),
@@ -233,8 +234,8 @@ function mednet_register_block_patterns() {
 				'keywords'    => array( 'page' ),
 			),
 			'mednet-block-patterns/$room_booking_page'     => array(
-				'title'       => __( 'Room Booking Page', 'mednet-block-patterns' ),
-				'description' => ( 'Room Booking Page' ),
+				'title'       => __( 'One-Column Content Page', 'mednet-block-patterns' ),
+				'description' => ( 'One-Column Content Page' ),
 				'categories'  => array( 'MedNet_Page_Pattern' ),
 				'content'     => $room_booking_page,
 				'keywords'    => array( 'page' ),

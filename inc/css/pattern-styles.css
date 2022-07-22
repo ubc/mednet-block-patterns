@@ -1,30 +1,7 @@
+
 /* CSS for all block patterns */
-
-:root {
-  /* Colors: */
-  --white: #ffffff;
-  --gray_1: #d7e0e7;
-  --gray_2: #e6e6e6;
-  --gray_3: #f2f2f2;
-  --blue_1: #0055b7;
-  --blue_2: #002145;
-}
-
 /* MedNet Components*/
 
-/* group style variation */
-
-.is-style-3-4-width {
-  width: 70%;
-}
-
-.is-style-1-2-width {
-  width: 50%;
-}
-
-.is-style-1-4-width {
-  width: 30%;
-}
 
 /* Alert banner component*/
 
@@ -1257,7 +1234,7 @@ h2 > a {
   object-fit: cover;
 }
 
-/*Mednet patterns pages*/
+/*MedNet patterns pages*/
 
 /*Educational Activity Form & Resources*/
 
@@ -1378,55 +1355,54 @@ h2 > a {
   color: var(--blue_2);
 }
 
+.mednet_pagination_block .wp-block-query-pagination-next, 
+.mednet_pagination_block .wp-block-query-pagination-previous,
 .mednet_pagination_block .wp-block-query-pagination-numbers > * {
-  flex-basis: 100%;
+  height: 40px;
+  width: 40px;
   border: 1px solid var(--gray_2);
-  padding-left: 10px;
-  padding-right: 10px;
   text-decoration: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.mednet_pagination_block .wp-block-query-pagination-next, 
+.mednet_pagination_block .wp-block-query-pagination-previous {
+  background: var(--gray_2)
 }
 
+.mednet_pagination_block .current,
 .mednet_pagination_block .wp-block-query-pagination-numbers > a:hover,
-.mednet_pagination_block .wp-block-query-pagination-numbers > a:active {
+.mednet_pagination_block .wp-block-query-pagination-numbers > a:active, 
+  .mednet_pagination_block .wp-block-query-pagination-next:hover, 
+.mednet_pagination_block .wp-block-query-pagination-previous:hover {
   background-color: var(--blue_2);
   color: var(--white);
 }
-
+.mednet_pagination_block .wp-block-query-pagination-next,
 .mednet_pagination_block .wp-block-query-pagination-previous {
   text-indent: -9999px;
   line-height: 0;
   text-decoration: none;
   margin-right: 0;
 }
-
-.mednet_pagination_block .wp-block-query-pagination-next {
-  text-indent: -9999px;
-  line-height: 0;
-  text-decoration: none;
-}
-
+.mednet_pagination_block .wp-block-query-pagination-next:after,
 .mednet_pagination_block .wp-block-query-pagination-previous:after {
-  content: "<<";
-  border: 1px solid var(--gray_2);
-  background-color: var(--gray_2);
+  background-color: inherit;
   padding: 3px;
   font-size: 14px;
-  color: var(--blue_2);
+  color: inherit;
   text-indent: 0;
   display: block;
   line-height: initial;
+}
+.mednet_pagination_block .wp-block-query-pagination-previous:after {
+  content: "«";
 }
 
 .mednet_pagination_block .wp-block-query-pagination-next:after {
-  content: ">>";
-  border: 1px solid var(--gray_2);
-  background-color: var(--gray_2);
-  padding: 3px;
-  font-size: 14px;
-  color: var(--blue_2);
-  text-indent: 0;
-  display: block;
-  line-height: initial;
+  content: "»";
 }
 
 /*quick_links_one_col*/
@@ -2454,7 +2430,7 @@ h2 > a {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /*Mednet patterns pages*/
+  /*MedNet patterns pages*/
   /*What's New - Page*/
   .what_is_new_page .wp-block-group__inner-container .has-medium-font-size {
     line-height: 30px;
