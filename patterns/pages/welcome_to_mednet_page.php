@@ -70,7 +70,7 @@
 <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"featured_resource"} -->
 <div class="wp-block-group featured_resource has-background" style="background-color:#f2f2f2"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"id":484,"width":125,"height":178,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/Icon_Home-FeaturedResource@2x.png" alt="" class="wp-image-484" width="125" height="178"/></figure>
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/Icon_Home-FeaturedResource@2x.png" alt="" class="wp-image-484" width="125" height="178"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","letterSpacing":"1.4px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#002145"}}} -->
@@ -102,7 +102,7 @@
 <div class="wp-block-group has-background" style="background-color:#002145"><!-- wp:columns {"style":{"color":{"background":"#002145"}},"textColor":"white"} -->
 <div class="wp-block-columns has-white-color has-text-color has-background" style="background-color:#002145"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"id":481,"width":58,"height":59,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Home_Icon-Events.svg" alt="" class="wp-image-481" width="58" height="59"/></figure>
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Home_Icon-Events.svg" alt="" class="wp-image-481" width="58" height="59"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","letterSpacing":"0.9px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"}},"textColor":"white"} -->
@@ -153,7 +153,7 @@
 <div class="wp-block-group spotlight_cards has-background" style="background-color:#f2f2f2"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Home_Icon-Spotlight.svg" alt=""/></figure>
+<figure class="wp-block-image size-large is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Home_Icon-Spotlight.svg" alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","letterSpacing":"0.9px","fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"},"color":{"text":"#002145"}}} -->
@@ -246,7 +246,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"width":457,"height":268,"sizeSlug":"large","className":"is-style-default overlay_image"} -->
-<figure class="wp-block-image size-large is-resized is-style-default overlay_image"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Pattern_Overlay.svg" alt="" width="457" height="268"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default overlay_image"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Pattern_Overlay.svg" alt="" width="457" height="268"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
@@ -276,7 +276,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"width":88,"height":88,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_External_Link.svg" alt="" width="88" height="88"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg" alt="" width="88" height="88"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

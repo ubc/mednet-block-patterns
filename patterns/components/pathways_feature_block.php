@@ -13,7 +13,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"width":88,"height":88,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_External_Link.svg" alt="" width="88" height="88"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg" alt="" width="88" height="88"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

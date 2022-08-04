@@ -13,25 +13,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/**
- * Returns the path to the MBP patterns directory
- *
- * @since 1.0.0
- * @return string
- */
 if ( ! function_exists( 'mbp_get_patterns_dir' ) ) :
+	/**
+	 * Returns the path to the MBP patterns directory
+	 *
+	 * @since 1.0.0
+	 * @return string
+	 */
 	function mbp_get_patterns_dir() {
 		return MBP_PLUGIN_DIR . 'patterns';
 	}
 endif;
 
-/**
- * Returns the URL to the MBP patterns directory
- *
- * @since 1.0.0
- * @return string
- */
 if ( ! function_exists( 'mbp_get_patterns_url' ) ) :
+	/**
+	 * Returns the URL to the MBP patterns directory
+	 *
+	 * @since 1.0.0
+	 * @return string
+	 */
 	function mbp_get_patterns_url() {
 		return MBP_PLUGIN_URL . 'patterns';
 	}

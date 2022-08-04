@@ -2,7 +2,7 @@
 <div class="wp-block-group spotlight_cards has-background" style="background-color:#f2f2f2"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Home_Icon-Spotlight.svg" alt=""/></figure>
+<figure class="wp-block-image size-large is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Home_Icon-Spotlight.svg" alt=""/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","letterSpacing":"0.9px","fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"},"color":{"text":"#002145"}}} -->

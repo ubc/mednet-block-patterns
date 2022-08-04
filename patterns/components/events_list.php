@@ -3,7 +3,7 @@
 <div class="wp-block-group has-background" style="background-color:#002145"><!-- wp:columns {"style":{"color":{"background":"#002145"}},"textColor":"white"} -->
 <div class="wp-block-columns has-white-color has-text-color has-background" style="background-color:#002145"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"id":481,"width":58,"height":59,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Home_Icon-Events.svg" alt="" class="wp-image-481" width="58" height="59"/></figure>
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Home_Icon-Events.svg" alt="" class="wp-image-481" width="58" height="59"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","letterSpacing":"0.9px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"}},"textColor":"white"} -->

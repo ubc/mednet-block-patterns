@@ -5,7 +5,7 @@
 <!-- /wp:image -->
 
 <!-- wp:image {"width":457,"height":268,"sizeSlug":"large","className":"is-style-default overlay_image"} -->
-<figure class="wp-block-image size-large is-resized is-style-default overlay_image"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Pattern_Overlay.svg" alt="" width="457" height="268"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default overlay_image"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Pattern_Overlay.svg" alt="" width="457" height="268"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 

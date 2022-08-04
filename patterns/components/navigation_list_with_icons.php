@@ -3,7 +3,7 @@
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_FindRoom.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_FindRoom.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->
@@ -19,7 +19,7 @@
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_HelpSupport.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_HelpSupport.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->
@@ -35,7 +35,7 @@
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_TrainingResources.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_TrainingResources.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->
@@ -51,7 +51,7 @@
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_AdvanceBooking.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_AdvanceBooking.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->
@@ -69,7 +69,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_HowMeet.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_HowMeet.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->
@@ -85,7 +85,7 @@
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_AdvanceBooking.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_AdvanceBooking.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->
@@ -101,7 +101,7 @@
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"width":58,"height":58,"sizeSlug":"large","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/svgs/Icon_MeetTeam.svg" alt="" width="58" height="58"/></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_MeetTeam.svg" alt="" width="58" height="58"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group -->

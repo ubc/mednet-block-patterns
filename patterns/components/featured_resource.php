@@ -1,7 +1,7 @@
 <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"featured_resource"} -->
 <div class="wp-block-group featured_resource has-background" style="background-color:#f2f2f2"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:image {"id":484,"width":125,"height":178,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/inc/assets/images/Icon_Home-FeaturedResource@2x.png" alt="" class="wp-image-484" width="125" height="178"/></figure>
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/Icon_Home-FeaturedResource@2x.png" alt="" class="wp-image-484" width="125" height="178"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","letterSpacing":"1.4px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#002145"}}} -->

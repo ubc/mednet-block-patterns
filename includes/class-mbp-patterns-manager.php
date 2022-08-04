@@ -29,7 +29,7 @@ class MBP_Patterns_Manager {
 	}
 
 	/**
-	 * Register block patterns
+	 * Register all block patterns in an array
 	 *
 	 * @return void
 	 */

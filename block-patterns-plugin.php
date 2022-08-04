@@ -63,13 +63,10 @@ if ( ! class_exists( 'MedNet_Block_Patterns' ) ) :
 				self::$instance->setup_constants();
 				self::$instance->includes();
 
-				$MBP_Pattern_Packages = new MBP_Pattern_Packages();
-				$MBP_Scripts          = new MBP_Scripts();
-				$MBP_Categories       = new MBP_Category_Manager();
-
-				self::$instance->pattern_packages = $MBP_Pattern_Packages->get_page_patterns();
-				register_activation_hook( __FILE__, array( self::$instance, 'mbp_on_plugin_activation' ) );
-
+				$mbp_pattern_packages             = new MBP_Pattern_Packages();
+				$mbp_scripts                      = new MBP_Scripts();
+				$mbp_categories                   = new MBP_Category_Manager();
+				self::$instance->pattern_packages = $mbp_pattern_packages->get_page_patterns();
 			}
 
 			return self::$instance;
@@ -155,11 +152,11 @@ if ( ! class_exists( 'MedNet_Block_Patterns' ) ) :
 		private function includes() {
 
 			require_once MBP_PLUGIN_DIR . 'includes/template-functions.php';
-			require_once MBP_PLUGIN_DIR . 'includes/class-pattern-packages.php';
-			require_once MBP_PLUGIN_DIR . 'includes/class-blocks-manager.php'; // add block styles in this file.
-			require_once MBP_PLUGIN_DIR . 'includes/class-category-manager.php';
-			require_once MBP_PLUGIN_DIR . 'includes/class-patterns-manager.php';
-			require_once MBP_PLUGIN_DIR . 'includes/class-scripts.php';
+			require_once MBP_PLUGIN_DIR . 'includes/class-mbp-pattern-packages.php';
+			require_once MBP_PLUGIN_DIR . 'includes/class-mbp-blocks-manager.php'; // add block styles in this file.
+			require_once MBP_PLUGIN_DIR . 'includes/class-mbp-category-manager.php';
+			require_once MBP_PLUGIN_DIR . 'includes/class-mbp-patterns-manager.php';
+			require_once MBP_PLUGIN_DIR . 'includes/class-mbp-scripts.php';
 
 		}
 
