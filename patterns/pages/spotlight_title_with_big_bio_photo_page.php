@@ -1,11 +1,13 @@
 
 <!-- wp:group {"className":"spotlight_title_with_big_bio_photo_page"} -->
-<div class="wp-block-group spotlight_title_with_big_bio_photo_page"><!-- wp:heading {"level":1,"fontSize":"large"} -->
-<!-- /wp:heading -->
+<div class="wp-block-group spotlight_title_with_big_bio_photo_page">
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":474,"sizeSlug":"full","linkDestination":"custom","className":"is-style-default"} -->
+<figure class="wp-block-image is-style-default"><img src="https://via.placeholder.com/500x150/002145/ffffff/" alt="" class="wp-image-474"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} -->
 <p style="font-size:16px">The &ldquo;in-house&rdquo; role is part of the new Embedded Counsellor Program (ECP), which provides students with direct access to resources that are tailored to their specific needs and concerns. We met with Asmae (pronounced Ess-maa) to learn more about the unique supports available for graduate students.</p>
 <!-- /wp:paragraph -->
 
