@@ -1,7 +1,5 @@
 <!-- wp:group {"className":"all_announcements_page"} -->
-<div class="wp-block-group all_announcements_page"><!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-0.3px"},"color":{"text":"#002145"}},"fontSize":"large"} -->
-<h1 class="has-text-color has-large-font-size" style="color:#002145;letter-spacing:-0.3px">All Announcements</h1>
-<!-- /wp:heading -->
+<div class="wp-block-group all_announcements_page">
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">Introduction copy about the section. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>

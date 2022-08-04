@@ -1,7 +1,5 @@
 <!-- wp:group {"className":"facilities_page"} -->
-<div class="wp-block-group facilities_page"><!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-0.36px"}},"fontSize":"large"} -->
-<h1 class="has-large-font-size" style="letter-spacing:-0.36px">Facilities</h1>
-<!-- /wp:heading -->
+<div class="wp-block-group facilities_page">
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">Introduction copy about the section. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>

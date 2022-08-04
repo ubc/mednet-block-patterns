@@ -1620,17 +1620,17 @@ h2 > a {
 }
 
 /*UBC Broadcaste Page*/
-.ubc_broadcast_page > div .announcement_feed_small .mednet_pagination_block {
+.announcements_post > div .announcement_feed_small .mednet_pagination_block {
   display: none;
 }
 
-.ubc_broadcast_page > div .wp-block-query ul li .wp-block-read-more {
+.announcements_post > div .wp-block-query ul li .wp-block-read-more {
   padding: 11px 20px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.ubc_broadcast_page
+.announcements_post
   > div
   .wp-block-query
   ul
@@ -1639,17 +1639,17 @@ h2 > a {
   display: none;
 }
 
-.ubc_broadcast_page > div > p:nth-child(3) {
+.announcements_post > div > p:nth-child(3) {
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 24px;
 }
 
-.ubc_broadcast_page > div > div:last-child {
+.announcements_post > div > div:last-child {
   margin-top: 60px;
 }
 
-.ubc_broadcast_page
+.announcements_post
   > div
   .wp-block-query
   ul
@@ -1658,7 +1658,7 @@ h2 > a {
   display: none;
 }
 
-.ubc_broadcast_page
+.announcements_post
   > div
   .wp-block-query
   ul
@@ -1672,7 +1672,7 @@ h2 > a {
   margin-top: 24px;
 }
 
-.ubc_broadcast_page
+.announcements_post
   > div
   .wp-block-query
   ul
@@ -1684,7 +1684,7 @@ h2 > a {
   border-left: 1px solid var(--gray_2);
 }
 
-.ubc_broadcast_page
+.announcements_post
   > div
   .wp-block-query
   ul
@@ -1697,7 +1697,7 @@ h2 > a {
   padding-left: 1rem;
 }
 
-.ubc_broadcast_page
+.announcements_post
   > div
   .wp-block-query
   ul
@@ -1715,35 +1715,35 @@ h2 > a {
 
 /*Room Booking Page*/
 
-.room_booking_page > div > h1 {
+.one_column_page > div > h1 {
   margin-bottom: 24px;
 }
 
-.room_booking_page > div > hr {
+.one_column_page > div > hr {
   margin: 40px 0;
 }
 
-.room_booking_page > div > * a {
+.one_column_page > div > * a {
   text-decoration: none;
   color: var(--blue_1);
 }
 
-.room_booking_page > div > * a:hover {
+.one_column_page > div > * a:hover {
   text-decoration: underline;
   color: var(--blue_1);
 }
 
-.room_booking_page > div > h2 {
+.one_column_page > div > h2 {
   margin: 24px 0;
 }
 
-.room_booking_page > div .accordion_block {
+.one_column_page > div .accordion_block {
   margin: 40px 0;
 }
 
-.room_booking_page > div .table_option_1,
-.room_booking_page > div .table_option_2,
-.room_booking_page > div .contact_block {
+.one_column_page > div .table_option_1,
+.one_column_page > div .table_option_2,
+.one_column_page > div .contact_block {
   margin: 40px 0;
 }
 
@@ -2311,7 +2311,7 @@ h2 > a {
     width: 100%;
     padding-left: 0;
   }
-  .ubc_broadcast_page > div .wp-block-query ul {
+  .announcements_post > div .wp-block-query ul {
     margin: 0;
   }
   .mednet_pagination_block .wp-block-query-pagination-previous-arrow {

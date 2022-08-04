@@ -339,15 +339,15 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/what_is_new_page.php',
 			),
-			'mednet-block-patterns/ubc_broadcast_page'     => array(
-				'slug'          => 'ubc_broadcast_page',
-				'pattern_class' => 'mbp-pattern-ubc_broadcast_page',
+			'mednet-block-patterns/announcements_post'     => array(
+				'slug'          => 'announcements_post',
+				'pattern_class' => 'mbp-pattern-announcements_post',
 				'title'         => __( 'Announcement Post', 'mednet-block-patterns' ),
 				'description'   => __( 'Announcement Post', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Pattern' ),
+				'categories'    => array( 'MedNet_Post_Pattern' ),
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/ubc_broadcast_page.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/announcements_post.php',
 			),
 			'mednet-block-patterns/welcome_to_mednet_page' => array(
 				'slug'          => 'welcome_to_mednet_page',
@@ -359,15 +359,15 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/welcome_to_mednet_page.php',
 			),
-			'mednet-block-patterns/room_booking_page'      => array(
-				'slug'          => 'room_booking_page',
-				'pattern_class' => 'mbp-pattern-room_booking_page',
+			'mednet-block-patterns/one_column_page'      => array(
+				'slug'          => 'one_column_page',
+				'pattern_class' => 'mbp-pattern-one_column_page',
 				'title'         => __( 'One-Column Content Page', 'mednet-block-patterns' ),
 				'description'   => __( 'One-Column Content Page', 'mbp-block-patterns' ),
 				'categories'    => array( 'MedNet_Page_Pattern' ),
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/room_booking_page.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/one_column_page.php',
 			),
 			'mednet-block-patterns/icon_page'              => array(
 				'slug'          => 'icon_page',

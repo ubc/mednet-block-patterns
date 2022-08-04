@@ -1,7 +1,5 @@
 <!-- wp:group {"className":"staff_spotlight_page"} -->
-<div class="wp-block-group staff_spotlight_page"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"letterSpacing":"-0.36px"}},"fontSize":"large"} -->
-<h1 class="has-text-align-center has-large-font-size" style="letter-spacing:-0.36px">Staff Spotlight</h1>
-<!-- /wp:heading -->
+<div class="wp-block-group staff_spotlight_page">
 
 <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
 <p class="has-text-align-center has-medium-font-size"><strong>Meet staff members from across the Faculty of Medicine</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

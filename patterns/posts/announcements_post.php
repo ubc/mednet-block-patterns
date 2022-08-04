@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"ubc_broadcast_page"} -->
-<div class="wp-block-group ubc_broadcast_page"><!-- wp:query {"queryId":13,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3}} -->
+<!-- wp:group {"className":"announcements_post"} -->
+<div class="wp-block-group announcements_post"><!-- wp:query {"queryId":13,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3}} -->
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:post-title {"style":{"typography":{"letterSpacing":"-0.36px"},"color":{"text":"#002145"}},"fontSize":"large"} /-->
 

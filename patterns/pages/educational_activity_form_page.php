@@ -1,9 +1,7 @@
 <!-- wp:group {"className":"  educational_activity_form_page "} -->
 <div class="wp-block-group educational_activity_form_page"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:heading {"level":1,"style":{"typography":{"letterSpacing":"-0.36px"}},"fontSize":"large"} -->
-<h1 class="has-large-font-size" style="letter-spacing:-0.36px">Space Planning &amp; Requests</h1>
-<!-- /wp:heading -->
+<div class="wp-block-column" style="flex-basis:66.66%">
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
 <p class="has-medium-font-size">Introduction copy about the section. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
