@@ -1,4 +1,3 @@
-
 /* CSS for all block patterns */
 /* MedNet Components*/
 
@@ -2568,4 +2567,16 @@ h2 > a {
   .table_option_1 > div > table {
     display: inline-table;
   }
+}
+
+/* 
+ * Quicklinks
+ */
+.quicklinks {
+  color: var(----blue_2);
+  font-size:14px;
+  font-style:normal;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1.4px;
 }

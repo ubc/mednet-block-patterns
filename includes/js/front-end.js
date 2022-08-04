@@ -1,3 +1,4 @@
+console.log("front end");
 //  Javascript to be executed on the front end. Impacts visitor experience.
 function closeAlert() {
     document.querySelector('.alert-banner').style.display = "none";

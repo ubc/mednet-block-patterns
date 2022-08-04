@@ -1,3 +1,4 @@
+console.log("variations");
 wp.blocks.registerBlockStyle('core/group', {
     name: 'hide-group',
     label: 'Hide',
