@@ -860,6 +860,11 @@ h2 > a {
 }
 
 /* Spotlight Cards */
+.spotlight-float-image {
+  float: left;
+  margin: 0 1rem 1rem 0 !important;
+  z-index: 999;
+}
 
 .spotlight_cards {
   padding: 40px 70px;
