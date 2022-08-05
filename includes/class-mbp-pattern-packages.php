@@ -289,7 +289,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/sidebar_block.php',
 			),
-			'mednet-block-patterns/pathway_page_grid'          => array(
+			'mednet-block-patterns/pathway_page_grid'      => array(
 				'slug'          => 'pathway_page_grid',
 				'pattern_class' => 'mbp-pattern-pathway_page_grid',
 				'title'         => __( 'Pathway page content grid', 'mednet-block-patterns' ),
@@ -299,16 +299,6 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/pathway_page_grid.php',
 			),
-			// 'mednet-block-patterns/overview_pages'         => array(
-			// 'slug'          => 'overview_pages',
-			// 'pattern_class' => 'mbp-pattern-overview_pages',
-			// 'title'         => __( 'Overview Pages', 'mednet-block-patterns' ),
-			// 'description'   => __( 'Overview Pages', 'mbp-block-patterns' ),
-			// 'categories'    => array( 'MedNet_Page_Pattern' ),
-			// 'keywords'      => array( 'page' ),
-			// 'viewportWidth' => 1200,
-			// 'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/overview_pages.php',
-			// ),
 			'mednet-block-patterns/all_announcements_page' => array(
 				'slug'          => 'all_announcements_page',
 				'pattern_class' => 'mbp-pattern-all_announcements_page',
@@ -339,7 +329,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/announcements_post.php',
 			),
-			'mednet-block-patterns/announcements_post_footer'     => array(
+			'mednet-block-patterns/announcements_post_footer' => array(
 				'slug'          => 'announcements_post_footer',
 				'pattern_class' => 'mbp-pattern-announcements_post_footer',
 				'title'         => __( 'Announcement Post Footer', 'mednet-block-patterns' ),
@@ -349,7 +339,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/announcements_post_footer.php',
 			),
-			'mednet-block-patterns/homepage' => array(
+			'mednet-block-patterns/homepage'               => array(
 				'slug'          => 'homepage',
 				'pattern_class' => 'mbp-pattern-homepage',
 				'title'         => __( 'Homepage', 'mednet-block-patterns' ),
@@ -379,7 +369,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/icon_page.php',
 			),
-			'mednet-block-patterns/two_column_page' => array(
+			'mednet-block-patterns/two_column_page'        => array(
 				'slug'          => 'two_column_page',
 				'pattern_class' => 'mbp-pattern-two_column_page',
 				'title'         => __( 'Two column content page', 'mednet-block-patterns' ),
@@ -389,7 +379,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/two_column_page.php',
 			),
-			'mednet-block-patterns/overview_page' => array(
+			'mednet-block-patterns/overview_page'          => array(
 				'slug'          => 'overview_page',
 				'pattern_class' => 'mbp-pattern-overview_page',
 				'title'         => __( 'Overview Page', 'mednet-block-patterns' ),
@@ -399,7 +389,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/overview_page.php',
 			),
-			'mednet-block-patterns/pathway_page'        => array(
+			'mednet-block-patterns/pathway_page'           => array(
 				'slug'          => 'pathway_page',
 				'pattern_class' => 'mbp-pattern-pathway_page',
 				'title'         => __( 'Pathway Page', 'mednet-block-patterns' ),
@@ -409,7 +399,7 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/pathway_page.php',
 			),
-			'mednet-block-patterns/faculty_staff_spotlight_page'   => array(
+			'mednet-block-patterns/faculty_staff_spotlight_page' => array(
 				'slug'          => 'faculty_staff_spotlight_page',
 				'pattern_class' => 'mbp-pattern-faculty_staff_spotlight_page',
 				'title'         => __( 'Faculty and Staff Spotlight Page', 'mednet-block-patterns' ),

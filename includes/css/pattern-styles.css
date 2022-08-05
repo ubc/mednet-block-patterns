@@ -157,11 +157,6 @@
   position: relative;
 }
 
-.announcement_block_btn .wp-block-button {
-  /* position: absolute;
-  top: -73px; */
-}
-
 .announcement_block_btn .wp-block-button > a {
   padding: 11px 20px;
   line-height: 24px;
