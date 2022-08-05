@@ -2585,7 +2585,7 @@ h2 > a {
 /*
  * Link styles
  */
- a[href$=".pdf"]:before { 
+ a[href$=".pdf"]::before { 
   content: "\f1c1";
   margin-right: 1ch;
   display: inline-block;
@@ -2595,4 +2595,15 @@ h2 > a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal!important;
+}
+
+a[target="_blank"]::after{
+  content: "";
+  display: inline-block;
+  width: 1.1ch;
+  height: 1.1ch;
+  margin-left: 0.5ch;
+  background-image: url('/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/icon_external_link.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
 }
