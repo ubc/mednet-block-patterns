@@ -1818,6 +1818,10 @@ h2 > a {
 
 /*Staff Spotlight Page*/
 
+.faculty_staff_spotlight_page {
+  text-align: center;
+}
+
 .faculty_staff_spotlight_page > div > p {
   margin: 24px 0 60px;
   padding: 0 15%;
@@ -1886,6 +1890,36 @@ h2 > a {
 
 .faculty_staff_spotlight_page > div > div > .wp-block-query-pagination {
   margin-top: 60px;
+}
+
+.spotlight-single-post {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spotlight-single-post li {
+  text-align: left;
+  flex: 250px;
+  margin: 3%;
+}
+
+.spotlight-submission-footer {
+  background: var(--blue_1);
+  text-align: center;
+  padding: 5rem;
+  color: var(--white);
+}
+
+.spotlight-submission-footer > p {
+  color: var(--white);
+}
+
+.spotlight-submission-footer > p > a {
+  color: var(--white);
+}
+
+.spotlight-submission-footer > h3 {
+  color: var(--white);
 }
 
 .spotlight_post_full_width_photo > div > h1 {
