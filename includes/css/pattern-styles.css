@@ -1564,6 +1564,17 @@ h2 > a {
   line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+.overview_page_columns > div {
+  flex-direction: row;
+  display: flex;
+  gap: 2em;
+}
+
+.overview_page_columns > div > div > div {
+  flex: 300px;
+}
+
 /*What is New Page */
 .what_is_new_page > div > .announcement_feed_small .mednet_pagination_block {
   display: none;
@@ -1893,14 +1904,15 @@ h2 > a {
 }
 
 .spotlight-single-post {
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
+  gap: 2em;
 }
 
 .spotlight-single-post li {
   text-align: left;
-  flex: 250px;
-  margin: 3%;
+  flex: 300px;
 }
 
 .spotlight-submission-footer {
@@ -1910,16 +1922,9 @@ h2 > a {
   color: var(--white);
 }
 
-.spotlight-submission-footer > p {
-  color: var(--white);
-}
-
-.spotlight-submission-footer > p > a {
-  color: var(--white);
-}
-
-.spotlight-submission-footer > h3 {
-  color: var(--white);
+.spotlight-submission-footer > div > p {
+  width: 700px;
+  margin: 30px auto;
 }
 
 .spotlight_post_full_width_photo > div > h1 {

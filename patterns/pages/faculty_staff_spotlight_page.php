@@ -30,7 +30,7 @@
     <!-- /wp:post-template --></div>
     <!-- /wp:query -->
     
-    <!-- wp:group {"style":{"color":{"background":"#0055b7"}},"textColor":"white","className":"spotlight-submission-footer"} -->
+    <!-- wp:group {"style":{"color":{"background":"#0055b7"}},"className":"spotlight-submission-footer"} -->
     <div class="wp-block-group spotlight-submission-footer has-white-color has-text-color has-background" style="background-color:#0055b7"><!-- wp:heading -->
     <h2>Spotlight Submissions</h2>
     <!-- /wp:heading -->
