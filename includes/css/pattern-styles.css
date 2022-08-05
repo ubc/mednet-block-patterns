@@ -158,8 +158,8 @@
 }
 
 .announcement_block_btn .wp-block-button {
-  position: absolute;
-  top: -73px;
+  /* position: absolute;
+  top: -73px; */
 }
 
 .announcement_block_btn .wp-block-button > a {
@@ -968,19 +968,20 @@ h2 > a {
 }
 
 .spotlight_cards
-  > div
-  > div
-  > div:nth-child(2)
-  > div
-  > ul
-  li
-  .wp-block-post-featured-image
-  > a
-  > img {
+.wp-block-post-featured-image
+> a {
   height: auto;
   border-radius: 50%;
   text-align: center;
   aspect-ratio: 1/1;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.spotlight_cards
+  .wp-block-post-featured-image
+  > a img {
+    object-fit: cover;
 }
 
 /* Contact Block */
@@ -1242,26 +1243,26 @@ h2 > a {
 
 /*Educational Activity Form & Resources*/
 
-.educational_activity_form_page > div > div > div:nth-child(1) > hr {
+.two_column_page > div > div > div:nth-child(1) > hr {
   margin: 40px 0;
 }
 
-.educational_activity_form_page > div > div > div:nth-child(1) > * a {
+.two_column_page > div > div > div:nth-child(1) > * a {
   text-decoration: none;
   color: var(--blue_1) !important;
 }
 
-.educational_activity_form_page > div > div > div:nth-child(1) > h2,
-.educational_activity_form_page > div > div > div:nth-child(1) > h1,
-.educational_activity_form_page > div > div > div:nth-child(2) > h4 {
+.two_column_page > div > div > div:nth-child(1) > h2,
+.two_column_page > div > div > div:nth-child(1) > h1,
+.two_column_page > div > div > div:nth-child(2) > h4 {
   margin-bottom: 24px;
 }
 
-.educational_activity_form_page > div > div > div:nth-child(1) > h3 {
+.two_column_page > div > div > div:nth-child(1) > h3 {
   margin: 40px 0 24px;
 }
 
-.educational_activity_form_page
+.two_column_page
   > div
   > div
   > div:nth-child(1)
@@ -1269,12 +1270,12 @@ h2 > a {
   margin-bottom: 24px;
 }
 
-.educational_activity_form_page > div > div > div:nth-child(1) > * a:hover {
+.two_column_page > div > div > div:nth-child(1) > * a:hover {
   text-decoration: underline;
   color: var(--blue_1) !important;
 }
 
-.educational_activity_form_page
+.two_column_page
   > div
   > div
   > div:nth-child(2)
@@ -1283,7 +1284,7 @@ h2 > a {
   margin: 60px 0;
 }
 
-.educational_activity_form_page
+.two_column_page
   > div
   > div
   > div:nth-child(2)
@@ -1291,7 +1292,7 @@ h2 > a {
   margin-bottom: 38px;
 }
 
-.educational_activity_form_page
+.two_column_page
   > div
   > div
   > div:nth-child(2)
@@ -1521,13 +1522,13 @@ h2 > a {
 
 /*Pathway Page */
 
-.pathway_pages > div > div > div > h2 {
+.pathway_page_grid > div > div > div > h2 {
   font-size: 30px;
   letter-spacing: -0.3px;
   line-height: 36px;
 }
 
-.pathway_pages > div > div > div > p {
+.pathway_page_grid > div > div > div > p {
   font-size: 16px;
   line-height: 24px;
 }
@@ -1574,36 +1575,36 @@ h2 > a {
 }
 /*Welcome to MedNet Page */
 
-.welcome_to_mednet_page > div .alert-banner {
+.homepage > div .alert-banner {
   margin-bottom: 40px;
 }
 
-.welcome_to_mednet_page > div .spotlight_cards {
+.homepage > div .spotlight_cards {
   margin-bottom: 40px;
 }
 
-.welcome_to_mednet_page > div > h2 {
+.homepage > div > h2 {
   line-height: 60px;
 }
 
-.welcome_to_mednet_page > div > div:nth-child(5) {
+.homepage > div > div:nth-child(5) {
   margin-top: 50px;
 }
 
-.welcome_to_mednet_page > div > div:nth-child(5) {
+.homepage > div > div:nth-child(5) {
   margin-top: 50px;
   margin-bottom: 60px;
 }
 
-.welcome_to_mednet_page > div > div:nth-child(8) {
+.homepage > div > div:nth-child(8) {
   margin-top: 60px;
 }
 
-.welcome_to_mednet_page > div > div:nth-child(8) > div .content_card {
+.homepage > div > div:nth-child(8) > div .content_card {
   margin: 0 auto;
 }
 
-.welcome_to_mednet_page
+.homepage
   > div
   > div:nth-child(5)
   .wp-block-column:nth-child(2)
@@ -1611,11 +1612,11 @@ h2 > a {
   margin-top: 60px;
 }
 
-.welcome_to_mednet_page > div > hr {
+.homepage > div > hr {
   margin: 60px 0;
 }
 
-.welcome_to_mednet_page > div > div:last-child > div > p {
+.homepage > div > div:last-child > div > p {
   margin: 24px 0;
 }
 
@@ -1764,12 +1765,12 @@ h2 > a {
 
 /*Services & Resources Page*/
 
-.services_resources_page > div > p {
+.overview_page > div > p {
   margin: 24px 0 60px;
   line-height: 30px;
 }
 
-.services_resources_page > div > div > ul > li > h2 > a {
+.overview_page > div > div > ul > li > h2 > a {
   margin: 24px 0 12px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1780,11 +1781,11 @@ h2 > a {
   color: var(--blue_2);
 }
 
-.services_resources_page > div > div > ul > li > h2 > a:hover {
+.overview_page > div > div > ul > li > h2 > a:hover {
   text-decoration: underline;
 }
 
-.services_resources_page > div > div > ul > li .wp-block-post-excerpt {
+.overview_page > div > div > ul > li .wp-block-post-excerpt {
   margin-bottom: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1794,52 +1795,52 @@ h2 > a {
   -webkit-box-orient: vertical;
 }
 
-.services_resources_page > div > div {
+.overview_page > div > div {
   margin-bottom: 40px;
 }
 
 /* Facilities Page*/
 
-.facilities_page > div > h1 {
+.pathway_page > div > h1 {
   margin-bottom: 24px;
 }
 
-.facilities_page > div > p {
+.pathway_page > div > p {
   line-height: 30px;
 }
 
-.facilities_page > div > hr {
+.pathway_page > div > hr {
   margin: 40px 0;
 }
 
-.facilities_page > div .pathway_pages {
+.pathway_page > div .pathway_page_grid {
   margin-bottom: 40px;
 }
 
-.facilities_page > div .quick_links_three_columns {
+.pathway_page > div .quick_links_three_columns {
   margin: 40px 0;
 }
 
 /*Staff Spotlight Page*/
 
-.staff_spotlight_page > div > p {
+.faculty_staff_spotlight_page > div > p {
   margin: 24px 0 60px;
   padding: 0 15%;
 }
 
-.staff_spotlight_page > div > div > ul > li > h2 {
+.faculty_staff_spotlight_page > div > div > ul > li > h2 {
   margin: 24px 0 18px;
 }
 
-.staff_spotlight_page > div > div > ul > li > h2 > a {
+.faculty_staff_spotlight_page > div > div > ul > li > h2 > a {
   color: var(--blue_2);
 }
 
-.staff_spotlight_page > div > div > ul > li > h2 > a:hover {
+.faculty_staff_spotlight_page > div > div > ul > li > h2 > a:hover {
   text-decoration: underline;
 }
 
-.staff_spotlight_page > div > div > ul > li > .wp-block-post-excerpt {
+.faculty_staff_spotlight_page > div > div > ul > li > .wp-block-post-excerpt {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1848,13 +1849,13 @@ h2 > a {
   -webkit-box-orient: vertical;
 }
 
-.staff_spotlight_page > div > div > ul > li > .wp-block-post-featured-image {
+.faculty_staff_spotlight_page > div > div > ul > li > .wp-block-post-featured-image {
   background-color: rgba(0, 33, 69, 50%);
   isolation: isolate;
   aspect-ratio: 16/9;
 }
 
-.staff_spotlight_page
+.faculty_staff_spotlight_page
   > div
   > div
   > ul
@@ -1863,7 +1864,7 @@ h2 > a {
   transform: translate(-10px);
 }
 
-.staff_spotlight_page
+.faculty_staff_spotlight_page
   > div
   > div
   > ul
@@ -1877,7 +1878,7 @@ h2 > a {
   aspect-ratio: 16/9;
 }
 
-.staff_spotlight_page
+.faculty_staff_spotlight_page
   > div
   > div
   > ul
@@ -1888,15 +1889,15 @@ h2 > a {
   mix-blend-mode: overlay;
 }
 
-.staff_spotlight_page > div > div > .wp-block-query-pagination {
+.faculty_staff_spotlight_page > div > div > .wp-block-query-pagination {
   margin-top: 60px;
 }
 
-.spotlight_title_with_big_bio_photo_page > div > h1 {
+.spotlight_post_full_width_photo > div > h1 {
   margin-bottom: 40px;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -1905,7 +1906,7 @@ h2 > a {
   margin: 0;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -1914,7 +1915,7 @@ h2 > a {
   > li
   > h2
   > a,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -1926,7 +1927,7 @@ h2 > a {
   color: var(--blue_2);
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -1935,7 +1936,7 @@ h2 > a {
   > li
   > h2
   > a:hover,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -1947,7 +1948,7 @@ h2 > a {
   text-decoration: underline;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
@@ -1958,12 +1959,12 @@ h2 > a {
   margin-top: 24px;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
   > h2,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
@@ -1977,12 +1978,12 @@ h2 > a {
   line-height: 36px;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column
   > hr,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -1990,12 +1991,12 @@ h2 > a {
   margin: 40px 0;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
   > p:nth-child(2),
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -2003,7 +2004,7 @@ h2 > a {
   margin: 18px 0;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -2011,7 +2012,7 @@ h2 > a {
   margin-top: 8px;
 }
 
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(2)
@@ -2019,13 +2020,13 @@ h2 > a {
   margin-top: 0px;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column
   > p
   > a,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -2035,13 +2036,13 @@ h2 > a {
   text-decoration: none;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column
   > p
   > a:hover,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -2050,14 +2051,14 @@ h2 > a {
   text-decoration: underline;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column
   .wp-block-buttons
   .wp-block-button
   > a,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -2067,14 +2068,14 @@ h2 > a {
   padding: 11px 20px;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column
   .wp-block-buttons
   .wp-block-button
   > a:hover,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -2084,12 +2085,12 @@ h2 > a {
   background-color: var(--blue_2) !important;
 }
 
-.spotlight_title_with_big_bio_photo_page
+.spotlight_post_full_width_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
   .wp-block-buttons,
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
@@ -2097,11 +2098,11 @@ h2 > a {
   margin-top: 40px;
 }
 
-.spotlight_title_with_side_by_side_bio_page > div > h1 {
+.spotlight_post_inline_photo > div > h1 {
   margin-bottom: 40px;
 }
 
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column
@@ -2110,7 +2111,7 @@ h2 > a {
   margin: 0;
 }
 
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
@@ -2124,7 +2125,7 @@ h2 > a {
   margin: 0 24px 24px 0;
 }
 
-.spotlight_title_with_side_by_side_bio_page
+.spotlight_post_inline_photo
   > div
   > .wp-block-columns
   .wp-block-column:nth-child(1)
@@ -2467,10 +2468,10 @@ h2 > a {
   .pathways_feature_block > div > div > div {
     max-width: none;
   }
-  .welcome_to_mednet_page > div > div:last-child > div:nth-child(1) {
+  .homepage > div > div:last-child > div:nth-child(1) {
     margin-bottom: 40px;
   }
-  .welcome_to_mednet_page > div > div:nth-child(5) > div:nth-child(1) {
+  .homepage > div > div:nth-child(5) > div:nth-child(1) {
     margin-bottom: 60px;
   }
   .content_card {
@@ -2479,29 +2480,29 @@ h2 > a {
   .table_option_1 > div > table {
     display: inline-table;
   }
-  .services_resources_page > div > div > ul,
+  .overview_page > div > div > ul,
   .overview_pages > div > div > ul {
     margin: 0;
   }
-  .staff_spotlight_page > div > p {
+  .faculty_staff_spotlight_page > div > p {
     padding: 0;
   }
-  .staff_spotlight_page > div > div > ul {
+  .faculty_staff_spotlight_page > div > div > ul {
     margin: 0;
   }
-  .spotlight_title_with_big_bio_photo_page
+  .spotlight_post_full_width_photo
     > div
     > .wp-block-columns
     .wp-block-column:nth-child(2)
     > h2:nth-child(1),
-  .spotlight_title_with_side_by_side_bio_page
+  .spotlight_post_inline_photo
     > div
     > .wp-block-columns
     .wp-block-column:nth-child(2)
     > h2:nth-child(1) {
     margin-top: 60px;
   }
-  .spotlight_title_with_side_by_side_bio_page
+  .spotlight_post_inline_photo
     > div
     > .wp-block-columns
     .wp-block-column:nth-child(1)
@@ -2511,7 +2512,7 @@ h2 > a {
     .wp-block-post-featured-image {
     width: 100%;
   }
-  .spotlight_title_with_side_by_side_bio_page
+  .spotlight_post_inline_photo
     > div
     > .wp-block-columns
     .wp-block-column:nth-child(1)
@@ -2522,7 +2523,7 @@ h2 > a {
     width: 100%;
     aspect-ratio: auto;
   }
-  .spotlight_title_with_side_by_side_bio_page
+  .spotlight_post_inline_photo
     > div
     > .wp-block-columns
     .wp-block-column:nth-child(1)
@@ -2584,4 +2585,19 @@ h2 > a {
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:1.4px;
+}
+
+/*
+ * Link styles
+ */
+ a[href$=".pdf"]:before { 
+  content: "\f1c1";
+  margin-right: 1ch;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal!important;
 }

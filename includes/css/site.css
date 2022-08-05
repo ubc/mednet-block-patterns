@@ -43,3 +43,7 @@ h1 {
 h2 {
 	font-size: 1.875rem
 }
+
+.has-white-color * {
+	color: inherit;
+}
