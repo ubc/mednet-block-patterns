@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"spotlight_title_with_side_by_side_bio_page"} -->
-<div class="wp-block-group spotlight_title_with_side_by_side_bio_page">
+<!-- wp:group {"className":"spotlight_post_inline_photo"} -->
+<div class="wp-block-group spotlight_post_inline_photo">
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->

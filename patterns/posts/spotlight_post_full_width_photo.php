@@ -1,6 +1,6 @@
 
-<!-- wp:group {"className":"spotlight_title_with_big_bio_photo_page"} -->
-<div class="wp-block-group spotlight_title_with_big_bio_photo_page">
+<!-- wp:group {"className":"spotlight_post_full_width_photo"} -->
+<div class="wp-block-group spotlight_post_full_width_photo">
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
