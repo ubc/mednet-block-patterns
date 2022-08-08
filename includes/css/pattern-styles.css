@@ -1564,6 +1564,17 @@ h2 > a {
   line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
+.overview_page_columns > div {
+  flex-direction: row;
+  display: flex;
+  gap: 2em;
+}
+
+.overview_page_columns > div > div > div {
+  flex: 300px;
+}
+
 /*What is New Page */
 .what_is_new_page > div > .announcement_feed_small .mednet_pagination_block {
   display: none;
@@ -1818,6 +1829,10 @@ h2 > a {
 
 /*Staff Spotlight Page*/
 
+.faculty_staff_spotlight_page {
+  text-align: center;
+}
+
 .faculty_staff_spotlight_page > div > p {
   margin: 24px 0 60px;
   padding: 0 15%;
@@ -1886,6 +1901,30 @@ h2 > a {
 
 .faculty_staff_spotlight_page > div > div > .wp-block-query-pagination {
   margin-top: 60px;
+}
+
+.spotlight-single-post {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.spotlight-single-post li {
+  text-align: left;
+  flex: 300px;
+}
+
+.spotlight-submission-footer {
+  background: var(--blue_1);
+  text-align: center;
+  padding: 5rem;
+  color: var(--white);
+}
+
+.spotlight-submission-footer > div > p {
+  width: 700px;
+  margin: 30px auto;
 }
 
 .spotlight_post_full_width_photo > div > h1 {

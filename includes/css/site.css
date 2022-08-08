@@ -26,7 +26,8 @@
 
 /* CLF Overrides*/
 .has-medium-font-size {
-	line-height: 1.2;
+	line-height: 1.5;
+	
 }
 :root {
 	font-size: 16px;

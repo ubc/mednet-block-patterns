@@ -417,7 +417,7 @@ class MBP_Pattern_Packages {
 				'categories'    => array( 'MedNet_Post_Pattern' ),
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/spotlight_post_full_width_photo.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/spotlight_post_full_width_photo.php',
 			),
 			'mednet-block-patterns/spotlight_post_inline_photo' => array(
 				'slug'          => 'spotlight_post_inline_photo',
@@ -427,7 +427,7 @@ class MBP_Pattern_Packages {
 				'categories'    => array( 'MedNet_Post_Pattern' ),
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/spotlight_post_inline_photo.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/spotlight_post_inline_photo.php',
 			),
 
 		);
