@@ -327,7 +327,7 @@
 						class="wp-block-image size-large is-resized is-style-default"
 					>
 						<img
-							src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/icon_external_link.svg"
+							src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg"
 							alt=""
 							width="88"
 							height="88"
