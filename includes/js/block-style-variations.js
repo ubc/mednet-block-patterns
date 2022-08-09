@@ -22,6 +22,12 @@ wp.blocks.registerBlockStyle('core/group', {
 
 wp.blocks.registerBlockStyle(
     'core/quote', {
-        name: 'blue-quote',
-        label: 'MedNet Quote',
-    });
+    name: 'blue-quote',
+    label: 'MedNet Quote',
+});
+
+wp.blocks.registerBlockStyle(
+    'core/button', {
+    name: 'blue-btn',
+    label: 'Blue',
+});

@@ -140,6 +140,12 @@ if ( ! class_exists( 'MedNet_Block_Patterns' ) ) :
 				define( 'MBP_WP_BASEURL', $mbp_upload_dir['baseurl'] );
 			}
 
+			// Patterns Folder.
+			if ( ! defined( 'MBP_PATTERNS_FOLDER' ) ) {
+				define( 'MBP_PATTERNS_FOLDER', MBP_PLUGIN_DIR . '/patterns/' );
+			}
+			// /Users/graham/Sites/examplepowershifter/app/public/wp-content/uploads/patterns/components/events_list.php
+			// /Users/graham/Sites/examplepowershifter/app/public/wp-content/plugins/mednet-block-patterns/patterns/pages/homepage.php
 		}
 
 		/**

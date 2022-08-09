@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@wordpress/prettier-config": "^1.4.0"
+  }
+}

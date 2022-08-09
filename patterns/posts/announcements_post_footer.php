@@ -1,33 +1,5 @@
-<!-- wp:group {"className":"ubc_broadcast_page"} -->
-<div class="wp-block-group ubc_broadcast_page"><!-- wp:query {"queryId":13,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"displayLayout":{"type":"list","columns":3}} -->
-<div class="wp-block-query"><!-- wp:post-template -->
-<!-- wp:post-title {"style":{"typography":{"letterSpacing":"-0.36px"},"color":{"text":"#002145"}},"fontSize":"large"} /-->
-
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:post-date {"style":{"typography":{"fontSize":"16px","fontStyle":"normal","fontWeight":"600"}}} /-->
-
-<!-- wp:post-author {"showAvatar":false,"style":{"typography":{"fontSize":"16px"}}} /--></div>
-<!-- /wp:group -->
-
-<!-- wp:post-content {"moreText":""} /-->
-
-<!-- wp:read-more {"content":"Read Full Message \u003ci class=\u0022icon fa fa-clone\u0022 aria-hidden=\u0022true\u0022\u003e \u003c/i\u003e","linkTarget":"_blank","style":{"typography":{"fontSize":"14px"},"color":{"background":"#0055b7"}},"textColor":"white"} /-->
-<!-- /wp:post-template --></div>
-<!-- /wp:query -->
-
-<!-- wp:separator {"style":{"color":{"background":"#e6e6e6"}},"className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#e6e6e6;color:#e6e6e6"/>
-<!-- /wp:separator -->
-
-<!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic","fontWeight":"100","fontSize":"16px"}}} -->
-<p style="font-size:16px;font-style:italic;font-weight:100">Additional information in italics. UBC Broadcast is used to communicate time sensitive, organization-wide information to faculty, staff and students lorem ipsum dolor sit amet.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:separator {"style":{"color":{"background":"#e6e6e6"}},"className":"is-style-wide"} -->
-<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#e6e6e6;color:#e6e6e6"/>
-<!-- /wp:separator -->
-
-<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","textTransform":"uppercase","letterSpacing":"0.7px","fontStyle":"normal","fontWeight":"600"}}} -->
+<!-- wp:group {"className":"announcements-post-footer"} -->
+<div class="wp-block-group announcements-post-footer"><!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","textTransform":"uppercase","letterSpacing":"0.7px","fontStyle":"normal","fontWeight":"600"}}} -->
 <p style="font-size:14px;font-style:normal;font-weight:600;text-transform:uppercase;letter-spacing:0.7px">EXPLORE MORE OF WHAT&rsquo;S NEW</p>
 <!-- /wp:paragraph -->
 
@@ -82,7 +54,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color">Learn more about What’s New in the Faculty of Medicine and at UBC.</p>
+<p class="has-white-color has-text-color">Learn more about What&rsquo;s New in the Faculty of Medicine and at UBC.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -94,4 +66,9 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

@@ -26,3 +26,31 @@
 .wp-block-embed__wrapper {
   background: #b4b4b2;
 }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline;
+    width: auto;
+    height: auto;
+  font-family: FontAwesome;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  background-position: 0 0;
+    background-repeat: repeat;
+    margin-top: 0;
+}
+.icon-exclamation-sign:before {
+  content: "\f06a";
+}
+
+.rich-text,
+p {
+  white-space: normal !important;
+}
+.content-card .wp-block-cover__inner-container,
+.content-card .wp-block-cover__inner-container *{
+  color: #fff;
+  display: block;
+}
