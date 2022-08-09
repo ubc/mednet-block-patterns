@@ -26,6 +26,16 @@
 .wp-block-embed__wrapper {
   background: #b4b4b2;
 }
+.editor-styles-wrapper .has-white-color *,
+.editor-styles-wrapper .has-white-color .wp-block {
+  color: inherit;
+}
+.editor-styles-wrapper .full-bleed {
+  box-shadow:50vw 0 1px var(--blue_2), -50vw 0px 1px var(--blue_2);
+}
+.editor-styles-wrapper .full-bleed + .full-bleed {
+  box-shadow:50vw 0 1px var(--gray_3), -50vw 0px 1px var(--gray_3);
+}
 
 [class^="icon-"],
 [class*=" icon-"] {
