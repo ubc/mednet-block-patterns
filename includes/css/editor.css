@@ -44,3 +44,13 @@
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
+
+.rich-text,
+p {
+  white-space: normal !important;
+}
+.content-card .wp-block-cover__inner-container,
+.content-card .wp-block-cover__inner-container *{
+  color: #fff;
+  display: block;
+}
