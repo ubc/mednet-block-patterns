@@ -64,3 +64,14 @@ p {
   color: #fff;
   display: block;
 }
+
+.interface-complementary-area p{
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 1em 0;
+  background: #fff;
+  color: #1e1e1e;
+}
+.interface-complementary-area div {
+  color: #1e1e1e;
+}

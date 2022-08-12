@@ -2248,6 +2248,9 @@ a[target="_blank"]::after{
   background-repeat: no-repeat;
   background-size: auto;
 }
+.components-external-link::after {
+  content: none;
+}
 /* negate new tab icon for special cases*/
 .wp-block-button__link[target="_blank"]::after,
 .quicklinks_list a[target="_blank"]::after {
