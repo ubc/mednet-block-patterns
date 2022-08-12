@@ -31,10 +31,10 @@
   color: inherit;
 }
 .editor-styles-wrapper .full-bleed {
-  box-shadow:50vw 0 1px var(--blue_2), -50vw 0px 1px var(--blue_2);
+  box-shadow:25vw 0 1px var(--blue_2), -25vw 0px 1px var(--blue_2);
 }
 .editor-styles-wrapper .full-bleed + .full-bleed {
-  box-shadow:50vw 0 1px var(--gray_3), -50vw 0px 1px var(--gray_3);
+  box-shadow:25vw 0 1px var(--gray_3), -25vw 0px 1px var(--gray_3);
 }
 
 [class^="icon-"],

@@ -439,6 +439,16 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/spotlight_post_inline_photo.php',
 			),
+			'mednet-block-patterns/one-on-one-spotlight-post' => array(
+				'slug'          => 'one-on-one-spotlight-post',
+				'pattern_class' => 'one-on-one-spotlight-post',
+				'title'         => __( 'One-on-One post', 'mednet-block-patterns' ),
+				'description'   => __( 'Inline photo, sidebar query to category', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Post_Pattern' ),
+				'keywords'      => array( 'post', 'one on one', 'spotlight', 'profile', 'column' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/one-on-one-spotlight.php',
+			),
 
 		);
 

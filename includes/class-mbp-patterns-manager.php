@@ -23,7 +23,7 @@ class MBP_Patterns_Manager {
 	 * Class constructor
 	 */
 	public function __construct() {
-
+		add_action( 'init', array( $this, 'set_pattern_permissions' ), 9 );
 		add_action( 'init', array( $this, 'mbp_register_block_patterns' ), 9 );
 
 	}
@@ -68,7 +68,19 @@ class MBP_Patterns_Manager {
 		register_block_pattern( $pattern_name, $data );
 
 	}
-
+	/**
+	 * Checks if the user is admin or can edit others pages.
+	 *
+	 * @return bool
+	 */
+	public function can_use_admin_packages() {
+		$user = wp_get_current_user();
+		if ( current_user_can( 'edit_others_pages' ) || current_user_can( 'administrator' ) ) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	/**
 	 * Get the content of a file for the pattern content
 	 *
