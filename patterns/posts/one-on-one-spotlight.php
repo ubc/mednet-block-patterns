@@ -21,8 +21,8 @@
 
             <!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} -->
             <p style="font-size: 16px">
-                <strong>One-on-One</strong> is a series aimed at getting ‘behind
-                the scenes’ with senior leadership in the Faculty of Medicine.
+                <strong>One-on-One</strong> is a series aimed at getting &lsquo;behind
+                the scenes&rsquo; with senior leadership in the Faculty of Medicine.
             </p>
             <!-- /wp:paragraph -->
 
@@ -49,7 +49,7 @@
                         class="wp-block-button__link wp-element-button"
                         href="https://med-fom-mednet-plugin-test.sites.olt.ubc.ca/office-of-the-dean/about-the-office/one-on-one/"
                         style="border-radius: 0px"
-                        >Learn More <i
+                        >Learn More&nbsp;<i
                             class="icon fa fa-angle-right"
                             aria-hidden="true"
                         >
