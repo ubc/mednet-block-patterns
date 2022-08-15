@@ -27,15 +27,23 @@
 }
 
 /* Buttons */
-.is-style-blue-btn .wp-block-button__link{
-	background: var(--blue_1);
+.wp-block-button__link{
 	color: #fff;
 	border-radius: 0;
 	padding: 11px 20px;
 	line-height: 1.5rem;
 	font-size: 1rem;
-	transition: all .2s;
+	transition: ease all .2s;
+}
+.is-style-blue-btn .wp-block-button__link{
+	background: var(--blue_1);
 }
 .is-style-blue-btn:hover .wp-block-button__link{
 	background: var(--blue_2);
+}
+.is-style-light-blue .wp-block-button__link{
+	background: var(--blue_2);
+}
+.is-style-light-blue:hover .wp-block-button__link{
+	background: var(--blue_1)
 }
