@@ -1577,13 +1577,14 @@ h2 > a {
 .spotlight-submission-footer {
   background: var(--blue_1);
   text-align: center;
-  padding: 5rem;
+  padding: clamp(1rem, 2vw, 5rem);
   color: var(--white);
 }
 
 .spotlight-submission-footer > div > p {
   width: 700px;
   margin: 30px auto;
+  max-width: 100%;
 }
 
 .spotlight_post_full_width_photo > div > h1 {
@@ -2173,7 +2174,7 @@ h2 > a {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 101.5rem) {
+@media only screen and (min-width: 768px) and (max-width: 1624px) {
   .all_announcements_tabs_block > ul.ubc-accordion-tabs__tab-list {
     display: flex !important;
     flex-wrap: wrap !important;
@@ -2210,7 +2211,15 @@ h2 > a {
     display: inline-table;
   }
 }
-
+@media screen and (max-width: 425px) {
+  #container,
+  #container > .row-fluid {
+    padding: 0;
+  }
+  #container {
+    margin-bottom: 25vw;
+  }
+}
 /* 
  * Quicklinks
  */
