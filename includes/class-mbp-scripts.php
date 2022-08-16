@@ -27,11 +27,33 @@ class MBP_Scripts {
 	public function __construct() {
 
 		add_action( 'init', array( $this, 'mbp_register_assets' ) );
+		add_action( 'init', array( $this, 'set_filters' ) );
+		add_action( 'admin_init', array( $this, 'remove_block_directory' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'mbp_load_assets' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'mbp_load_assets' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'mbp_load_editor_assets' ) );
 		add_action( 'after_setup_theme', array( $this, 'remove_core_patterns' ) );
+
 	}
 
+	/**
+	 * Set sitewide filters to improve the editing experience.
+	 * 
+	 * @return void
+	 */
+	public function set_filters() {
+		add_filter( 'should_load_remote_block_patterns', '__return_false' );
+	}
+	
+	/**
+	 * Disable the block editor directory
+	 * 
+	 * @return void
+	 */
+	public function remove_block_directory() {
+		remove_action( 'enqueue_block_editor_assets', 'wp_enqueue_editor_block_directory_assets' );
+		remove_action( 'enqueue_block_editor_assets', 'gutenberg_enqueue_block_editor_assets_block_directory' );
+	}
 	/**
 	 * Enqueue assets to frontend pages.
 	 *
