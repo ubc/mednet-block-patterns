@@ -21,12 +21,13 @@
 
             <!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} -->
             <p style="font-size: 16px">
-                <strong>One-on-One</strong> is a series aimed at getting &lsquo;behind
-                the scenes&rsquo; with senior leadership in the Faculty of Medicine.
+                <strong>One-on-One</strong> is a series aimed at getting
+                &lsquo;behind the scenes&rsquo; with senior leadership in the
+                Faculty of Medicine.
             </p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:query {"queryId":18,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[[the_ID]],"sticky":"","inherit":false,"taxQuery":{"category":[10750]}}} -->
+            <!-- wp:query {"queryId":18,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[<?php echo(get_the_ID()); ?>],"sticky":"","inherit":false,"taxQuery":{"category":[10750]}}} -->
             <div class="wp-block-query">
                 <!-- wp:post-template -->
                 <!-- wp:post-featured-image {"isLink":true,"height":"200px","align":"wide"} /-->
@@ -46,7 +47,7 @@
                     style="font-size: 16px"
                 >
                     <a
-                        class="wp-block-button__link wp-element-button"
+                        class="wp-block-button__link"
                         href="https://med-fom-mednet-plugin-test.sites.olt.ubc.ca/office-of-the-dean/about-the-office/one-on-one/"
                         style="border-radius: 0px"
                         >Learn More&nbsp;<i
