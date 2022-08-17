@@ -1,9 +1,10 @@
 :root {
+
 	/* Colors: */
-	--white: #ffffff;
+	--white: #fff;
 	--gray_1: #d7e0e7;
 	--gray_2: #e6e6e6;
 	--gray_3: #f2f2f2;
 	--blue_1: #0055b7;
 	--blue_2: #002145;
-  }
+}

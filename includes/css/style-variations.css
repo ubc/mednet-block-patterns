@@ -1,14 +1,14 @@
 /* group style variation */
 .is-style-3-4-width {
-  width: 70%;
+	width: 70%;
 }
 
 .is-style-1-2-width {
-  width: 50%;
+	width: 50%;
 }
 
 .is-style-1-4-width {
-  width: 30%;
+	width: 30%;
 }
 
 .is-style-blue-quote,
@@ -18,32 +18,38 @@
 	font-size: 1.625rem;
 	line-height: 1.38;
 }
-.is-style-blue-quote cite:before {
-    content: '— ';
-    display: inline-block;
+
+.is-style-blue-quote cite::before {
+	content: "— ";
+	display: inline-block;
 }
+
 .is-style-blue-quote cite {
 	font-size: 1.125rem;
 }
 
 /* Buttons */
-.wp-block-button__link{
+.wp-block-button__link {
 	color: #fff;
 	border-radius: 0;
 	padding: 11px 20px;
 	line-height: 1.5rem;
 	font-size: 1rem;
-	transition: ease all .2s;
+	transition: ease all 0.2s;
 }
-.is-style-blue-btn .wp-block-button__link{
+
+.is-style-blue-btn .wp-block-button__link {
 	background: var(--blue_1);
 }
-.is-style-blue-btn:hover .wp-block-button__link{
+
+.is-style-blue-btn:hover .wp-block-button__link {
 	background: var(--blue_2);
 }
-.is-style-light-blue .wp-block-button__link{
+
+.is-style-light-blue .wp-block-button__link {
 	background: var(--blue_2);
 }
-.is-style-light-blue:hover .wp-block-button__link{
-	background: var(--blue_1)
+
+.is-style-light-blue:hover .wp-block-button__link {
+	background: var(--blue_1);
 }
