@@ -1,30 +1,55 @@
 * {
-	font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Arial, sans-serif;
 }
+
 #ubc7-unit-name {
-	font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Arial, sans-serif;
 }
-  
+
 /* Full Width CLF
 -------------------------------*/
-
 .full-width .full-width-container .expand {
 	max-width: 1170px;
 	position: relative;
 	margin: 0 auto;
 }
+
 .home.full-width .full-width-container .expand {
 	max-width: none;
 }
+
 .home.full-width .homepage .wp-block-columns,
 .home.full-width .homepage .wp-block-group {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
+@media screen and (min-width: 767px) {
+
+	#container,
+	#container div[role="main"] {
+		max-width: none;
+	}
+
+	#content {
+		max-width: 1200px;
+	}
+
+	#primary-secondary {
+		max-width: 350px;
+	}
+
+	div[role="main"] {
+		display: flex;
+		justify-content: center;
+	}
+}
+
 .home.full-width h1 {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .home.full-width .full-width-container,
 .home #container,
 .home #container .expand,
@@ -34,24 +59,29 @@
 	padding-left: 0;
 	padding-right: 0;
 }
+
 .home #container .homepage .full-bleed {
 	max-width: none;
 	padding-top: 5.4rem;
 	padding-bottom: 5.5rem;
 }
+
 .home #container .homepage .full-bleed {
 	margin-top: 6rem;
 }
+
 .home #container .homepage .full-bleed + .full-bleed {
-	margin-top: 0rem;
-	margin-bottom:6rem;
+	margin-top: 0;
+	margin-bottom: 6rem;
 }
+
 .full-width {
-	background: #FFF;
+	background: #fff;
 }
 
 @media screen and (min-width: 769px) {
-	.page #utility-after-content .widget_subpages_navigation{
+
+	.page #utility-after-content .widget_subpages_navigation {
 		display: none;
 	}
 }
@@ -59,37 +89,44 @@
 /* CLF Overrides*/
 .has-medium-font-size {
 	line-height: 1.5;
-	
+
 }
+
 :root {
 	font-size: 16px;
 }
+
 p {
 	font-size: 1rem;
 	line-height: 1.5;
 	color: var(--blue_2);
 }
+
 h1 {
 	font-size: 2.25rem;
 	line-height: 1.16;
 }
+
 h2 {
-	font-size: 1.875rem
+	font-size: 1.875rem;
 }
 
 .has-white-color * {
 	color: inherit;
 }
+
 a {
 	color: var(--blue_1);
 	text-decoration: none;
 }
+
 a:hover,
 a:focus,
 a:active {
 	color: var(--blue_1);
 	text-decoration: underline;
 }
+
 /* Utilities */
 .fill-container {
 	display: flex;
@@ -97,9 +134,11 @@ a:active {
 	align-items: stretch;
 	justify-content: stretch;
 }
+
 .no-bottom-space {
 	margin-bottom: 0;
 }
+
 .no-margin {
 	margin: 0;
 }

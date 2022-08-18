@@ -23,7 +23,6 @@ class MBP_Patterns_Manager {
 	 * Class constructor
 	 */
 	public function __construct() {
-
 		add_action( 'init', array( $this, 'mbp_register_block_patterns' ), 9 );
 
 	}
@@ -64,11 +63,11 @@ class MBP_Patterns_Manager {
 			'categories'    => $pattern_data['categories'],
 			'keywords'      => $pattern_data['keywords'],
 			'viewportWidth' => $pattern_data['viewportWidth'],
+			'inserter'      => true,
 		);
 		register_block_pattern( $pattern_name, $data );
 
 	}
-
 	/**
 	 * Get the content of a file for the pattern content
 	 *
