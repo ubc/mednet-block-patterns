@@ -26,23 +26,13 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:buttons {"className":"announcement_block_btn"} -->
-            <div class="wp-block-buttons announcement_block_btn">
-                <!-- wp:button {"style":{"border":{"radius":"0px"},"typography":{"fontSize":"16px"},"color":{"background":"#0055b7"}},"className":"is-style-fill"} -->
-                <div
-                    class="wp-block-button has-custom-font-size is-style-fill"
-                    style="font-size: 16px"
-                >
-                    <a
-                        class="wp-block-button__link has-background"
-                        style="border-radius: 0px; background-color: #0055b7"
-                        >See What’s New</a
-                    >
-                </div>
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-blue-btn"} -->
+                <div class="wp-block-button is-style-blue-btn"><a class="wp-block-button__link" href="/">See What's New</a></div>
                 <!-- /wp:button -->
-            </div>
+                </div>
             <!-- /wp:buttons -->
-        </div>
+            </div>
         <!-- /wp:column -->
 
         <!-- wp:column {"width":"50%"} -->

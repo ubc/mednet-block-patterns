@@ -201,25 +201,10 @@
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->
-			<div class="wp-block-buttons">
-				<!-- wp:button {"style":{"border":{"radius":"0px"},"typography":{"fontSize":"16px"},"color":{"background":"#0055b7"}},"className":"is-style-fill"} -->
-				<div
-					class="wp-block-button has-custom-font-size is-style-fill"
-					style="font-size: 16px"
-				>
-					<a
-						class="wp-block-button__link has-background"
-						href="/"
-						style="border-radius: 0px; background-color: #0055b7"
-						target="_blank"
-						rel="noreferrer noopener"
-						>See All News &amp; Honours
-					</a>
-				</div>
-				<!-- /wp:button -->
-			</div>
-			<!-- /wp:buttons -->
-		</div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-blue-btn"} -->
+<div class="wp-block-button is-style-blue-btn"><a class="wp-block-button__link" href="/">See All News &amp; Honours</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 		<!-- /wp:column -->
 
 		<!-- wp:column {"width":"50%"} -->

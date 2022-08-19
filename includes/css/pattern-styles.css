@@ -606,7 +606,7 @@ li
 
 /* Spotlight Cards */
 .spotlight_cards {
-	padding: 40px 70px;
+	padding: 3rem;
 }
 
 .spotlight_cards > div > div > div:nth-child(1) {
@@ -1922,7 +1922,7 @@ p::before {
 	.spotlight_cards {
 		margin-left: -15px;
 		margin-right: -15px;
-		padding: 40px 15px;
+		padding: 3rem;
 	}
 
 	.spotlight_cards > div > div > div:nth-child(2) > div > ul {
@@ -2087,7 +2087,7 @@ p::before {
 	}
 
 	.spotlight_cards {
-		padding: 40px 15px;
+		padding: 3rem;
 	}
 
 	.spotlight_cards > div > div > div:nth-child(2) > div > ul
