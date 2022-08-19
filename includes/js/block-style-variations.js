@@ -33,7 +33,7 @@ wp.domReady(() => {
 			isDefault: true,
 		},
 		{
-			name: 'light-blue',
+			name: 'dark-blue',
 			label: 'Dark Blue',
 		},
 	]);

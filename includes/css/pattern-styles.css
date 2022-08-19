@@ -62,9 +62,8 @@ div.announcement_block {
 .announcement_block .featured-announcement h3 > a {
 	font-size: 1.75rem;
 	font-weight: normal;
-	line-height: 2rem;
 	color: var(--blue_1);
-	margin: 1.65rem 0;
+	margin: 0.75rem 0;
 }
 
 .announcement_block > .wp-block-column:first-of-type {
@@ -100,16 +99,16 @@ div.announcement_block {
 
 .announcements-list li {
 	font-size: 12px; /* used for em value gaps */
-	height: 170px;
 	overflow: hidden;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #ccc;
 }
 
-.announcements-list li * {
-	max-height: 170px;
+.announcements-list li h3 {
+	font-size: 16px;
 }
+
 
 /* Cards */
 .card-title,
