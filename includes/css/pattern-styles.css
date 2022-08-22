@@ -106,7 +106,7 @@ div.announcement_block {
 }
 
 .announcements-list li h3 {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 
@@ -605,7 +605,7 @@ li
 
 /* Spotlight Cards */
 .spotlight_cards {
-	padding: 3rem;
+	padding: 3rem 4rem;
 }
 
 .spotlight_cards > div > div > div:nth-child(1) {
@@ -1496,10 +1496,19 @@ p::before {
 
 .faculty_staff_spotlight_page > div > div > ul > li > h2 > a {
 	color: var(--blue_2);
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 2rem;
 }
 
 .faculty_staff_spotlight_page > div > div > ul > li > h2 > a:hover {
 	text-decoration: underline;
+}
+
+.faculty_staff_spotlight_page > div > div > ul > li > div > a {
+	color: var(--blue_2);
+	font-weight: 100;
+	font-size: 0.8rem;
 }
 
 .faculty_staff_spotlight_page > div > div > ul > li > .wp-block-post-excerpt {
@@ -1921,7 +1930,7 @@ p::before {
 	.spotlight_cards {
 		margin-left: -15px;
 		margin-right: -15px;
-		padding: 3rem;
+		padding: 3rem 4rem;
 	}
 
 	.spotlight_cards > div > div > div:nth-child(2) > div > ul {
@@ -2086,7 +2095,7 @@ p::before {
 	}
 
 	.spotlight_cards {
-		padding: 3rem;
+		padding: 3rem 4rem;
 	}
 
 	.spotlight_cards > div > div > div:nth-child(2) > div > ul
