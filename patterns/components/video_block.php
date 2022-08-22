@@ -6,13 +6,7 @@
     >
         <div class="wp-block-embed__wrapper">https://youtu.be/skm-01f-La8</div>
         <figcaption>
-            <strong
-                >Video component leads with video title in Whitney Semibold i.e.
-                Penticton Regional Hospital &ndash; Fly through the new ipsum
-                dolor</strong
-            >. Short and brief caption or descriptor follows in Whitney Book (if
-            applicable). Lorem ipsum dolor sit amet, adipisicing elit, sed do
-            eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
+            <strong>Video Title</strong>. Video Description.
         </figcaption>
     </figure>
     <!-- /wp:embed -->

@@ -169,12 +169,12 @@
   </div>
   <!-- /wp:columns -->
 
-  <!-- wp:separator {"style":{"color":{"background":"#e6e6e6"}},"className":"is-style-wide"} -->
-  <hr
-    class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide"
-    style="background-color: #e6e6e6; color: #e6e6e6"
-  />
-  <!-- /wp:separator -->
+	<!-- wp:separator {"style":{"color":{"background":"#e6e6e6"}},"className":"is-style-wide"} -->
+	<hr
+		class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide"
+		style="background-color: #e6e6e6; color: #e6e6e6"
+	/>
+	<!-- /wp:separator -->
 
   <!-- wp:columns -->
   <div class="wp-block-columns">
@@ -312,5 +312,8 @@
     <!-- /wp:column -->
   </div>
   <!-- /wp:columns -->
+=======
+	<?php require MBP_PATTERNS_FOLDER . 'pages/news-and-honours-section.php'; ?>
+>>>>>>> 698ab64 (Fixed issues with "what's new" buttons)
 </div>
 <!-- /wp:group -->

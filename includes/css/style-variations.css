@@ -36,6 +36,7 @@
 	line-height: 1.5rem;
 	font-size: 1rem;
 	transition: ease all 0.2s;
+	background: var(--blue_1)
 }
 
 .is-style-blue-btn .wp-block-button__link {

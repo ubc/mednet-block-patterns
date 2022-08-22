@@ -1,9 +1,7 @@
 <!-- wp:group {"className":"announcements-block"} -->
 <div class="wp-block-group announcements-block">
-    <!-- wp:heading {"style":{"color":{"text":"#002145"},"typography":{"fontSize":"18px"}}} -->
-    <h2 class="has-text-color" style="color: #002145; font-size: 18px">
-        WHAT’S NEW
-    </h2>
+    <!-- wp:heading -->
+    <h2>WHAT’S NEW</h2>
     <!-- /wp:heading -->
 
     <!-- wp:columns {"className":"announcement_block"} -->
@@ -15,7 +13,7 @@
                 <!-- wp:query {"queryId":20,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"featured-announcement"} -->
                 <div class="wp-block-query featured-announcement">
                     <!-- wp:post-template -->
-                    <!-- wp:post-featured-image {"sizeSlug":"medium","isLink":true,"width":"","height":"","align":"wide"} /-->
+                    <!-- wp:post-featured-image {"isLink":true,"width":"","height":"","sizeSlug":"medium","align":"wide"} /-->
 
                     <!-- wp:post-title {"level":3,"isLink":true,"style":{"color":{"text":"#0055b7"}}} /-->
 
@@ -26,9 +24,12 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:buttons -->
-            <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-blue-btn"} -->
-                <div class="wp-block-button is-style-blue-btn"><a class="wp-block-button__link" href="/">See What's New</a></div>
+            <!-- wp:buttons {"className":"announcement_block_btn"} -->
+            <div class="wp-block-buttons announcement_block_btn">
+                <!-- wp:button {"className":"is-style-blue-btn"} -->
+                <div class="wp-block-button is-style-blue-btn">
+                    <a class="wp-block-button__link">See What’s New</a>
+                </div>
                 <!-- /wp:button -->
                 </div>
             <!-- /wp:buttons -->
@@ -47,7 +48,7 @@
                         class="wp-block-column is-vertically-aligned-top"
                         style="flex-basis: 65%"
                     >
-                        <!-- wp:post-featured-image {"sizeSlug":"medium","isLink":true,"width":"100%","height":"170px"} /-->
+                        <!-- wp:post-featured-image {"isLink":true,"width":"100%","height":"170px","sizeSlug":"medium"} /-->
                     </div>
                     <!-- /wp:column -->
 
