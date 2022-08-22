@@ -33,21 +33,20 @@ class MBP_Scripts {
 		add_action( 'wp_enqueue_scripts', array( $this, 'mbp_load_assets' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'mbp_load_editor_assets' ) );
 		add_action( 'after_setup_theme', array( $this, 'remove_core_patterns' ) );
-
+		add_action( 'after_setup_theme', array( $this, 'add_theme_supports' ), 100 );
 	}
 
 	/**
 	 * Set sitewide filters to improve the editing experience.
-	 * 
+	 *
 	 * @return void
 	 */
 	public function set_filters() {
 		add_filter( 'should_load_remote_block_patterns', '__return_false' );
 	}
-	
 	/**
 	 * Disable the block editor directory
-	 * 
+	 *
 	 * @return void
 	 */
 	public function remove_block_directory() {
@@ -141,5 +140,19 @@ class MBP_Scripts {
 	 */
 	public function remove_core_patterns() {
 		remove_theme_support( 'core-block-patterns' );
+	}
+	/**
+	 * Add options for giving the user more editing control
+	 *
+	 * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/ Opt-in documentation
+	 */
+	public function add_theme_supports() {
+
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'line-height' );
+		add_theme_support( 'spacing' );
+		add_theme_support( 'custom-spacing' );
+		add_theme_support( 'appearance-tools' );
+		add_theme_support( 'responsive-embeds' );
 	}
 }
