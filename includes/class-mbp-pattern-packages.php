@@ -467,6 +467,17 @@ class MBP_Pattern_Packages {
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/faculty_staff_spotlight_page.php',
 				'blockTypes'    => array( 'core/paragraph' ),
 			),
+			'mednet-block-patterns/news-honours-section'               => array(
+				'slug'          => 'news-honours-section',
+				'pattern_class' => 'mbp-pattern-news-honours-section',
+				'title'         => __( 'News and Honours section', 'mednet-block-patterns' ),
+				'description'   => __( 'Part of the Homepage layout. A query showing news and honours content', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Pattern' ),
+				'keywords'      => array( 'page', 'section', 'homepage' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/news-and-honours-section.php',
+				'blockTypes'    => array( 'core/paragraph', 'core/columns', 'core/query', 'core/image' ),
+			),
 			'mednet-block-patterns/homepage'               => array(
 				'slug'          => 'homepage',
 				'pattern_class' => 'mbp-pattern-homepage',

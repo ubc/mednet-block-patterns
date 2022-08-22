@@ -361,18 +361,11 @@
 
                     <!-- wp:buttons -->
                     <div class="wp-block-buttons">
-                        <!-- wp:button {"textColor":"white","style":{"typography":{"fontSize":"16px"},"border":{"radius":"0px"},"color":{"background":"#002145"}},"className":"is-style-fill"} -->
-                        <div
-                            class="wp-block-button has-custom-font-size is-style-fill"
-                            style="font-size: 16px"
-                        >
+                        <!-- wp:button {"className":"has-custom-font-size"} -->
+                        <div class="wp-block-button has-custom-font-size">
                             <a
-                                class="wp-block-button__link has-white-color has-text-color has-background"
+                                class="wp-block-button__link"
                                 href="/"
-                                style="
-                                    border-radius: 0px;
-                                    background-color: #002145;
-                                "
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 >See all News &amp; Honours
@@ -407,7 +400,7 @@
                         letter-spacing: -0.3px;
                     "
                 >
-                    What&rsquo;s New
+                    What’s New
                 </h2>
                 <!-- /wp:heading -->
 

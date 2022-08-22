@@ -53,11 +53,16 @@
 }
 
 /* Announcements Block */
+.announcements-block h2 {
+	font-size: 1.125rem;
+	color: var(--blue_2);
+}
+
+
 div.announcement_block {
 	gap: 1rem;
 	margin-top: 26px;
 }
-
 .announcement_block .featured-announcement h3,
 .announcement_block .featured-announcement h3 > a {
 	font-size: 1.75rem;
@@ -114,7 +119,9 @@ div.announcement_block {
 /* Cards */
 .card-title,
 .card-title > a {
-	font: normal normal normal 1.75rem/2rem Whitney;
+	font-weight: 400;
+	font-size: 1.75rem;
+	line-height: 2rem;
 }
 
 /*Announcement Card - Large*/
