@@ -1496,8 +1496,8 @@ p::before {
 
 .faculty_staff_spotlight_page > div > div > ul > li > h2 > a {
 	color: var(--blue_2);
-	font-size: 1.5rem;
-	font-weight: 600;
+	font-size: 1.75rem;
+	font-weight: 400;
 	line-height: 2rem;
 }
 
