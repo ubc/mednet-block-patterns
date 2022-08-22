@@ -47,10 +47,10 @@
 	background: var(--blue_2);
 }
 
-.is-style-light-blue .wp-block-button__link {
+.is-style-dark-blue .wp-block-button__link {
 	background: var(--blue_2);
 }
 
-.is-style-light-blue:hover .wp-block-button__link {
+.is-style-dark-blue:hover .wp-block-button__link {
 	background: var(--blue_1);
 }

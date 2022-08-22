@@ -23,17 +23,15 @@
                 <!-- /wp:query -->
             </div>
             <!-- /wp:group -->
-
             <!-- wp:buttons {"className":"announcement_block_btn"} -->
             <div class="wp-block-buttons announcement_block_btn">
                 <!-- wp:button {"className":"is-style-blue-btn"} -->
                 <div class="wp-block-button is-style-blue-btn">
-                    <a class="wp-block-button__link">See What’s New</a>
+                    <a class="wp-block-button__link">See What&rsquo;s New</a>
                 </div>
                 <!-- /wp:button -->
-            </div>
             <!-- /wp:buttons -->
-        </div>
+            </div>
         <!-- /wp:column -->
 
         <!-- wp:column {"width":"50%"} -->

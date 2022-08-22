@@ -67,9 +67,8 @@ div.announcement_block {
 .announcement_block .featured-announcement h3 > a {
 	font-size: 1.75rem;
 	font-weight: normal;
-	line-height: 2rem;
 	color: var(--blue_1);
-	margin: 1.65rem 0;
+	margin: 0.75rem 0;
 }
 
 .announcement_block > .wp-block-column:first-of-type {
@@ -105,16 +104,16 @@ div.announcement_block {
 
 .announcements-list li {
 	font-size: 12px; /* used for em value gaps */
-	height: 170px;
 	overflow: hidden;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #ccc;
 }
 
-.announcements-list li * {
-	max-height: 170px;
+.announcements-list li h3 {
+	font-size: 1rem;
 }
+
 
 /* Cards */
 .card-title,
@@ -613,7 +612,7 @@ li
 
 /* Spotlight Cards */
 .spotlight_cards {
-	padding: 40px 70px;
+	padding: 3rem 4rem;
 }
 
 .spotlight_cards > div > div > div:nth-child(1) {
@@ -1504,10 +1503,19 @@ p::before {
 
 .faculty_staff_spotlight_page > div > div > ul > li > h2 > a {
 	color: var(--blue_2);
+	font-size: 1.75rem;
+	font-weight: 400;
+	line-height: 2rem;
 }
 
 .faculty_staff_spotlight_page > div > div > ul > li > h2 > a:hover {
 	text-decoration: underline;
+}
+
+.faculty_staff_spotlight_page > div > div > ul > li > div > a {
+	color: var(--blue_2);
+	font-weight: 100;
+	font-size: 0.8rem;
 }
 
 .faculty_staff_spotlight_page > div > div > ul > li > .wp-block-post-excerpt {
@@ -1929,7 +1937,7 @@ p::before {
 	.spotlight_cards {
 		margin-left: -15px;
 		margin-right: -15px;
-		padding: 40px 15px;
+		padding: 3rem 4rem;
 	}
 
 	.spotlight_cards > div > div > div:nth-child(2) > div > ul {
@@ -2094,7 +2102,7 @@ p::before {
 	}
 
 	.spotlight_cards {
-		padding: 40px 15px;
+		padding: 3rem 4rem;
 	}
 
 	.spotlight_cards > div > div > div:nth-child(2) > div > ul

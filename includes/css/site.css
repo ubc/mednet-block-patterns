@@ -60,10 +60,9 @@
 	padding-right: 0;
 }
 
-.home #container .homepage .full-bleed {
+.full-bleed {
 	max-width: none;
-	padding-top: 5.4rem;
-	padding-bottom: 5.5rem;
+	padding: 3rem;
 }
 
 .home #container .homepage .full-bleed {
