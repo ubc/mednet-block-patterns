@@ -39,15 +39,15 @@ class MBP_Pattern_Packages {
 
 		$block_patterns = array(
 			'mednet-block-patterns/alert-banner'           => array(
-				'slug'           => 'alert-banner',
-				'pattern_class'  => 'mbp-pattern-alert-banner',
-				'title'          => __( 'Alert banner', 'mednet-block-patterns' ),
-				'description'    => __( 'Alert banner', 'mbp-block-patterns' ),
-				'categories'     => array( 'MedNet_Components' ),
-				'keywords'       => array( 'banner', 'alert' ),
-				'viewportWidth'  => 1200,
-				'file_content'   => MBP_PLUGIN_DIR . 'patterns/components/alert_banner.php',
-				'viewportHeight' => 250,
+				'slug'          => 'alert-banner',
+				'pattern_class' => 'mbp-pattern-alert-banner',
+				'title'         => __( 'Alert banner', 'mednet-block-patterns' ),
+				'description'   => __( 'Alert banner', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Components' ),
+				'keywords'      => array( 'banner', 'alert' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/alert_banner.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcements_block'    => array(
 				'slug'          => 'announcements_block',
@@ -58,6 +58,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/announcements_block.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcement_card_large' => array(
 				'slug'          => 'announcement_card_large',
@@ -68,6 +69,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/announcement_card_large.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcement_card_small' => array(
 				'slug'          => 'announcement_card_small',
@@ -78,6 +80,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/announcement_card_small.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/content_card'           => array(
 				'slug'          => 'content_card',
@@ -88,6 +91,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'image', 'card' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/content_card.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/content_card_with_overlay' => array(
 				'slug'          => 'content_card_with_overlay',
@@ -98,6 +102,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'image', 'card' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/content_card_with_overlay.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/three_col_block_with_blue_feature_box' => array(
 				'slug'          => 'three_col_block_with_blue_feature_box',
@@ -108,6 +113,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'column', 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/three_col_block_with_blue_feature_box.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/blue_feature_blocks'    => array(
 				'slug'          => 'blue_feature_blocks',
@@ -118,6 +124,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'column' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/blue_feature_blocks.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcement_feed_small' => array(
 				'slug'          => 'announcement_feed_small',
@@ -128,6 +135,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'query' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/announcement_feed_small.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/quick_link_list'        => array(
 				'slug'          => 'quick_link_list',
@@ -138,6 +146,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'quicklinks', 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/quick_link_list.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/featured_resource'      => array(
 				'slug'          => 'featured_resource',
@@ -148,6 +157,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'text' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/featured_resource.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/events_list'            => array(
 				'slug'          => 'events_list',
@@ -158,8 +168,9 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'text', 'events' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/events_list.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
-			'mednet-block-patterns/events_list_item'            => array(
+			'mednet-block-patterns/events_list_item'       => array(
 				'slug'          => 'events_list_item',
 				'pattern_class' => 'mbp-pattern-events_list_item',
 				'title'         => __( 'Events List Item', 'mednet-block-patterns' ),
@@ -168,6 +179,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'text', 'events', 'list item', 'date', 'title' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/event_list_item.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/spotlight_cards'        => array(
 				'slug'          => 'spotlight_cards',
@@ -178,6 +190,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'query', 'spotlight' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/spotlight_cards.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/contact_block'          => array(
 				'slug'          => 'contact_block',
@@ -188,6 +201,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'card' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/contact_block.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/contact_block_1_4_width' => array(
 				'slug'          => 'contact_block_1_4_width',
@@ -198,6 +212,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'card' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/contact_block_1_4_width.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/accordion_block'        => array(
 				'slug'          => 'accordion_block',
@@ -208,6 +223,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'accordion' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/accordion_block.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/table_option_1'         => array(
 				'slug'          => 'table_option_1',
@@ -218,6 +234,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'table' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/table_option_1.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/table_option_2'         => array(
 				'slug'          => 'table_option_2',
@@ -228,6 +245,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'table' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/table_option_2.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/video_block'            => array(
 				'slug'          => 'video_block',
@@ -238,6 +256,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'table' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/video_block.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/navigation_list_with_icons' => array(
 				'slug'          => 'navigation_list_with_icons',
@@ -248,6 +267,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/navigation_list_with_icons.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/pathways_feature_block' => array(
 				'slug'          => 'pathways_feature_block',
@@ -258,6 +278,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'block', 'image' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/pathways_feature_block.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/quick_links_one_col'    => array(
 				'slug'          => 'quick_links_one_col',
@@ -268,6 +289,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'block', 'image' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/quick_links_one_col.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/quick_links_two_columns' => array(
 				'slug'          => 'quick_links_two_columns',
@@ -278,6 +300,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/quick_links_two_columns.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/quick_links_three_columns' => array(
 				'slug'          => 'quick_links_three_columns',
@@ -288,6 +311,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'list', 'quicklinks', 'three column' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/quick_links_three_columns.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/sidebar_block'          => array(
 				'slug'          => 'sidebar_block',
@@ -298,6 +322,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'sidebar' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/sidebar_block.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/pathway_page_grid'      => array(
 				'slug'          => 'pathway_page_grid',
@@ -307,7 +332,8 @@ class MBP_Pattern_Packages {
 				'categories'    => array( 'MedNet_Components' ),
 				'keywords'      => array( 'grid', 'links' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/pathway_page_grid.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/pathway_page_grid.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcements_post'     => array(
 				'slug'          => 'announcements_post',
@@ -318,6 +344,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'post' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/announcements_post.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcements_post_footer' => array(
 				'slug'          => 'announcements_post_footer',
@@ -328,46 +355,40 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'post', 'related posts' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/announcements_post_footer.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
-			'mednet-block-patterns/spotlight_post_full_width_photo' => array(
-				'slug'          => 'spotlight_post_full_width_photo',
-				'pattern_class' => 'mbp-pattern-spotlight_post_full_width_photo',
-				'title'         => __( 'Spotlight post with full width photo', 'mednet-block-patterns' ),
-				'description'   => __( 'Spotlight Title With Big Bio Photo Page', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Post_Pattern' ),
-				'keywords'      => array( 'page' ),
-				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/spotlight_post_full_width_photo.php',
-			),
-			'mednet-block-patterns/spotlight_post_inline_photo' => array(
-				'slug'          => 'spotlight_post_inline_photo',
-				'pattern_class' => 'mbp-pattern-spotlight_post_inline_photo',
-				'title'         => __( 'Spotlight post with inline photo', 'mednet-block-patterns' ),
+			'mednet-block-patterns/spotlight_post' => array(
+				'slug'          => 'spotlight_post',
+				'pattern_class' => 'mbp-pattern-spotlight_post',
+				'title'         => __( 'Spotlight post', 'mednet-block-patterns' ),
 				'description'   => __( 'Inline photo on spotlight post', 'mbp-block-patterns' ),
 				'categories'    => array( 'MedNet_Post_Pattern' ),
-				'keywords'      => array( 'page' ),
+				'keywords'      => array( 'post' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/spotlight_post_inline_photo.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/spotlight_post.php',
+				'blockTypes'    => array( 'core/paragraph', 'core/columns', 'core/image', 'core/query' ),
 			),
 			'mednet-block-patterns/one_column_page'        => array(
-				'slug'          => 'one_column_page',
-				'pattern_class' => 'mbp-pattern-one_column_page',
+				'slug'          => 'one_column_demo_page',
+				'pattern_class' => 'mbp-pattern-demo_one_column_page',
 				'title'         => __( 'One-Column Content Page', 'mednet-block-patterns' ),
-				'description'   => __( 'One-Column Content Page', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Pattern' ),
-				'keywords'      => array( 'page' ),
+				'description'   => __( 'Single column page with many components available', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Demo_Pattern' ),
+				'keywords'      => array( 'demo' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/one_column_page.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/demo/one_column_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/two_column_page'        => array(
-				'slug'          => 'two_column_page',
-				'pattern_class' => 'mbp-pattern-two_column_page',
+				'slug'          => 'two_column_demo_page',
+				'pattern_class' => 'mbp-pattern-two_column_demo_page',
 				'title'         => __( 'Two column content page', 'mednet-block-patterns' ),
-				'description'   => __( 'Educational Activity Form & Resources Page', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Pattern' ),
-				'keywords'      => array( 'page' ),
+				'description'   => __( 'Two column page with many components', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Demo_Pattern' ),
+				'keywords'      => array( 'demo' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/two_column_page.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/demo/two_column_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/one-on-one-spotlight-post' => array(
 				'slug'          => 'one-on-one-spotlight-post',
@@ -378,36 +399,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'post', 'one on one', 'spotlight', 'profile', 'column' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/posts/one-on-one-spotlight.php',
-			),
-			'mednet-block-patterns/all_announcements_page' => array(
-				'slug'          => 'all_announcements_page',
-				'pattern_class' => 'mbp-pattern-all_announcements_page',
-				'title'         => __( 'All Announcements Page', 'mednet-block-patterns' ),
-				'description'   => __( 'All Announcements Page', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Pattern' ),
-				'keywords'      => array( 'page' ),
-				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/all_announcements_page.php',
-			),
-			'mednet-block-patterns/what_is_new_page'       => array(
-				'slug'          => 'what_is_new_page',
-				'pattern_class' => 'mbp-pattern-what_is_new_page',
-				'title'         => __( 'What\'s New Page', 'mednet-block-patterns' ),
-				'description'   => __( 'What\'s New Page', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Pattern' ),
-				'keywords'      => array( 'page' ),
-				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/what_is_new_page.php',
-			),
-			'mednet-block-patterns/icon_page'              => array(
-				'slug'          => 'icon_page',
-				'pattern_class' => 'mbp-pattern-icon_page',
-				'title'         => __( 'Icon Page', 'mednet-block-patterns' ),
-				'description'   => __( 'Icon Page', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Pattern' ),
-				'keywords'      => array( 'page' ),
-				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/icon_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/overview_page'          => array(
 				'slug'          => 'overview_page',
@@ -418,6 +410,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/overview_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/pathway_page'           => array(
 				'slug'          => 'pathway_page',
@@ -428,6 +421,40 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/pathway_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
+			),
+			'mednet-block-patterns/icon_page'              => array(
+				'slug'          => 'icon_page',
+				'pattern_class' => 'mbp-pattern-icon_page',
+				'title'         => __( 'Icon Page', 'mednet-block-patterns' ),
+				'description'   => __( 'Icon Page', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Pattern' ),
+				'keywords'      => array( 'page' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/icon_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
+			),
+			'mednet-block-patterns/all_announcements_page' => array(
+				'slug'          => 'all_announcements_page',
+				'pattern_class' => 'mbp-pattern-all_announcements_page',
+				'title'         => __( 'All Announcements Page', 'mednet-block-patterns' ),
+				'description'   => __( 'All Announcements Page', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Pattern' ),
+				'keywords'      => array( 'Page', 'Announcements', 'Query' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/all_announcements_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
+			),
+			'mednet-block-patterns/what_is_new_page'       => array(
+				'slug'          => 'what_is_new_page',
+				'pattern_class' => 'mbp-pattern-what_is_new_page',
+				'title'         => __( 'What\'s New Page', 'mednet-block-patterns' ),
+				'description'   => __( 'What\'s New Page', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Pattern' ),
+				'keywords'      => array( 'page' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/what_is_new_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/faculty_staff_spotlight_page' => array(
 				'slug'          => 'faculty_staff_spotlight_page',
@@ -438,6 +465,18 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/faculty_staff_spotlight_page.php',
+				'blockTypes'    => array( 'core/paragraph' ),
+			),
+			'mednet-block-patterns/news-honours-section'               => array(
+				'slug'          => 'news-honours-section',
+				'pattern_class' => 'mbp-pattern-news-honours-section',
+				'title'         => __( 'News and Honours section', 'mednet-block-patterns' ),
+				'description'   => __( 'Part of the Homepage layout. A query showing news and honours content', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Pattern' ),
+				'keywords'      => array( 'page', 'section', 'homepage' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/news-and-honours-section.php',
+				'blockTypes'    => array( 'core/paragraph', 'core/columns', 'core/query', 'core/image' ),
 			),
 			'mednet-block-patterns/homepage'               => array(
 				'slug'          => 'homepage',
@@ -448,6 +487,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'page' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/homepage.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 
 		);
