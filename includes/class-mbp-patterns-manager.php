@@ -63,7 +63,8 @@ class MBP_Patterns_Manager {
 			'categories'    => $pattern_data['categories'],
 			'keywords'      => $pattern_data['keywords'],
 			'viewportWidth' => $pattern_data['viewportWidth'],
-			'blockTypes'      => $pattern_data['blockTypes'],
+			'blockTypes'    => $pattern_data['blockTypes'],
+			'inserter'      => $pattern_data['inserter'] ?? true,
 		);
 		register_block_pattern( $pattern_name, $data );
 
