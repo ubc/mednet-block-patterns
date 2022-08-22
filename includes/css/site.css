@@ -64,9 +64,6 @@
 	max-width: none;
 	padding-top: 5.4rem;
 	padding-bottom: 5.5rem;
-}
-
-.home #container .homepage .full-bleed {
 	margin-top: 6rem;
 }
 
@@ -141,4 +138,10 @@ a:active {
 
 .no-margin {
 	margin: 0;
+}
+
+hr,
+.wp-block-separator {
+	background-color: #e6e6e6;
+	color: #e6e6e6;
 }

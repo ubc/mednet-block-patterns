@@ -48,6 +48,10 @@ if ( ! class_exists( 'MBP_Category_Manager' ) ) :
 					'slug' => 'MedNet_Page_Pattern',
 					'text' => 'MedNet Page Patterns',
 				),
+				'layouts'      => array(
+					'slug' => 'MedNet_Page_Layouts',
+					'text' => 'MedNet Page Layouts',
+				),
 				'posts'      => array(
 					'slug' => 'MedNet_Post_Pattern',
 					'text' => 'MedNet Post Patterns',
