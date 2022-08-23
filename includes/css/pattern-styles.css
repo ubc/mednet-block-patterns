@@ -1746,7 +1746,7 @@ p::before {
 	}
 
 	.announcement_block .wp-block-column:first-child .wp-block-query ul li h2 {
-		font-size: 20px;
+		font-size: var(--large);
 		line-height: 22px;
 		letter-spacing: -0.1px;
 	}
@@ -1817,7 +1817,7 @@ p::before {
 	}
 
 	.announcement_card_large ul li h2 {
-		font-size: 20px !important;
+		font-size: var(--large) !important;
 		line-height: 22px;
 		letter-spacing: -0.1px !important;
 	}
@@ -1845,7 +1845,7 @@ p::before {
 	}
 
 	.content-card > div > p:nth-child(2) {
-		font-size: 20px !important;
+		font-size: var(--large) !important;
 		line-height: 22px;
 		letter-spacing: -0.1px !important;
 	}
@@ -1976,7 +1976,7 @@ p::before {
 	.wp-block-post-title {
 		text-align: left;
 		margin: 0;
-		font-size: 20px !important;
+		font-size: var(--large) !important;
 		line-height: 20px;
 	}
 
