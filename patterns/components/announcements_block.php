@@ -1,7 +1,7 @@
 <!-- wp:group {"className":"announcements-block"} -->
 <div class="wp-block-group announcements-block">
     <!-- wp:heading -->
-    <h2>WHAT’S NEW</h2>
+    <h2>WHAT&rsquo;S NEW</h2>
     <!-- /wp:heading -->
 
     <!-- wp:columns {"className":"announcement_block"} -->
@@ -23,15 +23,17 @@
                 <!-- /wp:query -->
             </div>
             <!-- /wp:group -->
+
             <!-- wp:buttons {"className":"announcement_block_btn"} -->
             <div class="wp-block-buttons announcement_block_btn">
                 <!-- wp:button {"className":"is-style-blue-btn"} -->
                 <div class="wp-block-button is-style-blue-btn">
-                    <a class="wp-block-button__link">See What&rsquo;s New</a>
+                    <a class="wp-block-button__link">See What’s New</a>
                 </div>
                 <!-- /wp:button -->
-            <!-- /wp:buttons -->
             </div>
+            <!-- /wp:buttons -->
+        </div>
         <!-- /wp:column -->
 
         <!-- wp:column {"width":"50%"} -->
