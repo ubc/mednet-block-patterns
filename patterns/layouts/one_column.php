@@ -1,15 +1,9 @@
 <!-- wp:group {"className":"one_column_page"} -->
 <div class="wp-block-group one_column_page">
-    <!-- wp:paragraph {"placeholder":"Introduction content goes here","fontSize":"large"} -->
-    <p class="has-large-font-size"></p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:separator {"className":"is-style-wide"} -->
-    <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
-    <!-- /wp:separator -->
+    <?php require MBP_PATTERNS_FOLDER . 'text/intro-text.php'; ?>
 </div>
-<!-- /wp:group -->
 
-<!-- wp:paragraph {"placeholder":"Page content"} -->
+<!-- wp:paragraph {"placeholder":"Page content goes here. Add any kind of content you wish. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit.."} -->
 <p></p>
 <!-- /wp:paragraph -->
+<!-- /wp:group -->
