@@ -40,17 +40,29 @@ if ( ! class_exists( 'MBP_Category_Manager' ) ) :
 		public function get_pattern_categories() {
 
 			$pattern_categories = array(
-				'components' => array(
+				'text' => array(
+					'slug' => 'MedNet_Text',
+					'text' => 'Text',
+				),
+				'components'  => array(
 					'slug' => 'MedNet_Components',
-					'text' => 'MedNet Components',
+					'text' => 'Components',
 				),
-				'pages'      => array(
+				'layouts'     => array(
+					'slug' => 'MedNet_Page_Layouts',
+					'text' => 'Page Layouts',
+				),
+				'pages'       => array(
 					'slug' => 'MedNet_Page_Pattern',
-					'text' => 'MedNet Page Patterns',
+					'text' => 'Page Patterns',
 				),
-				'posts'      => array(
+				'posts'       => array(
 					'slug' => 'MedNet_Post_Pattern',
-					'text' => 'MedNet Post Patterns',
+					'text' => 'Post Patterns',
+				),
+				'demo'        => array(
+					'slug' => 'MedNet_Demo_Pattern',
+					'text' => 'MedNet Demo Patterns',
 				),
 				'demo'      => array(
 					'slug' => 'MedNet_Demo_Pattern',

@@ -44,7 +44,7 @@
 						letter-spacing: -0.3px;
 					"
 				>
-					What&rsquo;s New
+					What’s New
 				</h2>
 				<!-- /wp:heading -->
 

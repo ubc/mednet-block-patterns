@@ -34,6 +34,7 @@ class MBP_Scripts {
 		add_action( 'enqueue_block_editor_assets', array( $this, 'mbp_load_editor_assets' ) );
 		add_action( 'after_setup_theme', array( $this, 'remove_core_patterns' ) );
 		add_action( 'after_setup_theme', array( $this, 'add_theme_supports' ), 100 );
+		add_action( 'after_setup_theme', array( $this, 'set_editor_font_sizes' ) );
 	}
 
 	/**
@@ -154,5 +155,33 @@ class MBP_Scripts {
 		add_theme_support( 'custom-spacing' );
 		add_theme_support( 'appearance-tools' );
 		add_theme_support( 'responsive-embeds' );
+
+	}
+
+	/**
+	 * Configure the editor font options
+	 *
+	 * @return void
+	 */
+	public function set_editor_font_sizes() {
+
+		$font_sizes = array(
+			array(
+				'name' => 'Small',
+				'size' => '0.75rem',
+				'slug' => 'small',
+			),
+			array(
+				'name' => 'Normal',
+				'size' => '1rem',
+				'slug' => 'medium',
+			),
+			array(
+				'name' => 'Large',
+				'size' => '1.25rem',
+				'slug' => 'large',
+			),
+		);
+		add_theme_support( 'editor-font-sizes', $font_sizes );
 	}
 }

@@ -79,5 +79,5 @@ p {
 }
 
 .interface-complementary-area div {
-	color: #1e1e1e;
+	/* color: #1e1e1e; doesn't always work */
 }

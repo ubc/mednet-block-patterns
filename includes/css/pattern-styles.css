@@ -928,51 +928,8 @@ li
 
 /*MedNet patterns pages*/
 
-/*Educational Activity Form & Resources*/
+/*Two Column Page*/
 
-.two_column_page > div > div > div:nth-child(1) > hr {
-	margin: 40px 0;
-}
-
-.two_column_page > div > div > div:nth-child(1) > * a {
-	text-decoration: none;
-	color: var(--blue_1) !important;
-}
-
-.two_column_page > div > div > div:nth-child(1) > h2,
-.two_column_page > div > div > div:nth-child(1) > h1,
-.two_column_page > div > div > div:nth-child(2) > h4 {
-	margin-bottom: 1.5rem;
-}
-
-.two_column_page > div > div > div:nth-child(1) > h3 {
-	margin: 40px 0 1.5rem;
-}
-
-.two_column_page > div > div > div:nth-child(1) > p:nth-child(2) {
-	margin-bottom: 1.5rem;
-}
-
-.two_column_page > div > div > div:nth-child(1) > * a:hover {
-	text-decoration: underline;
-	color: var(--blue_1) !important;
-}
-
-.two_column_page > div > div > div:nth-child(2)
-.is-style-1-4-width {
-	width: 100%;
-	margin: 60px 0;
-}
-
-.two_column_page > div > div > div:nth-child(2)
-.wp-block-buttons {
-	margin-bottom: 38px;
-}
-
-.two_column_page > div > div > div:nth-child(2)
-.wp-block-buttons > div > a {
-	padding: 11px 20px;
-}
 
 /*All announcements page*/
 
@@ -1143,47 +1100,9 @@ li
 
 /*Sidebar Block*/
 
-.sidebar_block > div > div:nth-child(1) {
-	padding: 34px 2rem 40px;
-	margin-bottom: 40px;
-}
-
-.sidebar_block > div > div {
-	padding: 34px 2rem 40px;
-}
-
-.sidebar_block > div > div > div > h3 {
-	font-size: 1.5rem;
-	line-height: 28px;
-	font-weight: 600;
-	margin-bottom: 20px;
-}
-
-.sidebar_block > div > div > div > h3 {
-	font-size: 1.5rem;
-	line-height: 28px;
-	font-weight: 600;
-}
-
-.sidebar_block > div > div > div > h4 {
-	font-size: 18px;
-	line-height: 1.5rem;
-	font-weight: 600;
-}
-
-.sidebar_block > div > div:nth-child(2) > div > p > a {
-	color: var(--white);
-}
-
-.sidebar_block > div > div:nth-child(2) > div > .wp-block-buttons
-.wp-block-button > a {
-	padding: 11px 20px;
-}
-
-.sidebar_block > div > div:nth-child(2) > div > .wp-block-buttons
-.wp-block-button > a:hover {
-	background-color: var(--white) !important;
-	color: var(--blue_1) !important;
+.sidebar_block {
+	padding: 2.125rem 3.1875rem 4rem 2rem;
+	margin-bottom: 2.5rem;
 }
 
 /*Pathway Page */
@@ -1305,14 +1224,6 @@ li
 	margin-bottom: 40px;
 }
 
-.announcements_post > div
-.wp-block-query
-ul
-li
-.wp-block-read-more.is-style-hide-read-more {
-	display: none;
-}
-
 .announcements_post > div > p:nth-child(3) {
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -1321,14 +1232,6 @@ li
 
 .announcements_post > div > div:last-child {
 	margin-top: 60px;
-}
-
-.announcements_post > div
-.wp-block-query
-ul
-li
-.wp-block-group.is-style-hide-group {
-	display: none;
 }
 
 .announcements_post > div
@@ -1746,7 +1649,7 @@ p::before {
 	}
 
 	.announcement_block .wp-block-column:first-child .wp-block-query ul li h2 {
-		font-size: 20px;
+		font-size: var(--large);
 		line-height: 22px;
 		letter-spacing: -0.1px;
 	}
@@ -1817,7 +1720,7 @@ p::before {
 	}
 
 	.announcement_card_large ul li h2 {
-		font-size: 20px !important;
+		font-size: var(--large) !important;
 		line-height: 22px;
 		letter-spacing: -0.1px !important;
 	}
@@ -1845,7 +1748,7 @@ p::before {
 	}
 
 	.content-card > div > p:nth-child(2) {
-		font-size: 20px !important;
+		font-size: var(--large) !important;
 		line-height: 22px;
 		letter-spacing: -0.1px !important;
 	}
@@ -1976,7 +1879,7 @@ p::before {
 	.wp-block-post-title {
 		text-align: left;
 		margin: 0;
-		font-size: 20px !important;
+		font-size: var(--large) !important;
 		line-height: 20px;
 	}
 

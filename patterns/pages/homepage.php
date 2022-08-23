@@ -32,13 +32,13 @@
 	</div>
 	<!-- /wp:column -->
 
-	<!-- wp:column {"width":"260px"} -->
-	<div class="wp-block-column" style="flex-basis: 260px">
-	  <!-- wp:group -->
-	  <div class="wp-block-group">
-		<!-- wp:heading {"level":3,"className":"quicklinks"} -->
-		<h3 class="quicklinks">Quicklinks</h3>
-		<!-- /wp:heading -->
+    <!-- wp:column {"width":"260px"} -->
+    <div class="wp-block-column" style="flex-basis: 260px">
+      <!-- wp:group -->
+      <div class="wp-block-group">
+        <!-- wp:heading {"level":3,"className":"quicklinks"} -->
+        <h3 class="quicklinks">Quicklinks</h3>
+        <!-- /wp:heading -->
 
 		<!-- wp:list {"className":"quicklinks_list"} -->
 		<ul class="quicklinks_list">
