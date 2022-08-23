@@ -64,6 +64,10 @@ if ( ! class_exists( 'MBP_Category_Manager' ) ) :
 					'slug' => 'MedNet_Demo_Pattern',
 					'text' => 'MedNet Demo Patterns',
 				),
+				'demo'      => array(
+					'slug' => 'MedNet_Demo_Pattern',
+					'text' => 'MedNet Demo Patterns',
+				),
 			);
 
 			return $pattern_categories;

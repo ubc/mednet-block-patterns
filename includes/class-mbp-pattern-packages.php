@@ -376,7 +376,8 @@ class MBP_Pattern_Packages {
 				'categories'    => array( 'MedNet_Components' ),
 				'keywords'      => array( 'grid', 'links' ),
 				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/pages/pathway_page_grid.php',
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/pathway_page_grid.php',
+				'blockTypes'    => array( 'core/paragraph' ),
 			),
 			'mednet-block-patterns/announcements_post'     => array(
 				'slug'          => 'announcements_post',
