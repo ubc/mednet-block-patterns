@@ -312,8 +312,6 @@
     <!-- /wp:column -->
   </div>
   <!-- /wp:columns -->
-=======
 	<?php require MBP_PATTERNS_FOLDER . 'pages/news-and-honours-section.php'; ?>
->>>>>>> 698ab64 (Fixed issues with "what's new" buttons)
 </div>
 <!-- /wp:group -->
