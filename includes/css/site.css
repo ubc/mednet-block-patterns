@@ -140,7 +140,9 @@ a:active {
 }
 
 hr,
+#editor hr,
 .wp-block-separator {
 	background-color: #e6e6e6;
 	color: #e6e6e6;
+	opacity: initial;
 }
