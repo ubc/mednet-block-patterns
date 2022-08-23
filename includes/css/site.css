@@ -3,6 +3,9 @@
 	font-family: var(--font-family);
 }
 
+body {
+	font-size: var(--normal);
+}
 /* Full Width CLF
 -------------------------------*/
 .full-width .full-width-container .expand {
@@ -39,6 +42,12 @@ h1 {
 
 h2 {
 	font-size: 1.875rem;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 1.5rem;
+	line-height: 1.16;
 }
 
 .has-white-color * {
@@ -130,10 +139,23 @@ hr,
 	margin-bottom: 6rem;
 }
 
+.circle-icon {
+	border: 1px solid var(--blue_1);
+	border-radius: 50%;
+	display: block;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+}
+
 .full-width {
 	background: #fff;
 }
 
+.wp-block-list li {
+	list-style-type: square;
+}
 @media screen and (min-width: 769px) {
 
 	.page #utility-after-content .widget_subpages_navigation {
