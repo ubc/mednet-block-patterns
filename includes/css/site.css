@@ -139,7 +139,8 @@ hr,
 	margin-bottom: 6rem;
 }
 
-.circle-icon {
+.circle-icon,
+.editor-styles-wrapper .circle-icon {
 	border: 1px solid var(--blue_1);
 	border-radius: 50%;
 	display: block;
@@ -147,6 +148,18 @@ hr,
 	height: 25px;
 	text-align: center;
 	line-height: 25px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.circle-icon::before {
+	content: "!";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	font-family: var(--font-family);
 }
 
 .full-width {
