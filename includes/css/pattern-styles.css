@@ -735,8 +735,9 @@ li
 }
 
 /*Accordion Block*/
-.c-accordion__item.is-read {} /* is-read is added to accordion items that have been opened at least once */
-
+.accordions-pattern {
+	margin: 1rem 0;
+}
 .c-accordion__title {
 	font-size: 1rem;
 	font-weight: 500;
@@ -763,8 +764,6 @@ li
 .c-accordion__item .c-accordion__title::after {
 	content: none;
 }
-.c-accordion__title--button {} /* An accordion item title that is using a `<button>` tag */
-
 .c-accordion__content {
 	padding: 0 18px;
 	margin: 20px 0 0 0;
