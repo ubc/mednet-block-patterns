@@ -23,4 +23,12 @@
 	--normal: 1rem;
 	--large: 1.25rem;
 
+
+	/**
+	 *
+	 * Transitions
+	 *
+	*/
+	--transition-ease: transition: all ease 0.2s;
+	--transition-slow: transition: all ease 0.5s;
 }
