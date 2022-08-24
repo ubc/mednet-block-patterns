@@ -1,6 +1,6 @@
-<!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"spotlight_cards full-bleed"} -->
+<!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"spotlight_cards full-bleed-gray"} -->
 <div
-  class="wp-block-group spotlight_cards full-bleed has-background"
+  class="wp-block-group spotlight_cards full-bleed-gray has-background"
   style="background-color: #f2f2f2"
 >
   <!-- wp:columns -->

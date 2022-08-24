@@ -134,7 +134,7 @@ hr,
 	box-shadow: 25vw 0 1px var(--blue_2), -25vw 0 1px var(--blue_2), 35vw 0 1px var(--blue_2);
 }
 
-.homepage .full-bleed + .full-bleed {
+.full-bleed-gray {
 	margin-top: 0;
 	margin-bottom: 6rem;
 	box-shadow: 25vw 0 1px var(--gray_3), -25vw 0 1px var(--gray_3), 35vw 0 1px var(--gray_3);
