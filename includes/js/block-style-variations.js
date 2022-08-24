@@ -1,32 +1,44 @@
-wp.blocks.registerBlockStyle('core/group', {
-    name: 'hide-group',
-    label: 'Hide',
-});
-wp.blocks.registerBlockStyle('core/read-more', {
-    name: 'hide-read-more',
-    label: 'Hide',
-});
-wp.blocks.registerBlockStyle('core/group', {
-    name: '3-4-width',
-    label: '3/4 Width',
-});
-wp.blocks.registerBlockStyle('core/group', {
-    name: '1-4-width',
-    label: '1/4 Width',
-});
-wp.blocks.registerBlockStyle('core/group', {
-    name: '1-2-width',
-    label: '1/2 Width',
-});
+wp.domReady(() => {
+	wp.blocks.unregisterBlockStyle('core/button', ['outline', 'fill']);
+	
+	wp.blocks.registerBlockStyle('core/group', [{
+		name: 'default-group',
+		label: 'Default',
+		isDefault: true
+	},{
+		name: 'grey-fill-group',
+		label: 'Light Grey Fill',
+	},{
+		name: 'reverse-group',
+		label: 'Reverse',
+	}]);
+	
+	wp.blocks.registerBlockStyle('core/read-more', {
+		name: 'hide-read-more',
+		label: 'Hide Readmore',
+	});
 
-wp.blocks.registerBlockStyle(
-    'core/quote', {
-    name: 'blue-quote',
-    label: 'MedNet Quote',
-});
+	wp.blocks.registerBlockStyle('core/quote', {
+		name: 'blue-quote',
+		label: 'MedNet Quote',
+		isDefault: true,
+	});
+	
+	wp.blocks.registerBlockStyle('core/paragraph', {
+		name: 'introduction-paragraph',
+		label: 'Introduction text',
+		icon: 'help'
+	});
 
-wp.blocks.registerBlockStyle(
-    'core/button', {
-    name: 'blue-btn',
-    label: 'Blue',
+	wp.blocks.registerBlockStyle('core/button', [
+		{
+			name: 'blue-btn',
+			label: 'Default',
+			isDefault: true,
+		},
+		{
+			name: 'dark-blue',
+			label: 'Dark Blue',
+		},
+	]);
 });

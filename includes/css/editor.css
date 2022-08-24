@@ -1,66 +1,87 @@
 /* CSS to apply to the editor. Improve the editing experience */
-.mednet_pagination_block .wp-block-query-pagination-previous > span:after {
-  content: "<<";
-  border: 1px solid var(--gray_2);
-  background-color: var(--gray_2);
-  padding: 3px;
-  font-size: 14px;
-  color: var(--blue_2);
-  text-indent: 0;
-  display: block;
-  line-height: initial;
+.mednet_pagination_block .wp-block-query-pagination-previous > span::after {
+	content: "<<";
+	border: 1px solid var(--gray_2);
+	background-color: var(--gray_2);
+	padding: 3px;
+	font-size: 14px;
+	color: var(--blue_2);
+	text-indent: 0;
+	display: block;
+	line-height: initial;
 }
 
-.mednet_pagination_block .wp-block-query-pagination-next > span:after {
-  content: ">>";
-  border: 1px solid var(--gray_2);
-  background-color: var(--gray_2);
-  padding: 3px;
-  font-size: 14px;
-  color: var(--blue_2);
-  text-indent: 0;
-  display: block;
-  line-height: initial;
+.mednet_pagination_block .wp-block-query-pagination-next > span::after {
+	content: ">>";
+	border: 1px solid var(--gray_2);
+	background-color: var(--gray_2);
+	padding: 3px;
+	font-size: 14px;
+	color: var(--blue_2);
+	text-indent: 0;
+	display: block;
+	line-height: initial;
 }
 
 .wp-block-embed__wrapper {
-  background: #b4b4b2;
+	background: #b4b4b2;
 }
+
 .editor-styles-wrapper .has-white-color *,
 .editor-styles-wrapper .has-white-color .wp-block {
-  color: inherit;
+	color: inherit;
 }
+
 .editor-styles-wrapper .full-bleed {
-  box-shadow:50vw 0 1px var(--blue_2), -50vw 0px 1px var(--blue_2);
+	box-shadow: 25vw 0 1px var(--blue_2), -25vw 0 1px var(--blue_2);
 }
+
 .editor-styles-wrapper .full-bleed + .full-bleed {
-  box-shadow:50vw 0 1px var(--gray_3), -50vw 0px 1px var(--gray_3);
+	box-shadow: 25vw 0 1px var(--gray_3), -25vw 0 1px var(--gray_3);
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
-  display: inline;
-    width: auto;
-    height: auto;
-  font-family: FontAwesome;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  background-position: 0 0;
-    background-repeat: repeat;
-    margin-top: 0;
+	display: inline;
+	width: auto;
+	height: auto;
+	font-family: FontAwesome;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	background-position: 0 0;
+	background-repeat: repeat;
+	margin-top: 0;
 }
-.icon-exclamation-sign:before {
-  content: "\f06a";
+
+.icon-exclamation-sign::before {
+	content: "\f06a";
 }
 
 .rich-text,
 p {
-  white-space: normal !important;
+	white-space: normal !important;
 }
+
 .content-card .wp-block-cover__inner-container,
-.content-card .wp-block-cover__inner-container *{
-  color: #fff;
-  display: block;
+.content-card .wp-block-cover__inner-container * {
+	color: #fff;
+	display: block;
+}
+
+.interface-complementary-area p {
+	font-size: 13px;
+	line-height: 1.5;
+	margin: 1em 0;
+	background: #fff;
+	color: #1e1e1e;
+}
+
+.interface-complementary-area div {
+	/* color: #1e1e1e; doesn't always work */
+}
+
+a.components-external-link::after {
+	content: none;
 }
