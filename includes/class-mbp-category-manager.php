@@ -58,7 +58,7 @@ if ( ! class_exists( 'MBP_Category_Manager' ) ) :
 				),
 				'pages'       => array(
 					'slug' => 'MedNet_Page_Pattern',
-					'text' => 'Page Patterns',
+					'text' => 'Full Page Patterns',
 				),
 				'widgets'     => array(
 					'slug' => 'MedNet_Widgets',
