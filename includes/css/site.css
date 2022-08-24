@@ -156,6 +156,31 @@ hr,
 .wp-block-list li {
 	list-style-type: square;
 }
+
+/* Featured image placeholder */
+.wp-block-post-featured-image.wp-block-post-featured-image .components-placeholder,
+.wp-block-post-featured-image.wp-block-post-featured-image .wp-block-post-featured-image__placeholder,
+.wp-block-post-featured-image__placeholder {
+	box-shadow: inset 0px 4px 90px 1px var(--blue_2);
+}
+
+.wp-block-post-featured-image.wp-block-post-featured-image .wp-block-post-featured-image__placeholder::before,
+.wp-block-post-featured-image.wp-block-post-featured-image .components-placeholder::before {
+	border: none;
+}
+
+svg.components-placeholder__illustration {
+	background:url(../assets/images/svgs/placeholder.svg);
+	background: url(../assets/images/svgs/placeholder.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+svg.components-placeholder__illustration * {
+	stroke: none;
+}
+
 @media screen and (min-width: 769px) {
 
 	.page #utility-after-content .widget_subpages_navigation {
