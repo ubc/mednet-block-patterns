@@ -284,8 +284,8 @@ h2 > a:hover {
 	align-items: stretch;
 }
 
-#content .content-card-image .has-background-dim {
-	transition: var(--transition-ease);
+.content-card-image *, #content .content-card-image .has-background-dim {
+	transition: var(--transition-slow);
 }
 
 #content .content-card-image:hover .has-background-dim {
@@ -776,17 +776,12 @@ li
 
 /*Table Option 1*/
 
-.table_option_1 > div .table td {
+.table_option_1 > div table td {
 	border: 1px solid var(--gray_1);
 }
 
-.table_option_1 > div .table tbody > tr:nth-child(odd) > td {
-	border: none;
+.table_option_1 > div table tbody > tr:nth-child(odd) > td {
 	font-weight: 600;
-}
-
-.table_option_1 > div .table thead th {
-	border: none;
 }
 
 /*Table Option 2*/
@@ -1897,6 +1892,7 @@ p::before {
 
 	.table_option_1 table {
 		display: inline-table;
+		border: 1px solid var(--gray_1);
 	}
 
 	.overview_page > div > div > ul,

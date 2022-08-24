@@ -131,12 +131,13 @@ hr,
 	max-width: none;
 	padding-top: 5.4rem;
 	padding-bottom: 5.5rem;
-	margin-top: 6rem;
+	box-shadow: 25vw 0 1px var(--blue_2), -25vw 0 1px var(--blue_2), 35vw 0 1px var(--blue_2);
 }
 
-.home #container .homepage .full-bleed + .full-bleed {
+.homepage .full-bleed + .full-bleed {
 	margin-top: 0;
 	margin-bottom: 6rem;
+	box-shadow: 25vw 0 1px var(--gray_3), -25vw 0 1px var(--gray_3), 35vw 0 1px var(--gray_3);
 }
 
 .circle-icon,

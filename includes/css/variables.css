@@ -29,6 +29,6 @@
 	 * Transitions
 	 *
 	*/
-	--transition-ease: transition: all ease 0.2s;
-	--transition-slow: transition: all ease 0.5s;
+	--transition-ease: all ease 0.2s;
+	--transition-slow: all ease 0.5s;
 }
