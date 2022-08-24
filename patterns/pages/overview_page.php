@@ -83,7 +83,7 @@
 
 <?php include MBP_PATTERNS_FOLDER . 'components/blue_feature_blocks.php'; ?>
 
-<?php include MBP_PATTERNS_FOLDER . 'components/quick_links_three_columns.php'; ?>
+<?php include MBP_PATTERNS_FOLDER . 'lists-links/quicklinks_three_columns.php'; ?>
 
 <?php include MBP_PATTERNS_FOLDER . 'components/contact_block.php'; ?>
 

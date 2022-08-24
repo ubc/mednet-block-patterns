@@ -34,7 +34,7 @@
 	font-size: 22px;
 	line-height: 20px;
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: var(--transition-ease);
 	width: 22px;
 	margin-top: 4px !important;
 }
@@ -58,11 +58,11 @@
 	color: var(--blue_2);
 }
 
-
 div.announcement_block {
 	gap: 1rem;
 	margin-top: 26px;
 }
+
 .announcement_block .featured-announcement h3,
 .announcement_block .featured-announcement h3 > a {
 	font-size: 1.75rem;
@@ -99,7 +99,7 @@ div.announcement_block {
 .wp-block-post-title {
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .announcements-list li {
@@ -134,6 +134,7 @@ div.announcement_block {
 	background-color: var(--blue_2);
 	isolation: isolate;
 	aspect-ratio: 4/3;
+	transition: var(--transition-ease);
 }
 
 .announcement_card_large ul li .wp-block-post-featured-image:hover {
@@ -152,7 +153,7 @@ div.announcement_block {
 
 .announcement_card_large ul li h2 {
 	line-height: 2rem;
-	font-weight: normal;
+	font-weight: 400;
 	padding-top: 6px;
 	padding-bottom: 14px;
 }
@@ -284,7 +285,7 @@ h2 > a:hover {
 }
 
 #content .content-card-image .has-background-dim {
-	transition: all ease 0.2s;
+	transition: var(--transition-ease);
 }
 
 #content .content-card-image:hover .has-background-dim {
@@ -735,58 +736,42 @@ li
 }
 
 /*Accordion Block*/
-.accordion_block > div > div.wp-block-buttons {
-	text-align: end;
+.accordions-pattern {
+	margin: 1rem 0;
 }
-
-.accordion_block > div > div > div {
-	padding-left: 18px;
-	padding-bottom: 40px;
-	padding-top: 20px;
-}
-
-.accordion_block > div > div.wp-block-buttons > div {
-	padding: 12px 0;
-}
-
-.accordion_block div.accordion_expand_all::before {
-	content: "View:";
-	padding-right: 10px;
-	font-size: 14px;
-}
-
-.accordion_block div.wp-block-buttons a {
-	padding: 0;
-}
-
-.accordion_block > div > div > div > p > a {
-	text-decoration: none;
-}
-
-.accordion_block > div > div > div > p > a:hover {
-	text-decoration: underline;
-	color: var(--blue_1);
-}
-
-.accordion_block > div > div.is-open > h2 {
-	color: var(--white);
-	background-color: var(--blue_2);
-}
-
-.accordion_block > div > div > h2 {
+.c-accordion__title {
 	font-size: 1rem;
-	padding-left: 18px;
-	margin: 2px 0;
+	font-weight: 500;
+	line-height: 1;
+	padding: 13px 18px 11px 18px;
+	height: 40px;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	margin-top: 2px;
+}
+.c-accordion__title,
+.c-accordion__title:focus {
+	background: var(--gray_2);
 	color: var(--blue_2);
-	background-color: var(--gray_3);
+} 
+.c-accordion__item.is-open .c-accordion__title {
+	background: var(--blue_2);
+	color: var(--white);
 }
-
-.accordion_block > div > div > h2::after {
-	content: "";
+.c-accordion__item .c-accordion__title:hover {
+	background: var(--blue_1);
+	color: var(--white);
+} 
+.c-accordion__item .c-accordion__title::after {
+	content: none;
 }
-
-.accordion_block > div > div.is-open > h2::after {
-	content: "";
+.c-accordion__content {
+	padding: 0 18px;
+	margin: 20px 0 0 0;
+	padding-bottom: 0;
+}
+.c-accordion__content + .c-accordion__content {
+	padding-top: 0;
 }
 
 /*Table Option 1*/
@@ -899,7 +884,7 @@ li
 }
 
 .pathways_feature_block > div > div > div > figure:nth-child(2) {
-	transition: all 0.5s ease;
+	transition: var(--transition-slow);
 	opacity: 0;
 	position: absolute;
 	top: 50%;
@@ -919,7 +904,7 @@ li
 	display: block;
 	width: 100%;
 	height: auto;
-	transition: all 0.5s ease;
+	transition: var(--transition-slow);
 	backface-visibility: hidden;
 	width: 100%;
 	height: 100%;
@@ -1043,57 +1028,57 @@ li
 	content: "»";
 }
 
-/*quick_links_one_col*/
+/*quicklinks_one_col*/
 
-.quick_links_one_col > div > h4 {
+.quicklinks_one_col > div > h4 {
 	margin-bottom: 1.5rem;
 }
 
-.quick_links_one_col > div > ul {
+.quicklinks_one_col > div > ul {
 	list-style-type: none;
 	margin: 0;
 }
 
-.quick_links_one_col > div > ul > li {
+.quicklinks_one_col > div > ul > li {
 	padding-bottom: 1rem;
 }
 
-.quick_links_one_col > div > ul > li > a {
+.quicklinks_one_col > div > ul > li > a {
 	text-decoration: none;
 	color: var(--blue_1);
 }
 
-.quick_links_one_col > div > ul > li > a:hover {
+.quicklinks_one_col > div > ul > li > a:hover {
 	text-decoration: underline;
 	color: var(--blue_1);
 }
 
-/*quick_links_two_columns*/
+/*quicklinks_two_columns*/
 
-.quick_links_two_columns > div > div > div > h4,
-.quick_links_three_columns > div > div > div > h4 {
+.quicklinks_two_columns > div > div > div > h4,
+.quicklinks_three_columns > div > div > div > h4 {
 	margin-bottom: 1.5rem;
 }
 
-.quick_links_two_columns > div > div > div > ul,
-.quick_links_three_columns > div > div > div > ul {
+.quicklinks_two_columns > div > div > div > ul,
+.quicklinks_three_columns > div > div > div > ul {
 	list-style-type: none;
 	margin: 0;
 }
 
-.quick_links_two_columns > div > div > div > ul > li,
-.quick_links_three_columns > div > div > div > ul > li {
+.quicklinks_two_columns > div > div > div > ul > li,
+.quicklinks_three_columns > div > div > div > ul > li {
 	padding-bottom: 1rem;
 }
 
-.quick_links_two_columns > div > div > div > ul > li > a,
-.quick_links_three_columns > div > div > div > ul > li > a {
+.quicklinks_two_columns > div > div > div > ul > li > a,
+.quicklinks_three_columns > div > div > div > ul > li > a {
 	text-decoration: none;
 	color: var(--blue_1);
 }
 
-.quick_links_two_columns > div > div > div > ul > li > a:hover,
-.quick_links_three_columns > div > div > div > ul > li > a:hover {
+.quicklinks_two_columns > div > div > div > ul > li > a:hover,
+.quicklinks_three_columns > div > div > div > ul > li > a:hover {
 	text-decoration: underline;
 	color: var(--blue_1);
 }
@@ -1282,40 +1267,6 @@ p::before {
 	line-height: 1.5rem;
 }
 
-/*Room Booking Page*/
-
-.one_column_page > div > h1 {
-	margin-bottom: 1.5rem;
-}
-
-.one_column_page > div > hr {
-	margin: 40px 0;
-}
-
-.one_column_page > div > * a {
-	text-decoration: none;
-	color: var(--blue_1);
-}
-
-.one_column_page > div > * a:hover {
-	text-decoration: underline;
-	color: var(--blue_1);
-}
-
-.one_column_page > div > h2 {
-	margin: 1.5rem 0;
-}
-
-.one_column_page > div .accordion_block {
-	margin: 40px 0;
-}
-
-.one_column_page > div .table_option_1,
-.one_column_page > div .table_option_2,
-.one_column_page > div .contact_block {
-	margin: 40px 0;
-}
-
 /*Icon Page*/
 
 .icon_page > div > p {
@@ -1385,7 +1336,7 @@ p::before {
 	margin-bottom: 40px;
 }
 
-.pathway_page > div .quick_links_three_columns {
+.pathway_page > div .quicklinks_three_columns {
 	margin: 40px 0;
 }
 

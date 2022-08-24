@@ -7,7 +7,7 @@
             class="wp-block-column is-vertically-aligned-center"
             style="flex-basis: 30px"
         >
-            <!-- wp:paragraph {"className":"circle-icon"} -->
+            <!-- wp:paragraph {"lock":{"move":true,"remove":true} "className":"circle-icon"} -->
             <p class="circle-icon">!</p>
             <!-- /wp:paragraph -->
         </div>
@@ -15,7 +15,7 @@
 
         <!-- wp:column {"width":"100%"} -->
         <div class="wp-block-column" style="flex-basis: 100%">
-            <!-- wp:paragraph {"placeholder":"Alert Message: For your December 31 pay, the deadline to enter and submit your time in Workday is December 21. Managers must approve by December 22."} -->
+            <!-- wp:paragraph {"placeholder":"Alert Message: Display a notification for the user. User can close the notification."} -->
             <p></p>
             <!-- /wp:paragraph -->
         </div>

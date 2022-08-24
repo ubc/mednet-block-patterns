@@ -1,6 +1,6 @@
 <!-- wp:group {"className":"homepage"} -->
 <div class="wp-block-group homepage">
-  <?php require MBP_PATTERNS_FOLDER . 'components/alert_banner.php'; ?>
+  <?php require MBP_PATTERNS_FOLDER . 'widgets/alert_banner.php'; ?>
   <!-- wp:group -->
   <div class="wp-block-group">
 	<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"54px","letterSpacing":"-0.54px"},"color":{"text":"#002145"}}} -->
