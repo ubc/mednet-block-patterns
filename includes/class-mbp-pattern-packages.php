@@ -49,7 +49,7 @@ class MBP_Pattern_Packages {
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/text/intro-text.php',
 				'blockTypes'    => array( 'core/paragraph', 'core/separator' ),
 			),
-			'mednet-block-patterns/sidebar-block-default'             => array(
+			'mednet-block-patterns/sidebar-block-default'  => array(
 				'slug'          => 'sidebar-block-default',
 				'pattern_class' => 'mbp-pattern-sidebar-block-default',
 				'title'         => __( 'Sidebar Block', 'mednet-block-patterns' ),
@@ -60,7 +60,7 @@ class MBP_Pattern_Packages {
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/text/sidebar-block-default.php',
 				'blockTypes'    => array( 'core/group', 'core/column', 'core/columns', 'core/paragraph', 'core/separator' ),
 			),
-			'mednet-block-patterns/one-column-layout'             => array(
+			'mednet-block-patterns/one-column-layout'      => array(
 				'slug'          => 'one-column-layout',
 				'pattern_class' => 'mbp-pattern-one-column-layout',
 				'title'         => __( 'One column page layout', 'mednet-block-patterns' ),
@@ -71,7 +71,7 @@ class MBP_Pattern_Packages {
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/layouts/one_column.php',
 				'blockTypes'    => array( 'core/group' ),
 			),
-			'mednet-block-patterns/two-column-layout'             => array(
+			'mednet-block-patterns/two-column-layout'      => array(
 				'slug'          => 'two-column-layout',
 				'pattern_class' => 'mbp-pattern-two-column-layout',
 				'title'         => __( 'two column page layout', 'mednet-block-patterns' ),
@@ -181,7 +181,7 @@ class MBP_Pattern_Packages {
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/announcement_feed_small.php',
 				'blockTypes'    => array( '' ),
 			),
-			'mednet-block-patterns/quicklink_list'        => array(
+			'mednet-block-patterns/quicklink_list'         => array(
 				'slug'          => 'quicklink_list',
 				'pattern_class' => 'mbp-pattern-quicklink_list',
 				'title'         => __( 'Quick Link List', 'mednet-block-patterns' ),
