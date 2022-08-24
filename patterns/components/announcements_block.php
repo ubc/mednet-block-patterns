@@ -1,7 +1,7 @@
 <!-- wp:group {"className":"announcements-block"} -->
 <div class="wp-block-group announcements-block">
-    <!-- wp:heading -->
-    <h2>WHAT&rsquo;S NEW</h2>
+    <!-- wp:heading {"placeholder":"Add a title"} -->
+    <h2></h2>
     <!-- /wp:heading -->
 
     <!-- wp:columns {"className":"announcement_block"} -->
@@ -13,7 +13,7 @@
                 <!-- wp:query {"queryId":20,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"featured-announcement"} -->
                 <div class="wp-block-query featured-announcement">
                     <!-- wp:post-template -->
-                    <!-- wp:post-featured-image {"isLink":true,"width":"","height":"","sizeSlug":"medium","align":"wide"} /-->
+                    <!-- wp:post-featured-image {"isLink":true,"width":"","height":"","sizeSlug":"large","align":"wide"} /-->
 
                     <!-- wp:post-title {"level":3,"isLink":true,"style":{"color":{"text":"#0055b7"}}} /-->
 
@@ -26,11 +26,7 @@
 
             <!-- wp:buttons {"className":"announcement_block_btn"} -->
             <div class="wp-block-buttons announcement_block_btn">
-                <!-- wp:button {"className":"is-style-blue-btn"} -->
-                <div class="wp-block-button is-style-blue-btn">
-                    <a class="wp-block-button__link">See What’s New</a>
-                </div>
-                <!-- /wp:button -->
+                <!-- wp:button {"placeholder":"Set a link to view the category.","className":"is-style-blue-btn"} /-->
             </div>
             <!-- /wp:buttons -->
         </div>
@@ -48,7 +44,7 @@
                         class="wp-block-column is-vertically-aligned-top"
                         style="flex-basis: 65%"
                     >
-                        <!-- wp:post-featured-image {"isLink":true,"width":"100%","height":"170px","sizeSlug":"medium"} /-->
+                        <!-- wp:post-featured-image {"isLink":true,"width":"100%","height":"170px","sizeSlug":"medium_large"} /-->
                     </div>
                     <!-- /wp:column -->
 
