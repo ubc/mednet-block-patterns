@@ -735,58 +735,43 @@ li
 }
 
 /*Accordion Block*/
-.accordion_block > div > div.wp-block-buttons {
-	text-align: end;
-}
+.c-accordion__item.is-read {} /* is-read is added to accordion items that have been opened at least once */
 
-.accordion_block > div > div > div {
-	padding-left: 18px;
-	padding-bottom: 40px;
-	padding-top: 20px;
-}
-
-.accordion_block > div > div.wp-block-buttons > div {
-	padding: 12px 0;
-}
-
-.accordion_block div.accordion_expand_all::before {
-	content: "View:";
-	padding-right: 10px;
-	font-size: 14px;
-}
-
-.accordion_block div.wp-block-buttons a {
-	padding: 0;
-}
-
-.accordion_block > div > div > div > p > a {
-	text-decoration: none;
-}
-
-.accordion_block > div > div > div > p > a:hover {
-	text-decoration: underline;
-	color: var(--blue_1);
-}
-
-.accordion_block > div > div.is-open > h2 {
-	color: var(--white);
-	background-color: var(--blue_2);
-}
-
-.accordion_block > div > div > h2 {
+.c-accordion__title {
 	font-size: 1rem;
-	padding-left: 18px;
-	margin: 2px 0;
+	font-weight: 500;
+	line-height: 1;
+	padding: 13px 18px 11px 18px;
+	height: 40px;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	margin-top: 2px;
+}
+.c-accordion__title,
+.c-accordion__title:focus {
+	background: var(--gray_2);
 	color: var(--blue_2);
-	background-color: var(--gray_3);
+} 
+.c-accordion__item.is-open .c-accordion__title {
+	background: var(--blue_2);
+	color: var(--white);
 }
-
-.accordion_block > div > div > h2::after {
-	content: "";
+.c-accordion__item .c-accordion__title:hover {
+	background: var(--blue_1);
+	color: var(--white);
+} 
+.c-accordion__item .c-accordion__title::after {
+	content: none;
 }
+.c-accordion__title--button {} /* An accordion item title that is using a `<button>` tag */
 
-.accordion_block > div > div.is-open > h2::after {
-	content: "";
+.c-accordion__content {
+	padding: 0 18px;
+	margin: 20px 0 0 0;
+	padding-bottom: 0;
+}
+.c-accordion__content + .c-accordion__content {
+	padding-top: 0;
 }
 
 /*Table Option 1*/
@@ -1280,40 +1265,6 @@ p::before {
 	padding-right: 1ch;
 	font-size: 1rem;
 	line-height: 1.5rem;
-}
-
-/*Room Booking Page*/
-
-.one_column_page > div > h1 {
-	margin-bottom: 1.5rem;
-}
-
-.one_column_page > div > hr {
-	margin: 40px 0;
-}
-
-.one_column_page > div > * a {
-	text-decoration: none;
-	color: var(--blue_1);
-}
-
-.one_column_page > div > * a:hover {
-	text-decoration: underline;
-	color: var(--blue_1);
-}
-
-.one_column_page > div > h2 {
-	margin: 1.5rem 0;
-}
-
-.one_column_page > div .accordion_block {
-	margin: 40px 0;
-}
-
-.one_column_page > div .table_option_1,
-.one_column_page > div .table_option_2,
-.one_column_page > div .contact_block {
-	margin: 40px 0;
 }
 
 /*Icon Page*/

@@ -274,10 +274,10 @@ class MBP_Pattern_Packages {
 				'pattern_class' => 'mbp-pattern-accordion_block',
 				'title'         => __( 'Accordion Block', 'mednet-block-patterns' ),
 				'description'   => __( 'Accordion Block', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Components' ),
+				'categories'    => array( 'MedNet_Widgets' ),
 				'keywords'      => array( 'accordion' ),
-				'viewportWidth' => 1200,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/accordion_block.php',
+				'viewportWidth' => 900,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/widgets/accordion_block.php',
 				'blockTypes'    => array( '' ),
 			),
 			'mednet-block-patterns/table_option_1'         => array(
