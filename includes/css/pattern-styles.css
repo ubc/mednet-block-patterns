@@ -1043,57 +1043,57 @@ li
 	content: "»";
 }
 
-/*quick_links_one_col*/
+/*quicklinks_one_col*/
 
-.quick_links_one_col > div > h4 {
+.quicklinks_one_col > div > h4 {
 	margin-bottom: 1.5rem;
 }
 
-.quick_links_one_col > div > ul {
+.quicklinks_one_col > div > ul {
 	list-style-type: none;
 	margin: 0;
 }
 
-.quick_links_one_col > div > ul > li {
+.quicklinks_one_col > div > ul > li {
 	padding-bottom: 1rem;
 }
 
-.quick_links_one_col > div > ul > li > a {
+.quicklinks_one_col > div > ul > li > a {
 	text-decoration: none;
 	color: var(--blue_1);
 }
 
-.quick_links_one_col > div > ul > li > a:hover {
+.quicklinks_one_col > div > ul > li > a:hover {
 	text-decoration: underline;
 	color: var(--blue_1);
 }
 
-/*quick_links_two_columns*/
+/*quicklinks_two_columns*/
 
-.quick_links_two_columns > div > div > div > h4,
-.quick_links_three_columns > div > div > div > h4 {
+.quicklinks_two_columns > div > div > div > h4,
+.quicklinks_three_columns > div > div > div > h4 {
 	margin-bottom: 1.5rem;
 }
 
-.quick_links_two_columns > div > div > div > ul,
-.quick_links_three_columns > div > div > div > ul {
+.quicklinks_two_columns > div > div > div > ul,
+.quicklinks_three_columns > div > div > div > ul {
 	list-style-type: none;
 	margin: 0;
 }
 
-.quick_links_two_columns > div > div > div > ul > li,
-.quick_links_three_columns > div > div > div > ul > li {
+.quicklinks_two_columns > div > div > div > ul > li,
+.quicklinks_three_columns > div > div > div > ul > li {
 	padding-bottom: 1rem;
 }
 
-.quick_links_two_columns > div > div > div > ul > li > a,
-.quick_links_three_columns > div > div > div > ul > li > a {
+.quicklinks_two_columns > div > div > div > ul > li > a,
+.quicklinks_three_columns > div > div > div > ul > li > a {
 	text-decoration: none;
 	color: var(--blue_1);
 }
 
-.quick_links_two_columns > div > div > div > ul > li > a:hover,
-.quick_links_three_columns > div > div > div > ul > li > a:hover {
+.quicklinks_two_columns > div > div > div > ul > li > a:hover,
+.quicklinks_three_columns > div > div > div > ul > li > a:hover {
 	text-decoration: underline;
 	color: var(--blue_1);
 }
@@ -1385,7 +1385,7 @@ p::before {
 	margin-bottom: 40px;
 }
 
-.pathway_page > div .quick_links_three_columns {
+.pathway_page > div .quicklinks_three_columns {
 	margin: 40px 0;
 }
 

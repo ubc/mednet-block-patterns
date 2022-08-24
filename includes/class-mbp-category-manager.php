@@ -44,6 +44,10 @@ if ( ! class_exists( 'MBP_Category_Manager' ) ) :
 					'slug' => 'MedNet_Text',
 					'text' => 'Text',
 				),
+				'links_lists' => array(
+					'slug' => 'MedNet_Links_Lists',
+					'text' => 'Lists and Links',
+				),
 				'components'  => array(
 					'slug' => 'MedNet_Components',
 					'text' => 'Components',
