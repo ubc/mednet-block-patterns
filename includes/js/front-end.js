@@ -1,30 +1,63 @@
 //  Javascript to be executed on the front end. Impacts visitor experience.
 function closeAlert() {
-    document.querySelector('.alert-banner').style.display = "none";
+	jQuery('.alert-banner').fadeOut();
 }
 
-function expandAll() {
-    const accordionItems = document.querySelectorAll('.c-accordion__item');
-    const accordionContentBlocks = document.querySelectorAll('.c-accordion__content');
-    for (let i = 0; i < accordionItems.length; i++) {
-
-        accordionItems[i].classList.add("is-open");
-    }
-    for (let j = 0; j < accordionContentBlocks.length; j++) {
-        accordionContentBlocks[j].style.display = "block";
-    }
+/**
+ * 
+ *  Accordions
+ * 
+ *  Set listeners after windwo load.
+ *  Get the accordions related to click event.
+ *  Set visibile parameters before animating.
+ *  Use jQuery slideUp/Down to animate the accordions.
+ *  
+ **/
+function expandAll(e) {
+	const accordionGroup = e.target.closest('.accordions-pattern');
+	const accordionItems = accordionGroup.querySelectorAll('.c-accordion__item');
+	for (let i = 0; i < accordionItems.length; i++) {
+		openItem(jQuery(accordionItems[i]))
+		
+	}
+}
+function openItem(item) {
+	let content = item.children('.c-accordion__content');
+	item.addClass('is-open is-read');
+	item.attr('aria-expanded', true);
+	content.prop('hidden', false);
+	content.slideDown();
+}
+function collapseAll(e) {
+	const accordionGroup = e.target.closest('.accordions-pattern');
+	const accordionItems = accordionGroup.querySelectorAll('.c-accordion__item');
+	for (let i = 0; i < accordionItems.length; i++) {
+		closeItem(jQuery(accordionItems[i]))
+		
+	}
 }
 
-function collapseAll() {
-    const accordionItems = document.querySelectorAll('.c-accordion__item');
-    const accordionContentBlocks = document.querySelectorAll('.c-accordion__content');
-    for (let i = 0; i < accordionItems.length; i++) {
-        accordionItems[i].classList.remove("is-open");
-    }
-    for (let j = 0; j < accordionContentBlocks.length; j++) {
-        accordionContentBlocks[j].style.display = "none";
-    }
+function closeItem(item) {
+	let content = item.children('.c-accordion__content');
+	item.removeClass('is-open is-read');
+	item.attr('aria-expanded', false);
+	content.prop('hidden', true);
+	content.slideUp();
 }
-window.addEventListener('load', function() {
-    // do something here ...
-}, false);
+function initAccordions() {
+	const accordionsControls = document.querySelectorAll('.accordion-controls');
+	accordionsControls.forEach(controls => {
+		const expandBtn = controls.querySelector('.expand-accordions');
+		const collapseBtn = controls.querySelector('.collapse-accordions');
+		collapseBtn.addEventListener('click', collapseAll)
+		expandBtn.addEventListener('click', expandAll)
+	});
+}
+
+window.addEventListener(
+	'load',
+	function () {
+		initAccordions();
+	},
+	false
+);

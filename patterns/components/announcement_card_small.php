@@ -8,7 +8,7 @@
             class="wp-block-column is-vertically-aligned-center"
             style="flex-basis: 40%"
         >
-            <!-- wp:post-featured-image {"isLink":true} /-->
+            <!-- wp:post-featured-image {"sizeSlug":"medium","isLink":true} /-->
         </div>
         <!-- /wp:column -->
 

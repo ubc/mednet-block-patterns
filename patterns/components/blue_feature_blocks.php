@@ -25,7 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"white"} -->
-<p class="has-white-color has-text-color">Learn more about What’s New in the Faculty of Medicine and at UBC.</p>
+<p class="has-white-color has-text-color">Learn more about What&rsquo;s New in the Faculty of Medicine and at UBC.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

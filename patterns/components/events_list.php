@@ -45,19 +45,10 @@
                 </p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:buttons -->
-                <div class="wp-block-buttons">
-                    <!-- wp:button {"className":"is-style-blue-btn"} -->
-                    <div class="wp-block-button is-style-blue-btn">
-                        <a
-                            class="wp-block-button__link"
-                            href="/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            >See All Events</a
-                        >
-                    </div>
-                    <!-- /wp:button -->
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-blue-btn"} -->
+                <div class="wp-block-button is-style-blue-btn"><a class="wp-block-button__link" href="/">See All Events</a></div>
+                <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->
             </div>
