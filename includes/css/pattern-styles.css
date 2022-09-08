@@ -717,7 +717,8 @@ li
 	min-height: 200px;
 }
 
-.contact_block h2 {
+.contact_block h3 {
+	font-size: 1.875rem;
 	margin-top: 18px;
 	margin-bottom: 8px;
 }
@@ -742,9 +743,8 @@ li
 .c-accordion__title {
 	font-size: 1rem;
 	font-weight: 500;
-	line-height: 1;
+	line-height: 1.5;
 	padding: 13px 18px 11px 18px;
-	height: 40px;
 	box-sizing: border-box;
 	margin-bottom: 0;
 	margin-top: 2px;
@@ -778,9 +778,10 @@ li
 
 .table_option_1 > div table td {
 	border: 1px solid var(--gray_1);
+	font-weight: 400;
 }
 
-.table_option_1 > div table tbody > tr:nth-child(odd) > td {
+.table_option_1 table thead {
 	font-weight: 600;
 }
 
