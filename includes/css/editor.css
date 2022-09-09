@@ -85,3 +85,8 @@ p {
 a.components-external-link::after {
 	content: none;
 }
+
+/* Styles for the editor */
+#editor .is-style-reverse-group * {
+	color: var(--white);
+}

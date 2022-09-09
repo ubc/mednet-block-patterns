@@ -38,6 +38,28 @@ class MBP_Pattern_Packages {
 	public function get_page_patterns() {
 
 		$block_patterns = array(
+			'mednet-block-patterns/one-column-layout'      => array(
+				'slug'          => 'one-column-layout',
+				'pattern_class' => 'mbp-pattern-one-column-layout',
+				'title'         => __( 'One column page layout', 'mednet-block-patterns' ),
+				'description'   => __( 'Large font with a wide horizontal rule separator.', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Layouts' ),
+				'keywords'      => array( 'standard', 'normal', 'simple', 'layout' ),
+				'viewportWidth' => 900,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/layouts/one_column.php',
+				'blockTypes'    => array( 'core/group', 'core/post-content' ),
+			),
+			'mednet-block-patterns/two-column-layout'      => array(
+				'slug'          => 'two-column-layout',
+				'pattern_class' => 'mbp-pattern-two-column-layout',
+				'title'         => __( 'two column page layout', 'mednet-block-patterns' ),
+				'description'   => __( 'Large font with a wide horizontal rule separator.', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Page_Layouts' ),
+				'keywords'      => array( 'standard', 'normal', 'simple', 'layout' ),
+				'viewportWidth' => 900,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/layouts/two_column.php',
+				'blockTypes'    => array( 'core/group', 'core/post-content' ),
+			),
 			'mednet-block-patterns/intro-text'             => array(
 				'slug'          => 'intro-text',
 				'pattern_class' => 'mbp-pattern-intro-text',
@@ -59,28 +81,6 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 300,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/text/sidebar-block-default.php',
 				'blockTypes'    => array( 'core/group', 'core/column', 'core/columns', 'core/paragraph', 'core/separator' ),
-			),
-			'mednet-block-patterns/one-column-layout'      => array(
-				'slug'          => 'one-column-layout',
-				'pattern_class' => 'mbp-pattern-one-column-layout',
-				'title'         => __( 'One column page layout', 'mednet-block-patterns' ),
-				'description'   => __( 'Large font with a wide horizontal rule separator.', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Layouts' ),
-				'keywords'      => array( 'standard', 'normal', 'simple', 'layout' ),
-				'viewportWidth' => 900,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/layouts/one_column.php',
-				'blockTypes'    => array( 'core/group' ),
-			),
-			'mednet-block-patterns/two-column-layout'      => array(
-				'slug'          => 'two-column-layout',
-				'pattern_class' => 'mbp-pattern-two-column-layout',
-				'title'         => __( 'two column page layout', 'mednet-block-patterns' ),
-				'description'   => __( 'Large font with a wide horizontal rule separator.', 'mbp-block-patterns' ),
-				'categories'    => array( 'MedNet_Page_Layouts' ),
-				'keywords'      => array( 'standard', 'normal', 'simple', 'layout' ),
-				'viewportWidth' => 900,
-				'file_content'  => MBP_PLUGIN_DIR . 'patterns/layouts/two_column.php',
-				'blockTypes'    => array( 'core/group' ),
 			),
 			'mednet-block-patterns/announcements_block'    => array(
 				'slug'          => 'announcements_block',
