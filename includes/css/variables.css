@@ -1,4 +1,5 @@
-:root {
+:root,
+.editor-styles-wrapper {
 
 	/* Colors: */
 	--white: #fff;
