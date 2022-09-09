@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"one_column_page"} -->
-<div class="wp-block-group one_column_page">
+<!-- wp:group {"className":"one_column_page, content-column"} -->
+<div class="wp-block-group one_column_page content-column">
     <?php require MBP_PATTERNS_FOLDER . 'text/intro-text.php'; ?>
 </div>
 
