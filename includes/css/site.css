@@ -9,9 +9,11 @@ body {
 /* Full Width CLF
 -------------------------------*/
 .full-width .full-width-container .expand {
-	max-width: 1170px;
-	position: relative;
-	margin: 0 auto;
+	max-width: 1600px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 .home.full-width .full-width-container .expand {
@@ -141,8 +143,6 @@ hr,
 .home #container .full-width-container {
 	margin-left: 0;
 	margin-right: 0;
-	padding-left: 0;
-	padding-right: 0;
 }
 
 .full-bleed {

@@ -856,6 +856,13 @@ li
 /*MedNet patterns pages*/
 
 /*Two Column Page*/
+.content-column {
+	max-width: 1000px;
+}
+
+.sidebar-column {
+	max-width: 350px;
+}
 
 
 /*All announcements page*/
