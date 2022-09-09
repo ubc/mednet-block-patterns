@@ -68,6 +68,10 @@ if ( ! class_exists( 'MBP_Category_Manager' ) ) :
 					'slug' => 'MedNet_Post_Pattern',
 					'text' => 'Post Patterns',
 				),
+				'query'       => array(
+					'slug' => 'MedNet_Query_Pattern',
+					'text' => 'Query Patterns',
+				),
 				'demo'        => array(
 					'slug' => 'MedNet_Demo_Pattern',
 					'text' => 'MedNet Demo Patterns',

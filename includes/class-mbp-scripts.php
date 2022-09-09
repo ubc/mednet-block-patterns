@@ -30,7 +30,6 @@ class MBP_Scripts {
 		add_action( 'init', array( $this, 'set_filters' ) );
 		add_action( 'admin_init', array( $this, 'remove_block_directory' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'mbp_load_assets' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'mbp_load_assets' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'mbp_load_editor_assets' ) );
 		add_action( 'after_setup_theme', array( $this, 'remove_core_patterns' ) );
 		add_action( 'after_setup_theme', array( $this, 'add_theme_supports' ), 100 );
@@ -61,7 +60,7 @@ class MBP_Scripts {
 	 */
 	public function mbp_load_assets() {
 		wp_enqueue_script( 'mbp-front-end-script' );
-		wp_enqueue_style( 'mbp-site-styles' );
+		wp_enqueue_style( 'mbp-public-styles' );
 	}
 
 	/**
@@ -103,14 +102,7 @@ class MBP_Scripts {
 		wp_register_script(
 			'mbp-front-end-script',
 			plugins_url( 'js/front-end.js', __FILE__ ),
-			array(
-				'wp-blocks',
-				'wp-i18n',
-				'wp-element',
-				'wp-editor',
-				'wp-plugins',
-				'wp-edit-post',
-			),
+			array(),
 			filemtime( plugin_dir_path( __FILE__ ) . 'js/front-end.js' ),
 			true
 		);
@@ -129,16 +121,9 @@ class MBP_Scripts {
 			true
 		);
 		wp_register_style(
-			'mbp-site-styles',
-			plugins_url( '/css/public.css', __FILE__ ),
-			array(
-				'wp-blocks',
-				'wp-i18n',
-				'wp-element',
-				'wp-editor',
-				'wp-plugins',
-				'wp-edit-post',
-			),
+			'mbp-public-styles',
+			plugins_url( 'css/public.css', __FILE__ ),
+			array(),
 			filemtime( plugin_dir_path( __FILE__ ) . 'css/public.css' )
 		);
 	}

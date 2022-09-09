@@ -2,12 +2,11 @@
 function closeAlert() {
 	jQuery('.alert-banner').fadeOut();
 }
-
 /**
  * 
  *  Accordions
  * 
- *  Set listeners after windwo load.
+ *  Set listeners after window load.
  *  Get the accordions related to click event.
  *  Set visibile parameters before animating.
  *  Use jQuery slideUp/Down to animate the accordions.

@@ -10,10 +10,10 @@ body {
 -------------------------------*/
 .full-width .full-width-container .expand {
 	max-width: 1600px;
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 20px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 20px;
 }
 
 .home.full-width .full-width-container .expand {
@@ -252,4 +252,7 @@ ol.wp-block-list li {
 	background: var(--blue_1);
 	color: #fff;
 	font-size: 0.75rem;
+}
+body .is-layout-flex {
+	gap: 1rem;
 }
