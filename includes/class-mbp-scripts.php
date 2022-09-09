@@ -72,8 +72,12 @@ class MBP_Scripts {
 	public function mbp_load_editor_assets() {
 		wp_enqueue_script( 'mbp-editor-script' );
 		wp_enqueue_script( 'mbp-style-variations' );
+
+		wp_enqueue_style( 'mbp-variables-styles' );
 		wp_enqueue_style( 'mbp-site-styles' );
 		wp_enqueue_style( 'mbp-editor-styles' );
+		wp_enqueue_style( 'mbp-pattern-styles' );
+		wp_enqueue_style( 'mbp-variation-styles' );
 	}
 
 	/**
@@ -103,7 +107,9 @@ class MBP_Scripts {
 				'wp-blocks',
 				'wp-i18n',
 				'wp-element',
+				'wp-editor',
 				'wp-plugins',
+				'wp-edit-post',
 			),
 			filemtime( plugin_dir_path( __FILE__ ) . 'js/front-end.js' ),
 			true
@@ -125,14 +131,15 @@ class MBP_Scripts {
 		wp_register_style(
 			'mbp-site-styles',
 			plugins_url( '/css/public.css', __FILE__ ),
-			array( 'wp-editor' ),
+			array(
+				'wp-blocks',
+				'wp-i18n',
+				'wp-element',
+				'wp-editor',
+				'wp-plugins',
+				'wp-edit-post',
+			),
 			filemtime( plugin_dir_path( __FILE__ ) . 'css/public.css' )
-		);
-		wp_register_style(
-			'mbp-editor-styles',
-			plugins_url( '/css/editor.css', __FILE__ ),
-			array( 'wp-editor' ),
-			filemtime( plugin_dir_path( __FILE__ ) . 'css/editor.css' )
 		);
 	}
 
@@ -167,19 +174,54 @@ class MBP_Scripts {
 
 		$font_sizes = array(
 			array(
-				'name' => 'Small',
+				'name' => 'Smallest',
 				'size' => '0.75rem',
+				'slug' => 'smallest',
+			),
+			array(
+				'name' => 'Small',
+				'size' => '0.875rem',
 				'slug' => 'small',
 			),
 			array(
-				'name' => 'Normal',
+				'name' => 'Default',
 				'size' => '1rem',
-				'slug' => 'medium',
+				'slug' => 'default',
+			),
+			array(
+				'name' => 'Callout',
+				'size' => '1.09375rem',
+				'slug' => 'callout',
+			),
+			array(
+				'name' => 'Larger',
+				'size' => '1.25rem',
+				'slug' => 'larger',
 			),
 			array(
 				'name' => 'Large',
-				'size' => '1.25rem',
+				'size' => '1.5rem',
 				'slug' => 'large',
+			),
+			array(
+				'name' => 'Really Large',
+				'size' => '1.75rem',
+				'slug' => 'really-large',
+			),
+			array(
+				'name' => 'Extra Large',
+				'size' => '2rem',
+				'slug' => 'xlarge',
+			),
+			array(
+				'name' => 'XX Large',
+				'size' => '2.25rem',
+				'slug' => 'xxlarge',
+			),
+			array(
+				'name' => 'Biggest',
+				'size' => '2.5rem',
+				'slug' => 'biggest',
 			),
 		);
 		add_theme_support( 'editor-font-sizes', $font_sizes );
