@@ -90,3 +90,11 @@ a.components-external-link::after {
 #editor .is-style-reverse-group * {
 	color: var(--white);
 }
+.editor-styles-wrapper .content-card .wp-block-cover__inner-container * {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.editor-styles-wrapper .content-card-description {
+	margin-left: 0;
+}

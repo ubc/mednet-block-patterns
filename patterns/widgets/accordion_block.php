@@ -46,7 +46,7 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:pb/accordion-item {"uuid":124321} -->
+    <!-- wp:pb/accordion-item {"uuid":12013} -->
     <div
         class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js"
         data-initially-open="false"
@@ -56,13 +56,13 @@
         data-scroll-offset="0"
     >
         <h2
-            id="at-124321"
+            id="at-12013"
             class="c-accordion__title js-accordion-controller"
             role="button"
         >
             Title
         </h2>
-        <div id="ac-124321" class="c-accordion__content">
+        <div id="ac-12013" class="c-accordion__content">
             <!-- wp:paragraph {"placeholder":"Add accordion content"} -->
             <p>Content</p>
             <!-- /wp:paragraph -->
@@ -70,7 +70,7 @@
     </div>
     <!-- /wp:pb/accordion-item -->
 
-    <!-- wp:pb/accordion-item {"uuid":124323} -->
+    <!-- wp:pb/accordion-item {"uuid":12014} -->
     <div
         class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js"
         data-initially-open="false"
@@ -80,13 +80,13 @@
         data-scroll-offset="0"
     >
         <h2
-            id="at-124323"
+            id="at-12014"
             class="c-accordion__title js-accordion-controller"
             role="button"
         >
             Other
         </h2>
-        <div id="ac-124323" class="c-accordion__content">
+        <div id="ac-12014" class="c-accordion__content">
             <!-- wp:paragraph {"placeholder":"Add accordion content"} -->
             <p>Object</p>
             <!-- /wp:paragraph -->
