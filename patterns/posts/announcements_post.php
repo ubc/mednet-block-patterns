@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"announcements_post"} -->
-<div class="wp-block-group announcements_post">
+<!-- wp:group {"className":"announcements-post"} -->
+<div class="wp-block-group announcements-post">
     <!-- wp:paragraph {"placeholder":"Announcement post content"} -->
     <p></p>
     <!-- /wp:paragraph -->

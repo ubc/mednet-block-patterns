@@ -16,7 +16,9 @@
 	*/
 
 	/* Families */
-	--font-family: "Whitney SSm A", "Whitney SSm B", Whitney, Arial, sans-serif;
+	/* stylelint-disable-next-line value-keyword-case */
+	--mbp-font-family: "Whitney SSm A", "Whitney SSm B", "Whitney SSm", Whitney, Arial, sans-serif;
+	--font-family: var(--mbp-font-family);
 
 	/* Sizes */
 	font-size: 15px;

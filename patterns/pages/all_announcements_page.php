@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"all_announcements_page"} -->
-<div class="wp-block-group all_announcements_page">
+<!-- wp:group {"className":"all-announcements-page"} -->
+<div class="wp-block-group all-announcements-page">
   <!-- wp:paragraph {"fontSize":"medium"} -->
   <p class="has-medium-font-size">content</p>
   <!-- /wp:paragraph -->
@@ -11,9 +11,9 @@
   />
   <!-- /wp:separator -->
 
-  <!-- wp:ubc/tabs {"tabTitles":["All Announcements","Events","Funding \u0026amp; Awards","Appointment","Community"],"className":"all_announcements_tabs_block"} -->
+  <!-- wp:ubc/tabs {"tabTitles":["All Announcements","Events","Funding \u0026amp; Awards","Appointment","Community"],"className":"all-announcements-tabs-block"} -->
   <section
-    class="wp-block-ubc-tabs ubc-accordion-tabs all_announcements_tabs_block"
+    class="wp-block-ubc-tabs ubc-accordion-tabs all-announcements-tabs-block"
     data-selected-tab="0"
   >
     <ul class="ubc-accordion-tabs__tab-list" role="tablist">
@@ -104,8 +104,8 @@
         </div>
       </div>
       <div class="content">
-        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement_feed_small"} -->
-        <div class="wp-block-query announcement_feed_small">
+        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement-feed"} -->
+        <div class="wp-block-query announcement-feed">
           <!-- wp:post-template -->
           <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
@@ -114,7 +114,7 @@
           <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}}} /-->
           <!-- /wp:post-template -->
 
-          <!-- wp:query-pagination {"align":"center","className":"mednet_pagination_block"} -->
+          <!-- wp:query-pagination {"align":"center","className":"mednet-pagination-block"} -->
           <!-- wp:query-pagination-previous /-->
 
           <!-- wp:query-pagination-numbers /-->
@@ -164,8 +164,8 @@
         </div>
       </div>
       <div class="content">
-        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement_feed_small"} -->
-        <div class="wp-block-query announcement_feed_small">
+        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement-feed"} -->
+        <div class="wp-block-query announcement-feed">
           <!-- wp:post-template -->
           <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
@@ -174,7 +174,7 @@
           <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}}} /-->
           <!-- /wp:post-template -->
 
-          <!-- wp:query-pagination {"align":"center","className":"mednet_pagination_block"} -->
+          <!-- wp:query-pagination {"align":"center","className":"mednet-pagination-block"} -->
           <!-- wp:query-pagination-previous /-->
 
           <!-- wp:query-pagination-numbers /-->
@@ -224,8 +224,8 @@
         </div>
       </div>
       <div class="content">
-        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement_feed_small"} -->
-        <div class="wp-block-query announcement_feed_small">
+        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement-feed"} -->
+        <div class="wp-block-query announcement-feed">
           <!-- wp:post-template -->
           <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
@@ -234,7 +234,7 @@
           <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}}} /-->
           <!-- /wp:post-template -->
 
-          <!-- wp:query-pagination {"align":"center","className":"mednet_pagination_block"} -->
+          <!-- wp:query-pagination {"align":"center","className":"mednet-pagination-block"} -->
           <!-- wp:query-pagination-previous /-->
 
           <!-- wp:query-pagination-numbers /-->
@@ -284,8 +284,8 @@
         </div>
       </div>
       <div class="content">
-        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement_feed_small"} -->
-        <div class="wp-block-query announcement_feed_small">
+        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement-feed"} -->
+        <div class="wp-block-query announcement-feed">
           <!-- wp:post-template -->
           <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
@@ -294,7 +294,7 @@
           <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}}} /-->
           <!-- /wp:post-template -->
 
-          <!-- wp:query-pagination {"align":"center","className":"mednet_pagination_block"} -->
+          <!-- wp:query-pagination {"align":"center","className":"mednet-pagination-block"} -->
           <!-- wp:query-pagination-previous /-->
 
           <!-- wp:query-pagination-numbers /-->
@@ -344,8 +344,8 @@
         </div>
       </div>
       <div class="content">
-        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement_feed_small"} -->
-        <div class="wp-block-query announcement_feed_small">
+        <!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement-feed"} -->
+        <div class="wp-block-query announcement-feed">
           <!-- wp:post-template -->
           <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
@@ -354,7 +354,7 @@
           <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}}} /-->
           <!-- /wp:post-template -->
 
-          <!-- wp:query-pagination {"align":"center","className":"mednet_pagination_block"} -->
+          <!-- wp:query-pagination {"align":"center","className":"mednet-pagination-block"} -->
           <!-- wp:query-pagination-previous /-->
 
           <!-- wp:query-pagination-numbers /-->

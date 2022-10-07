@@ -1,6 +1,6 @@
-<!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"contact_block"} -->
+<!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"contact-block"} -->
 <div
-    class="wp-block-group contact_block has-background"
+    class="wp-block-group contact-block has-background"
     style="background-color: #f2f2f2"
 >
     <!-- wp:columns -->

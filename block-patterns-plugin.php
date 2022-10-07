@@ -142,7 +142,7 @@ if ( ! class_exists( 'MedNet_Block_Patterns' ) ) :
 
 			// Patterns Folder.
 			if ( ! defined( 'MBP_PATTERNS_FOLDER' ) ) {
-				define( 'MBP_PATTERNS_FOLDER', MBP_PLUGIN_DIR . '/patterns/' );
+				define( 'MBP_PATTERNS_FOLDER', MBP_PLUGIN_DIR . 'patterns/' );
 			}
 		}
 		/**

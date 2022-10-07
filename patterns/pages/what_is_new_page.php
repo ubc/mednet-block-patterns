@@ -6,8 +6,8 @@
   </h2>
   <!-- /wp:heading -->
 
-  <!-- wp:columns {"className":"announcement_block"} -->
-  <div class="wp-block-columns announcement_block">
+  <!-- wp:columns {"className":"announcement-block"} -->
+  <div class="wp-block-columns announcement-block">
     <!-- wp:column {"width":"50%"} -->
     <div class="wp-block-column" style="flex-basis: 50%">
       <!-- wp:group -->

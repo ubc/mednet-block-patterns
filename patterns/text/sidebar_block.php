@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"sidebar_block"} -->
-<div class="wp-block-group sidebar_block">
+<!-- wp:group {"className":"sidebar-block"} -->
+<div class="wp-block-group sidebar-block">
     <!-- wp:heading {"level":3,"placeholder":"Heading"} -->
     <h3></h3>
     <!-- /wp:heading -->

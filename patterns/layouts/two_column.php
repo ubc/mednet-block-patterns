@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"  two_column_page "} -->
-<div class="wp-block-group two_column_page">
+<!-- wp:group {"className":"  two-column-page "} -->
+<div class="wp-block-group two-column-page">
     <!-- wp:columns -->
     <div class="wp-block-columns">
         <!-- wp:column {"width":"66.66%","className":"content-column"} -->

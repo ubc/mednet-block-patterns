@@ -1,8 +1,8 @@
 <!-- wp:group {"className":"services_resources_page"} -->
 <div class="wp-block-group services_resources_page"><!-- wp:group {"className":"overview_pages"} -->
 <div class="wp-block-group overview_pages"><!-- wp:group {"className":"spotlight_title_with_big_bio_photo_page"} -->
-<div class="wp-block-group spotlight_title_with_big_bio_photo_page"><!-- wp:group {"className":"faculty_staff_spotlight_page"} -->
-<div class="wp-block-group faculty_staff_spotlight_page"><!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+<div class="wp-block-group spotlight_title_with_big_bio_photo_page"><!-- wp:group {"className":"faculty-staff-spotlight-page"} -->
+<div class="wp-block-group faculty-staff-spotlight-page"><!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
 <p class="has-text-align-center has-medium-font-size">
           <strong>Meet staff members from across the Faculty of Medicine</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.

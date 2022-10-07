@@ -1,5 +1,6 @@
 wp.domReady(() => {
 	wp.blocks.unregisterBlockStyle('core/button', ['outline', 'fill']);
+	wp.blocks.unregister_block_style( 'core/quote', 'plain' );
 	
 	wp.blocks.registerBlockStyle('core/group', [{
 		name: 'default-group',

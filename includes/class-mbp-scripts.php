@@ -43,7 +43,7 @@ class MBP_Scripts {
 	 * @return void
 	 */
 	public function set_filters() {
-		add_filter( 'should_load_remote_block_patterns', '__return_false' ); //don't use the pattern catalogue.
+		add_filter( 'should_load_remote_block_patterns', '__return_false' ); // don't use the pattern catalogue.
 	}
 	/**
 	 * Remove or add menu items in the editor
@@ -51,7 +51,7 @@ class MBP_Scripts {
 	 * @return void
 	 */
 	public function config_cms_menu() {
-		remove_menu_page('link-manager.php');
+		remove_menu_page( 'link-manager.php' );
 	}
 	/**
 	 * Disable the block editor directory
@@ -120,6 +120,7 @@ class MBP_Scripts {
 			plugins_url( 'js/block-style-variations.js', __FILE__ ),
 			array(
 				'wp-blocks',
+				'wp-dom-ready',
 				'wp-i18n',
 				'wp-element',
 				'wp-editor',
@@ -143,6 +144,7 @@ class MBP_Scripts {
 	public function remove_core_patterns() {
 		remove_theme_support( 'core-block-patterns' );
 	}
+
 	/**
 	 * Add options for giving the user more editing control
 	 *
