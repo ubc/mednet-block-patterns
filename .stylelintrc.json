@@ -1,3 +1,8 @@
 {
-  "extends": "@wordpress/stylelint-config/index.js"
+  "extends": "@wordpress/stylelint-config/index.js",
+  "rules": {
+    "selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?(--([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)*$",
+    "function-url-quotes": "always",
+    "no-descending-specificity": null
+  }
 }

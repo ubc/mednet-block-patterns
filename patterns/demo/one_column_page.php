@@ -381,10 +381,10 @@
     </p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:group {"className":"table_option_2"} -->
-    <div class="wp-block-group table_option_2">
-        <!-- wp:ubc/advanced-table-block {"changed":true,"className":"table_option_2"} -->
-        <table class="wp-block-ubc-advanced-table-block table table_option_2">
+    <!-- wp:group {"className":"table-option-2"} -->
+    <div class="wp-block-group table-option-2">
+        <!-- wp:ubc/advanced-table-block {"changed":true,"className":"table-option-2"} -->
+        <table class="wp-block-ubc-advanced-table-block table table-option-2">
             <thead>
                 <tr>
                     <th scope="col">Image</th>
@@ -468,9 +468,9 @@
     />
     <!-- /wp:separator -->
 
-    <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"contact_block"} -->
+    <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"contact-block"} -->
     <div
-        class="wp-block-group contact_block has-background"
+        class="wp-block-group contact-block has-background"
         style="background-color: #f2f2f2"
     >
         <!-- wp:columns -->

@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"spotlight_post_inline_photo"} -->
-<div class="wp-block-group spotlight_post_inline_photo">
+<!-- wp:group {"className":"spotlight-post-inline-photo"} -->
+<div class="wp-block-group spotlight-post-inline-photo">
     <!-- wp:columns -->
     <div class="wp-block-columns">
         <!-- wp:column {"width":"66.66%"} -->

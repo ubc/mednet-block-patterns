@@ -28,7 +28,7 @@
   <div class="wp-block-columns">
 	<!-- wp:column {"width":"100%", "className":"fill-container"} -->
 	<div class="wp-block-column fill-container" style="flex-basis: 100%">
-	  <?php require MBP_PATTERNS_FOLDER . 'components/announcements_block.php'; ?>
+	  <?php require MBP_PATTERNS_FOLDER . 'query/announcements_block.php'; ?>
 	</div>
 	<!-- /wp:column -->
 
@@ -40,8 +40,8 @@
         <h3 class="quicklinks">Quicklinks</h3>
         <!-- /wp:heading -->
 
-		<!-- wp:list {"className":"quicklinks_list"} -->
-		<ul class="quicklinks_list">
+		<!-- wp:list {"className":"quicklinks-list"} -->
+		<ul class="quicklinks-list">
 		  <li>
 			<a rel="noreferrer noopener" href="/" target="_blank">Entrada</a>
 		  </li>
@@ -84,24 +84,16 @@
 	  </div>
 	  <!-- /wp:group -->
 
-	  <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"featured_resource"} -->
+	  <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"featured-resource"} -->
 	  <div
-		class="wp-block-group featured_resource has-background"
+		class="wp-block-group featured-resource has-background"
 		style="background-color: #f2f2f2"
 	  >
 		<!-- wp:group -->
 		<div class="wp-block-group">
-		  <!-- wp:image {"id":484,"width":125,"height":178,"sizeSlug":"full","linkDestination":"none"} -->
-		  <figure class="wp-block-image size-full is-resized">
-			<img
-			  src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/Icon_Home-FeaturedResource@2x.png"
-			  alt=""
-			  class="wp-image-484"
-			  width="125"
-			  height="178"
-			/>
-		  </figure>
-		  <!-- /wp:image -->
+		  <!-- wp:image {"id":484,"width":61,"height":89,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
+<figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/Icon_Home-FeaturedResource@2x.png" alt="" class="wp-image-484" width="61" height="89"/></figure>
+<!-- /wp:image -->
 
 		  <!-- wp:heading {"level":3,"style":{"color":{"text":"#002145"},"typography":{"fontSize":"0.875rem"}}} -->
 		  <h3
@@ -168,6 +160,6 @@
 	<!-- /wp:column -->
   </div>
   <!-- /wp:columns -->
-	<?php require MBP_PATTERNS_FOLDER . 'pages/news-and-honours-section.php'; ?>
+	<?php require MBP_PATTERNS_FOLDER . 'pages/news_and_honours_section.php'; ?>
 </div>
 <!-- /wp:group -->

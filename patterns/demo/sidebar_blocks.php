@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"sidebar_block"} -->
-<div class="wp-block-group sidebar_block"><!-- wp:group {"style":{"color":{"background":"#f2f2f2"}}} -->
+<!-- wp:group {"className":"sidebar-block"} -->
+<div class="wp-block-group sidebar-block"><!-- wp:group {"style":{"color":{"background":"#f2f2f2"}}} -->
 <div class="wp-block-group has-background" style="background-color:#f2f2f2"><!-- wp:heading {"level":3} -->
 <h3>Workday Support</h3>
 <!-- /wp:heading -->

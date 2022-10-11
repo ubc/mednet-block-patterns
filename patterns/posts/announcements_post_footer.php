@@ -3,8 +3,8 @@
 <p style="font-size:14px;font-style:normal;font-weight:600;text-transform:uppercase;letter-spacing:0.7px">EXPLORE MORE OF WHAT&rsquo;S NEW</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement_feed_small"} -->
-<div class="wp-block-query announcement_feed_small"><!-- wp:post-template -->
+<!-- wp:query {"queryId":33,"query":{"perPage":"3","pages":"0","offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}},"displayLayout":{"type":"flex","columns":3},"className":"announcement-feed"} -->
+<div class="wp-block-query announcement-feed"><!-- wp:post-template -->
 <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
 <!-- wp:post-title {"isLink":true,"linkTarget":"_blank","style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"600","letterSpacing":"-0.18px"},"color":{"text":"#002145"}}} /-->
@@ -12,7 +12,7 @@
 <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}}} /-->
 <!-- /wp:post-template -->
 
-<!-- wp:query-pagination {"align":"center","className":"mednet_pagination_block"} -->
+<!-- wp:query-pagination {"align":"center","className":"mednet-pagination-block"} -->
 <!-- wp:query-pagination-previous /-->
 
 <!-- wp:query-pagination-numbers /-->
@@ -28,8 +28,8 @@
 <!-- /wp:query -->
 
 <!-- wp:group -->
-<div class="wp-block-group"><!-- wp:columns {"textColor":"white","className":"blue_feature_blocks"} -->
-<div class="wp-block-columns blue_feature_blocks has-white-color has-text-color"><!-- wp:column {"width":"33.33%","style":{"color":{"background":"#002145"}},"textColor":"white"} -->
+<div class="wp-block-group"><!-- wp:columns {"textColor":"white","className":"blue-feature-blocks"} -->
+<div class="wp-block-columns blue-feature-blocks has-white-color has-text-color"><!-- wp:column {"width":"33.33%","style":{"color":{"background":"#002145"}},"textColor":"white"} -->
 <div class="wp-block-column has-white-color has-text-color has-background" style="background-color:#002145;flex-basis:33.33%"><!-- wp:heading {"level":3,"textColor":"white"} -->
 <h3 class="has-white-color has-text-color">Calendar</h3>
 <!-- /wp:heading -->

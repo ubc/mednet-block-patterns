@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"icon_page"} -->
-<div class="wp-block-group icon_page">
+<!-- wp:group {"className":"icon-page"} -->
+<div class="wp-block-group icon-page">
 	<!-- wp:paragraph {"fontSize":"medium"} -->
 	<p class="has-medium-font-size">
 		Introduction copy about the section. Ut enim ad minim veniam, quis
@@ -29,7 +29,7 @@
 
 	<?php require MBP_PATTERNS_FOLDER . 'components/blue_feature_blocks.php'; ?>
 
-	<?php require MBP_PATTERNS_FOLDER . 'components/three_col_block_with_blue_feature_box.php'; ?>
+	<?php require MBP_PATTERNS_FOLDER . 'components/three_col_content.php'; ?>
 
 	<?php require MBP_PATTERNS_FOLDER . 'components/contact_block.php'; ?>
 </div>

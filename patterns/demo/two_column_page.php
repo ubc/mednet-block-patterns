@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"  two_column_page "} -->
-<div class="wp-block-group two_column_page">
+<!-- wp:group {"className":"  two-column-page "} -->
+<div class="wp-block-group two-column-page">
     <!-- wp:columns -->
     <div class="wp-block-columns">
         <!-- wp:column {"width":"66.66%"} -->
@@ -342,9 +342,9 @@
             </p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"contact_block is-style-1-4-width"} -->
+            <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"contact-block is-style-1-4-width"} -->
             <div
-                class="wp-block-group contact_block is-style-1-4-width has-background"
+                class="wp-block-group contact-block is-style-1-4-width has-background"
                 style="background-color: #f2f2f2"
             >
                 <!-- wp:columns -->

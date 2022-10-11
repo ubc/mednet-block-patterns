@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"navigation_list_with_icons"} -->
-<div class="wp-block-group navigation_list_with_icons">
+<!-- wp:group {"className":"navigation-list-with-icons"} -->
+<div class="wp-block-group navigation-list-with-icons">
   <!-- wp:columns -->
   <div class="wp-block-columns">
     <!-- wp:column -->
