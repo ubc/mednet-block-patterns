@@ -95,3 +95,10 @@ a[target="_blank"].components-external-link::after {
 .block-editor-inserter__tabs .components-tab-panel__tab-content {
 	scrollbar-gutter: stable both-edges;
 }
+
+html.wp-has-aspect-ratio,
+body.wp-has-aspect-ratio,
+body.wp-has-aspect-ratio > div,
+body.wp-has-aspect-ratio > div iframe {
+	aspect-ratio: 16/9;
+}

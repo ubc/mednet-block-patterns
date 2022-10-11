@@ -10,9 +10,7 @@
 
             <!-- wp:list -->
             <ul>
-                <!-- wp:list-item -->
                 <li></li>
-                <!-- /wp:list-item -->
             </ul>
             <!-- /wp:list -->
         </div>
