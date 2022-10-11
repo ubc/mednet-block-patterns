@@ -218,6 +218,18 @@ ol.wp-block-list li {
 	overflow: unset;
 }
 
+/* responsive media class conflicts with block editor css */
+.responsive-media iframe,
+.responsive-media object,
+.responsive-media embed {
+	position: unset;
+	top: unset;
+	left: unset;
+	width: unset;
+	height: unset;
+}
+
+
 /* WP Overrides */
 .wp-block-file a[target="_blank"]::after {
 	content: none;
