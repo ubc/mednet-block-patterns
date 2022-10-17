@@ -67,7 +67,9 @@ a[target="_blank"].components-external-link::after {
 
 /* Styles for the editor */
 :root,
-.editor-styles-wrapper {
+.editor-styles-wrapper,
+#wpcontent .editor-styles-wrapper .wp-block,
+#wpcontent .editor-styles-wrapper .wp-block * {
 	font-family: var(--mbp-font-family);
 }
 
