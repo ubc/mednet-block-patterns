@@ -157,7 +157,7 @@ class MBP_Pattern_Packages {
 				'keywords'      => array( 'column', 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/three_col_content.php',
-				'blockTypes'    => array( '' ),
+				'blockTypes'    => array( 'core/group', 'core/column', 'core/columns', 'core/paragraph' ),
 			),
 			'mednet-block-patterns/blue-feature-blocks'    => array(
 				'slug'          => 'blue-feature-blocks',

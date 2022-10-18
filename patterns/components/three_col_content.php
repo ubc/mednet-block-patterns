@@ -28,8 +28,8 @@
         </div>
         <!-- /wp:column -->
 
-        <!-- wp:column {"verticalAlignment":"center"} -->
-        <div class="wp-block-column is-vertically-aligned-center">
+        <!-- wp:column {"verticalAlignment":"top","className":"feature-block-column"} -->
+        <div class="wp-block-column is-vertically-aligned-top feature-block-column">
             <?php require MBP_PATTERNS_FOLDER . 'text/sidebar_block.php'; ?>
         </div>
         <!-- /wp:column -->
