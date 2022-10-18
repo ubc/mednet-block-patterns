@@ -7,13 +7,28 @@
 	background: var(--gray_3);
 }
 
+.is-style-reverse-column,
 .is-style-reverse-group {
 	background: var(--blue_2);
 	color: var(--white);
 }
 
+.is-style-accent-column,
+.is-style-accent-group {
+	background: var(--blue_1);
+	color: var(--white);
+}
+
+.is-style-accent-column *,
+.is-style-accent-group *,
+.is-style-reverse-column *,
 .is-style-reverse-group * {
 	color: var(--white);
+}
+
+.is-style-accent-group .is-style-dark-blue,
+.is-style-accent-column .is-style-dark-blue {
+	border: 1px solid var(--blue_2);
 }
 
 .is-style-reverse-group a[target="_blank"]::after {

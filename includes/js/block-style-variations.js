@@ -12,8 +12,19 @@ wp.domReady(() => {
 	},{
 		name: 'reverse-group',
 		label: 'Reverse',
+	},{
+		name: 'accent-group',
+		label: 'Accent'
 	}]);
 	
+	wp.blocks.registerBlockStyle('core/column', [{
+		name: 'reverse-column',
+		label: 'Reverse',
+	}, {
+		name: 'accent-column',
+		label: 'Accent'
+	}]);
+
 	wp.blocks.registerBlockStyle('core/read-more', {
 		name: 'hide-read-more',
 		label: 'Hide Readmore',
