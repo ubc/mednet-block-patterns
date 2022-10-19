@@ -62,7 +62,7 @@
 }
 
 /* Buttons */
-.wp-block-button__link {
+.wp-block-buttons .wp-block-button__link {
 	color: #fff;
 	border-radius: 0;
 	padding: 11px 20px;
@@ -93,5 +93,9 @@
 }
 
 .is-style-hide-read-more {
+	display: none;
+}
+
+:where(.is-style-toc-top-only, .toc-h1-only) > ol ol {
 	display: none;
 }

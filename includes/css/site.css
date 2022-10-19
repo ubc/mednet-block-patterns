@@ -43,13 +43,11 @@ h1 {
 }
 
 h2 {
-	font-size: 1.875rem;
 	font-size: var(--really-large);
 	line-height: 1.2;
 }
 
 h3 {
-	font-size: 1.5rem;
 	font-size: 1.5rem;
 	line-height: 1.16;
 }
@@ -177,6 +175,7 @@ hr,
 	background: #fff;
 }
 
+ul.wp-block-list li,
 .wp-block-list ul li {
 	list-style-type: square;
 }
@@ -205,10 +204,6 @@ p {
 	font-size: var(--default);
 	line-height: 1.5;
 	color: var(--blue_2);
-}
-
-ol.wp-block-list li {
-	list-style-type: square;
 }
 
 .wp-block-embed__wrapper > .responsive-media {
@@ -407,10 +402,6 @@ a[href="#top"]::before {
 .wp-block-file__button.wp-element-button:hover {
 	background: var(--blue_2);
 	opacity: 12;
-}
-
-.toc-h1-only > ol ol {
-	display: none;
 }
 
 #primary {

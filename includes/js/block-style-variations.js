@@ -53,4 +53,9 @@ wp.domReady(() => {
 			label: 'Dark Blue',
 		},
 	]);
+
+	wp.blocks.registerBlockStyle('core/table-of-contents', [{
+		name: 'toc-top-only',
+		label: 'Top level items only',
+	},]);
 });
