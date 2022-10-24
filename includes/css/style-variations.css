@@ -100,3 +100,10 @@
 :where(.is-style-toc-top-only, .toc-h1-only) > ol ol {
 	display: none;
 }
+
+.is-style-no-link-icon::before,
+.is-style-no-link-icon::after,
+.is-style-no-link-icon a::before,
+.is-style-no-link-icon a::after {
+	content: none;
+}

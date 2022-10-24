@@ -58,4 +58,17 @@ wp.domReady(() => {
 		name: 'toc-top-only',
 		label: 'Top level items only',
 	},]);
+
+	wp.blocks.registerBlockStyle('core/paragraph', [{
+		name: 'no-link-icon',
+		label: 'No link icons',
+	},]);
+	wp.blocks.registerBlockStyle('core/heading', [{
+		name: 'no-link-icon',
+		label: 'No link icons',
+	},]);
+	wp.blocks.registerBlockStyle('core/list', [{
+		name: 'no-link-icon',
+		label: 'No link icons',
+	},]);
 });
