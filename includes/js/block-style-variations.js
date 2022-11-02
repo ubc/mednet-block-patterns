@@ -12,8 +12,19 @@ wp.domReady(() => {
 	},{
 		name: 'reverse-group',
 		label: 'Reverse',
+	},{
+		name: 'accent-group',
+		label: 'Accent'
 	}]);
 	
+	wp.blocks.registerBlockStyle('core/column', [{
+		name: 'reverse-column',
+		label: 'Reverse',
+	}, {
+		name: 'accent-column',
+		label: 'Accent'
+	}]);
+
 	wp.blocks.registerBlockStyle('core/read-more', {
 		name: 'hide-read-more',
 		label: 'Hide Readmore',
@@ -42,4 +53,22 @@ wp.domReady(() => {
 			label: 'Dark Blue',
 		},
 	]);
+
+	wp.blocks.registerBlockStyle('core/table-of-contents', [{
+		name: 'toc-top-only',
+		label: 'Top level items only',
+	},]);
+
+	wp.blocks.registerBlockStyle('core/paragraph', [{
+		name: 'no-link-icon',
+		label: 'No link icons',
+	},]);
+	wp.blocks.registerBlockStyle('core/heading', [{
+		name: 'no-link-icon',
+		label: 'No link icons',
+	},]);
+	wp.blocks.registerBlockStyle('core/list', [{
+		name: 'no-link-icon',
+		label: 'No link icons',
+	},]);
 });

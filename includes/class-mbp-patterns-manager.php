@@ -41,9 +41,17 @@ class MBP_Patterns_Manager {
 		global $mbp_instance;
 		$mbp_prefix = 'mbp-';
 		$patterns   = $mbp_instance->pattern_packages;
-		foreach ( $patterns as $pattern_key => $pattern_data ) {
-			$pattern_name = $mbp_prefix . '/' . $pattern_key;
-			$this->mbp_register_block_pattern( $pattern_name, $pattern_data );
+		if (!is_array($patterns)) {
+			// patterns must be an array
+			error_log("expected array recieved ". var_dump($patterns) );
+			wp_die( "<h1>Error loading MedNet Block Patterns</h1>"
+			. "<p>On Line: " . __LINE__ . "<br>In file " . __FILE__
+			. "<p>Expected <strong>array</strong> but recieved: " . gettype($patterns) . "</p>");
+		} else {
+			foreach ( $patterns as $pattern_key => $pattern_data ) {
+				$pattern_name = $mbp_prefix . '/' . $pattern_key;
+				$this->mbp_register_block_pattern( $pattern_name, $pattern_data );
+			}
 		}
 	}
 

@@ -418,6 +418,16 @@ li
 	line-height: 1.125;
 }
 
+/* three-col-block-with-feature-box */
+.three-col-block-with-feature-box .is-layout-flex.wp-block-columns {
+	gap: 1px;
+}
+.three-col-block-with-feature-box .wp-block-column {
+	padding: 2rem;
+
+}
+
+
 /* Featured Resources needs a heading and top margin. */
 .featured-resource .wp-block-group__inner-container .is-layout-flow.wp-block-group .wp-block-group__inner-container figure + p {
 	margin-top: 40px;
@@ -1003,10 +1013,6 @@ p::before {
 	margin: 40px 0;
 }
 
-.icon-page > div > .three-col-block-with-feature-box {
-	margin: 40px 0 1.5rem;
-}
-
 /*Services & Resources Page*/
 
 overview-pages > div > p {
@@ -1392,15 +1398,6 @@ overview-pages > div > div {
 	.blue-feature-blocks > div {
 		padding-left: 20px !important;
 		padding-right: 20px !important;
-	}
-
-	.three-col-block-with-feature-box > div > div > div:last-child {
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-
-	.three-col-block-with-feature-box > div > div > *:not(:last-child) h2 {
-		margin-top: 0;
 	}
 
 	.all-announcements-tabs-block > ul.ubc-accordion-tabs__tab-list {
