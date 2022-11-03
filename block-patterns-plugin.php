@@ -18,6 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Does not support WP_CLI.
+if ( defined( 'WP_CLI' ) && WP_CLI ) {
+	return;
+}
+
 if ( ! class_exists( 'MedNet_Block_Patterns' ) ) :
 
 	/**
