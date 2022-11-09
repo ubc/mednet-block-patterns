@@ -859,6 +859,12 @@ li
 	line-height: 1.5;
 }
 
+.pathway-page-grid h2,
+.pathway-page-grid h2 a {
+	color: var(--blue_2);
+}
+
+
 /*Overview Page */
 
 overview-pagess h2 > a {
@@ -1680,7 +1686,7 @@ a[target="_blank"]::after {
 }
 
 /* negate new tab icon for special cases*/
-.wp-block-button__link[target="_blank"]::after,
-.quicklinks-list a[target="_blank"]::after {
+:is(*, *[class*="is-style-reverse"]) .wp-block-button__link[target="_blank"]::after,
+:is(*, *[class*="is-style-reverse"]) .quicklinks-list a[target="_blank"]::after {
 	content: none;
 }

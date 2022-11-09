@@ -47,10 +47,11 @@
 
 /* body text */
 .is-style-introduction-paragraph {
-	font-size: var(--large);
+	font-size: var(--larger);
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
+	letter-spacing: -0.3px;
 }
 
 .wp-block-quote cite::before {

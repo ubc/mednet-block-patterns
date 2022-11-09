@@ -1,0 +1,186 @@
+.is-style-reverse-group .wp-block-button__link:hover {
+	background: var(--gray_1);
+	color: var(--blue_2);
+}
+
+.is-style-reverse-group a {
+	text-decoration: underline; /*make the link look like a link, dark background white text needs underline */
+}
+
+a.wp-block-file__button {
+	line-height: 1;
+}
+
+.wp-block-buttons .wp-block-button__link {
+	padding-right: 20px;
+}
+
+a[href^="mailto" i],
+a[href*=".xls" i],
+a[href*=".doc" i],
+a[href*=".pdf" i],
+a[href="#top" i],
+a[href^="telto"],
+a[href*="panopto" i],
+a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*=".mp4" i] {
+	display: inline-table;
+}
+
+a[target="_blank"] {
+	padding-right: 0.25em;
+	display: inline-table;
+}
+
+#content th a {
+	color: var(--white);
+	font-size: 0.75rem;
+}
+
+/* open in new tab icon with a background for visibility on image */
+.wp-block-post-featured-image a[target="_blank"]::after,
+figure.wp-block-image > a[target="_blank"]::after {
+	position: absolute;
+	right: 0;
+	height: 1rem;
+	width: 1rem;
+	z-index: 999;
+	color: #fff;
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.87 12.88'%3E%3Cpath d='M12.42 12.87H6.04c-.25 0-.45-.2-.45-.45s.2-.45.45-.45h5.94V.9H.9v5.94c0 .25-.2.45-.45.45S0 7.09 0 6.84V.45C0 .2.2 0 .45 0h11.97c.25 0 .45.2.45.45v11.97c0 .25-.2.45-.45.45ZM.77 12.74 4.8 8.71v2.51c0 .25.2.45.45.45s.45-.2.45-.45V7.63c0-.06-.01-.11-.04-.17a.42.42 0 0 0-.09-.14s-.09-.08-.14-.1c-.05-.02-.11-.03-.16-.04H1.66c-.25 0-.45.2-.45.45s.2.45.45.45h2.5L.13 12.11c-.17.18-.17.46 0 .63.08.09.2.13.32.13s.23-.05.32-.14Z' style='fill:%23fff'/%3E%3C/svg%3E");
+	background: rgba(0, 0, 0, 0.25);
+	padding: 0.25rem;
+	line-height: 1;
+	box-shadow: 0 0 0.25rem 0 rgb(0 0 0 / 25%);
+}
+
+/* AFTER */
+a[target="_blank"]::after {
+	content: "";
+	display: inline-block;
+	width: 1.1ch;
+	height: 1.1ch;
+	margin-left: 0.5ch;
+	background-image: url(/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+:is(h1, h2, h3) a::after {
+	font-size: 0.75rem;
+	vertical-align: top;
+	margin-top: 5px;
+}
+
+p.has-white-color a[target="_blank"]::after,
+.is-style-reverse-group a[target="_blank"]::after {
+	content: "";
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.87 12.88'%3E%3Cpath d='M12.42 12.87H6.04c-.25 0-.45-.2-.45-.45s.2-.45.45-.45h5.94V.9H.9v5.94c0 .25-.2.45-.45.45S0 7.09 0 6.84V.45C0 .2.2 0 .45 0h11.97c.25 0 .45.2.45.45v11.97c0 .25-.2.45-.45.45ZM.77 12.74 4.8 8.71v2.51c0 .25.2.45.45.45s.45-.2.45-.45V7.63c0-.06-.01-.11-.04-.17a.42.42 0 0 0-.09-.14s-.09-.08-.14-.1c-.05-.02-.11-.03-.16-.04H1.66c-.25 0-.45.2-.45.45s.2.45.45.45h2.5L.13 12.11c-.17.18-.17.46 0 .63.08.09.2.13.32.13s.23-.05.32-.14Z' style='fill:%23fff'/%3E%3C/svg%3E");
+}
+.is-style-reverse-group .wp-block-button__link:hover::after {
+	content: "";
+	background-image: url("/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg");
+}
+
+/* BEFORE */
+a[href^="mailto" i]::before,
+a[href*=".xls" i]::before,
+a[href*=".doc" i]::before,
+a[href*=".pdf" i]::before,
+a[href="#top" i]::before,
+a[href^="telto"]::before,
+a[href*="panopto" i]::before,
+a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*=".mp4" i]::before {
+	margin-right: 0.25em;
+	display: inline-block;
+	/* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+	font: normal normal 400 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal !important;
+}
+
+a[href="#top" i]::before,
+:is(h1, h2, h3) a[href="#top" i]::after {
+	content: "\f176"; /*fa-long-arrow-up*/
+}
+
+a[href*=".doc" i]::before,
+:is(h1, h2, h3) a[href*=".doc" i]::after {
+	content: "\f1c2"; /*fa-word-doc*/
+}
+
+a[href*=".xls" i]::before,
+:is(h1, h2, h3) a[href*=".xls" i]::after {
+	content: "\f1c3";
+}
+
+a[href^="mailto" i]::before,
+:is(h1, h2, h3) a[href^="mailto" i]::after {
+	content: "\f0e0";
+}
+
+a[href*="panopto" i]::before,
+a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*=".mp4" i]::before,
+:is(h1, h2, h3) a[href*="panopto" i]::after,
+:is(h1, h2, h3) a[href*="mediasite.audiovisual.ubc.ca" i]::after,
+:is(h1, h2, h3) a[href*=".mp4" i]::after {
+	content: "\f1c8";
+}
+
+a[href^="telto"]::before,
+:is(h1, h2, h3) a[href^="telto"]::after {
+	content: "\f098";
+}
+
+a[href*=".pdf"]::before,
+:is(h1, h2, h3) a[href*=".pdf"]::after {
+	content: "\f1c1";
+}
+
+
+/* DISABLE ICONS */
+a[href^="mailto" i]::after,
+a[href*=".xls" i]::after,
+a[href*=".doc" i]::after,
+a[href*=".pdf" i]::after,
+a[href="#top" i]::after,
+a[href^="telto"]::after,
+a[href*="panopto" i]::after,
+a[href*="mediasite.audiovisual.ubc.ca" i]::after,
+a[href*=".mp4" i]::after,
+a.wp-block-file__button::before,
+#content th a::before,
+#content th a::after,
+.wp-block-file a[target="_blank" i]::after {
+	background-image: unset;
+	padding-right: 0;
+}
+
+/* heading icons should be small after the heading */
+#content :is(h1, h2, h3) a::before {
+	content: unset;
+}
+
+:is(h1, h2, h3) :where(
+	a[href^="mailto" i],
+	a[href*=".xls" i],
+	a[href*=".doc" i],
+	a[href*=".pdf" i],
+	a[href="#top" i],
+	a[href^="telto"],
+	a[href*="panopto" i],
+	a[href*="mediasite.audiovisual.ubc.ca" i],
+	a[href*=".mp4" i])::after {
+		margin-right: 0.25em;
+		display: inline-block;
+		/* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+		font: normal normal 400 14px/1 FontAwesome;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-style: normal !important;
+}
