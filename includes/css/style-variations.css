@@ -26,6 +26,13 @@
 	color: var(--white);
 }
 
+.editor-styles-wrapper :where(.is-style-accent-column,
+.is-style-accent-group,
+.is-style-reverse-column,
+.is-style-reverse-group) *:not(.has-text-color) {
+	color: var(--white);
+}
+
 .is-style-accent-group .is-style-dark-blue,
 .is-style-accent-column .is-style-dark-blue {
 	border: 1px solid var(--blue_2);
