@@ -1,0 +1,112 @@
+/* Utilities */
+.fill-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: stretch;
+}
+
+.no-bottom-space {
+	margin-bottom: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+hr,
+#editor hr,
+.wp-block-separator {
+	background-color: #e6e6e6;
+	color: #e6e6e6;
+	opacity: initial;
+}
+
+.full-bleed {
+	max-width: none;
+	padding-top: 5.4rem;
+	padding-bottom: 5.5rem;
+	box-shadow: 25vw 0 1px var(--blue_2), -25vw 0 1px var(--blue_2), 35vw 0 1px var(--blue_2), -35vw 0 1px var(--blue_2);
+}
+
+.full-bleed-gray {
+	margin-top: 0;
+	margin-bottom: 6rem;
+	box-shadow: 25vw 0 1px var(--gray_3), -25vw 0 1px var(--gray_3), 35vw 0 1px var(--gray_3), -35vw 0 1px var(--gray_3);
+}
+
+.circle-icon,
+.editor-styles-wrapper .circle-icon {
+	border: 1px solid var(--blue_1);
+	border-radius: 50%;
+	display: block;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.circle-icon::before {
+	content: "!";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	font-family: var(--mbp-font-family);
+}
+
+.panopto-iframe {
+	width: 100%;
+	min-height: 250px;
+	aspect-ratio: 16/9; /* video embeds usually have a widescreen aspect */
+}
+
+/**
+ *
+ * Utility Classes
+ * Intended to be applied to elements ad hoc
+ *
+ *****/
+ .content .margin-top-none {
+	margin-top: 0;
+}
+
+.flex-shrink-0 {
+	flex-shrink: 0;
+}
+
+.is-layout-flex.column-gap-80 {
+	gap: 80px;
+}
+
+.is-layout-flex.column-gap-50 {
+	gap: 50px;
+}
+
+.border-light-gray {
+	border: 1px solid var(--gray_2);
+}
+
+.has-really-large-font-size {
+	font-size: var(--really-large);
+}
+
+#content img.natural-images,
+#content .natural-images img,
+#content .natural-images .wp-block-post-featured-image img {
+	object-fit: unset;
+	height: auto;
+}
+
+.mbp-dark-blue {
+	background: var(--blue_2);
+	color: var(--white);
+}
+
+.mbp-blue {
+	background: var(--blue_1);
+	color: var(--white);
+}

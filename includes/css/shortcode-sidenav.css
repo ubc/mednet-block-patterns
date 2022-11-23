@@ -1,0 +1,73 @@
+ul.shortcode.sidenav.simple {
+	padding: 0;
+	border: 0;
+}
+
+ul.shortcode.sidenav,
+ul.shortcode.sidenav li {
+	list-style-type: none;
+	margin: 0;
+
+}
+
+ul.shortcode.sidenav a {
+	color: var(--blue_2);
+	display: block;
+	border: 1px solid var(--gray_1);
+}
+
+ul.shortcode.sidenav a:hover,
+ul.shortcode.sidenav a:hover * {
+	color: var(--white);
+	background-color: var(--blue_2);
+	text-decoration: none;
+}
+
+ul.shortcode.sidenav p {
+	display: none;
+}
+
+ul.shortcode.sidenav div {
+	border: none;
+	padding: 8px 16px;
+}
+
+ul.shortcode.sidenav ul div {
+	color: var(--blue_2);
+	font-weight: 400;
+	display: inline-block;
+	display: block;
+	text-decoration: none;
+}
+
+.shortcode.sidenav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.shortcode.sidenav ul li div {
+	padding-left: 32px;
+	margin: 0;
+}
+
+ul.shortcode.sidenav .right-arrow {
+	float: right;
+	margin-right: -4px;
+	margin-top: 4px;
+	padding: 0;
+}
+
+.shortcode.sidenav a:hover .right-arrow {
+	background-position: -1113px -227px;
+}
+
+.shortcode.sidenav li.current_page_item > a,
+#office-of-the-dean-nav a[href*="governance/committees"],
+#research-agency-specific-procedures-nav a[href*="/agency-specific-procedures/"] {
+	background-color: var(--gray_1);
+}
+
+.shortcode.sidenav li.current_page_item > a > div,
+#office-of-the-dean-nav a[href*="governance/committees"] > div {
+	font-weight: 700;
+}

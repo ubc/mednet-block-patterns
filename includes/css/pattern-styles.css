@@ -107,7 +107,7 @@ div.announcement-block {
 	overflow: hidden;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #e6e6e6;
 }
 
 .announcements-list li h3 {
@@ -148,14 +148,16 @@ div.announcement-block {
 .announcement-card-large .wp-block-post-featured-image a > img {
 	width: 100%;
 	object-fit: cover;
-	aspect-ratio: 4/3;
+	aspect-ratio: unset;
 }
 
+
 .announcement-card-large ul li h2 {
-	line-height: 2;
 	font-weight: 400;
-	padding-top: 6px;
-	padding-bottom: 14px;
+	padding: 0;
+
+	/*fix bad heading spacing */
+	margin: clamp(20px, 1em, 28px) 0;
 }
 
 .announcement-card-large ul li h2 > a {
@@ -236,6 +238,7 @@ div.announcement-block {
 	padding: 0;
 	justify-content: stretch;
 	align-items: stretch;
+	aspect-ratio: 16 / 9;
 }
 
 .content-card-image *,
@@ -303,32 +306,16 @@ div.announcement-block {
 	padding: 40px;
 }
 
-.mbp-dark-blue {
-	background: var(--blue_2);
-	color: var(--white);
-}
-
-.mbp-blue {
-	background: var(--blue_1);
-	color: var(--white);
-}
-
-:is(.mbp-blue, .mbp-dark-blue) a[target="_blank"]::after {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.87 12.88'%3E%3Cpath d='M12.42 12.87H6.04c-.25 0-.45-.2-.45-.45s.2-.45.45-.45h5.94V.9H.9v5.94c0 .25-.2.45-.45.45S0 7.09 0 6.84V.45C0 .2.2 0 .45 0h11.97c.25 0 .45.2.45.45v11.97c0 .25-.2.45-.45.45ZM.77 12.74 4.8 8.71v2.51c0 .25.2.45.45.45s.45-.2.45-.45V7.63c0-.06-.01-.11-.04-.17a.42.42 0 0 0-.09-.14s-.09-.08-.14-.1c-.05-.02-.11-.03-.16-.04H1.66c-.25 0-.45.2-.45.45s.2.45.45.45h2.5L.13 12.11c-.17.18-.17.46 0 .63.08.09.2.13.32.13s.23-.05.32-.14Z' style='fill:%23fff'/%3E%3C/svg%3E");
-	background-image: none;
-}
-
 /* Announcement feed (Small) */
 
 .announcement-feed ul {
-	gap: 1rem !important;
 	margin: 0;
 }
 
 .announcement-feed ul li h2 {
 	line-height: 1.5;
 	margin-top: 1.5rem;
-	margin-bottom: 18px;
+	margin-bottom: 10px;
 }
 
 .announcement-feed ul li h2 > a {
@@ -365,10 +352,12 @@ li
 }
 
 .announcement-feed .wp-block-post-featured-image img {
+	height: 100%;
 	width: 100%;
-	object-fit: cover;
 	aspect-ratio: 16/9;
 	transition: var(--transition-ease);
+	object-fit: contain;
+	object-position: left;
 }
 
 .announcement-feed .wp-block-post-featured-image:hover img {
@@ -384,11 +373,11 @@ li
 .quicklinks-list {
 	list-style-type: none;
 	margin: 0;
-	margin-top: 26px;
+	margin-top: 10px;
 }
 
 .quicklinks-list li {
-	margin: 0 0 1rem 0;
+	margin: 0;
 }
 
 .quicklinks-list li > a {
@@ -422,6 +411,7 @@ li
 .three-col-block-with-feature-box .is-layout-flex.wp-block-columns {
 	gap: 1px;
 }
+
 .three-col-block-with-feature-box .wp-block-column {
 	padding: 2rem;
 
@@ -440,6 +430,7 @@ li
 	font-weight: 400;
 	line-height: 2;
 	text-decoration: none;
+	margin-top: 0;
 }
 
 .event-date {
@@ -453,17 +444,8 @@ li
 	padding: 3rem 4rem;
 }
 
-.spotlight-cards > div > div > div:nth-child(1) {
-	flex-basis: 25% !important;
+.spotlight-cards .wp-block-column:first-of-type {
 	align-self: center;
-}
-
-.spotlight-cards > div > div > div:nth-child(2) {
-	flex-basis: 75% !important;
-}
-
-.spotlight-icon img {
-	width: clamp(50px, 30%, 75px);
 }
 
 .spotlight-cards .wp-block-post-featured-image {
@@ -534,12 +516,24 @@ li
 	margin-bottom: 8px;
 }
 
-.contact-block > div > div > div:nth-child(2) > p {
-	margin-bottom: 1.5rem;
+.contact-block :where(h2, h3, h4) {
+	margin-top: 10px !important;
+	line-height: 1.01;
 }
 
-.contact-block > div > div > div:nth-child(3) > h4 {
-	margin-bottom: 18px;
+
+.contact-block .wp-block-column:has(.wp-block-image) {
+	flex-shrink: 0;
+	flex-basis: 210px !important; /*pattern defines 25% width for this column. Images are 210px. Overwrite inline style */
+}
+
+.room-booking-block {
+	display: flex;
+	align-items: flex-start;
+}
+
+.room-booking-block h2 {
+	margin: 0;
 }
 
 /*Accordion Block*/
@@ -631,53 +625,6 @@ li
 
 /*Pathways Feature Block*/
 
-.pathways-feature-block > div > p {
-	margin-bottom: 1.5rem;
-}
-
-.pathways-feature-block > div > div > div {
-	position: relative;
-	width: 100%;
-	max-width: 252px;
-	background-color: rgba(0, 33, 69, 70%);
-	isolation: isolate;
-	transition: var(--transition-ease);
-}
-
-.pathways-feature-block > div > div > div:hover > figure:nth-child(1) > img {
-	opacity: 0.3;
-}
-
-.pathways-feature-block > div > div > div:hover > figure:nth-child(2) {
-	opacity: 1;
-}
-
-.pathways-feature-block > div > div > div > figure:nth-child(2) {
-	transition: var(--transition-slow);
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.pathways-feature-block > div > div > div > figure:nth-child(1) {
-	width: 252px;
-	height: 359px;
-}
-
-.pathways-feature-block > div > div > div > figure:nth-child(1) > img {
-	opacity: 1;
-	display: block;
-	width: 100%;
-	height: 100%;
-	height: auto;
-	transition: var(--transition-slow);
-	backface-visibility: hidden;
-	object-fit: cover;
-}
 
 /*MedNet patterns pages*/
 
@@ -897,116 +844,58 @@ overview-pages_columns > div {
 	display: none;
 }
 
-/*homepage*/
-
-.homepage .alert-banner {
-	margin-bottom: 40px;
+#content .spotlight-cards figure {
+	max-width: 100%;
+	aspect-ratio: 1 / 1;
 }
 
-.homepage .spotlight-cards {
-	margin-bottom: 40px;
+#content .spotlight-cards figure a {
+	display: block;
+	height: 100%;
+	aspect-ratio: 1 / 1;
 }
 
-.homepage h1 {
-	line-height: 60px;
+/* Spotlights should not use other featured image backghrounds */
+.home #content li figure.wp-block-post-featured-image,
+.spotlight-cards .wp-block-post-featured-image {
+	background-image: unset;
+	background-color: unset;
 }
 
-.homepage h2 {
-	height: 1.125rem;
-	text-align: left;
-	letter-spacing: 0.9px;
-	color: #002145;
-	text-transform: uppercase;
-	opacity: 1;
-	font-size: 1.125rem;
+#content .spotlight-cards img {
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+
+.events-list p {
 	line-height: 1.5;
-	font-weight: 600;
-	margin: 0 0 1rem 0;
 }
 
-.homepage h3.quicklinks {
+.event-list-item :is(h2, h3, h4) {
 	margin-top: 0;
+	font-weight: 400;
 }
 
-.homepage .content-card {
-	margin: 0 auto;
+.event-list-item {
+	margin-bottom: 30px;
 }
 
-.homepage hr {
-	margin: 60px 0;
+.event-title:hover a {
+	text-decoration: underline;
+	color: var(--white);
 }
 
-.homepage > div > div:last-child > div > p {
-	margin: 1.5rem 0;
+.spotlight-cards .spotlight-icon {
+	margin-top: -2rem;
+	padding-bottom: 2rem;
+
+	/* remove setting the values for this icon */
+	width: 48px;
+	height: 51px;
 }
 
-.announcements-post .announcement-feed .mednet-pagination-block {
-	display: none;
-}
-
-.announcements-post > div .wp-block-query ul li .wp-block-read-more {
-	padding: 11px 20px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.announcements-post > div > p:nth-child(3) {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	line-height: 1.5;
-}
-
-.announcements-post > div > div:last-child {
-	margin-top: 60px;
-}
-
-.announcements-post > div
-.wp-block-query
-ul
-li
-.wp-block-group
-.wp-block-group__inner-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	margin-bottom: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-.announcements-post > div
-.wp-block-query
-ul
-li
-.wp-block-group
-.wp-block-group__inner-container
-div + div {
-	border-left: 1px solid var(--gray_2);
-}
-
-.announcements-post > div
-.wp-block-query
-ul
-li
-.wp-block-group
-.wp-block-group__inner-container > div:last-child
-.wp-block-post-author__content
-p {
-	padding-left: 1rem;
-}
-
-.announcements-post > div
-.wp-block-query
-ul
-li
-.wp-block-group
-.wp-block-group__inner-container > div:last-child
-.wp-block-post-author__content
-p::before {
-	content: "By";
-	padding-right: 1ch;
-	font-size: 1rem;
-	line-height: 1.5;
-}
 
 /*Icon Page*/
 
@@ -1084,14 +973,16 @@ overview-pages > div > div {
 }
 
 .faculty-staff-spotlight-page > div > div > ul > li > h2 {
-	margin: 1.5rem 0 18px;
+	margin: 0.5rem 0 5px;
 }
 
 .faculty-staff-spotlight-page > div > div > ul > li > h2 > a {
+
+	/* font tweaks to get closer to designs */
 	color: var(--blue_2);
-	font-size: 1.75rem;
-	font-weight: 400;
-	line-height: 2;
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 1.5;
 }
 
 .faculty-staff-spotlight-page > div > div > ul > li > div > a {
@@ -1115,10 +1006,6 @@ overview-pages > div > div {
 	transition: var(--transition-ease);
 }
 
-.faculty-staff-spotlight-page .wp-block-post-featured-image:hover {
-	transform: translate(-10px);
-}
-
 .faculty-staff-spotlight-page .wp-block-post-featured-image img {
 	width: 100%;
 	object-fit: cover;
@@ -1134,16 +1021,30 @@ overview-pages > div > div {
 	margin-top: 60px;
 }
 
+.spotlight_title_with_big_bio_photo_page ul {
+
+	/* remove indent for query*/
+	margin-left: 0;
+}
+
 .spotlight-single-post {
 	flex-direction: row;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
+	margin: 0;
+	justify-content: center;
 }
 
 .spotlight-single-post li {
 	text-align: left;
 	flex: 300px;
+
+	/* max-width is minus parent gap value of 1em */
+	max-width: 33.5%;
+	min-width: min(200px, 100%);
+	flex-basis: auto; /*remove in plugin*/
+	margin: 0;
 }
 
 .spotlight-submission-footer {
@@ -1472,31 +1373,9 @@ overview-pages > div > div {
 		padding: 3rem 4rem;
 	}
 
-	.spotlight-cards > div > div > div:nth-child(2) > div > ul {
-		margin: 0;
-		gap: 2em;
-	}
-
-	.spotlight-cards > div > div > div:nth-child(2) > div > ul li {
-		display: flex;
-		width: 100% !important;
-	}
-
 	.spotlight-cards .wp-block-post-featured-image {
 		max-width: 100px;
 		margin: 0;
-	}
-
-	.spotlight-cards > div > div > div:nth-child(2) > div > ul
-	li
-	.wp-block-group {
-		flex: 1 1 70%;
-		padding-left: 1.5rem;
-	}
-
-	.spotlight-cards .wp-block-post-featured-image img {
-		width: 72px;
-		height: 72px;
 	}
 
 	.spotlight-cards .wp-block-post-excerpt {
@@ -1542,21 +1421,6 @@ overview-pages > div > div {
 
 	.contact-block {
 		margin: auto 0;
-	}
-
-	.table-option-2 td > img {
-		width: 100%;
-		max-width: 186px;
-		height: auto;
-	}
-
-	.pathways-feature-block > div > div > div,
-	.pathways-feature-block > div > div > div > figure:nth-child(1) {
-		width: 100%;
-	}
-
-	.pathways-feature-block > div > div > div {
-		max-width: none;
 	}
 
 	.content-card {
@@ -1653,40 +1517,341 @@ h3.quicklinks {
 	letter-spacing: 1.4px;
 }
 
-/*
- * Link styles
- */
-a[href$=".pdf"]::before {
-	content: "\f1c1";
-	margin-right: 1ch;
-	display: inline-block;
-	/* stylelint-disable-next-line */
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-style: normal !important;
+.featured-resource,
+.sidebar-block {
+	margin-bottom: 1rem;
 }
 
-/* Open in new tab icon */
-a[target="_blank"]::after {
-	content: "";
-	display: inline-block;
-	width: 1.1ch;
-	height: 1.1ch;
-	margin-left: 0.5ch;
-	background-image: url("/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
+@media screen and (max-width: 768px) {
+
+	.announcement-card-large {
+		max-width: 100%;
+	}
+
+	.announcements-list figure {
+		max-width: 100%;
+	}
+
+	.announcements-list img {
+		object-fit: contain !important;
+		height: auto !important;
+	}
+
+	#content .announcements-list h2,
+	#content .announcements-list h2 a {
+		font-size: 1rem;
+		letter-spacing: -0.4px;
+		line-height: 1.2;
+		height: 5em;
+		-webkit-line-clamp: 4;
+	}
 }
 
-.components-external-link::after {
-	content: none;
+@media (max-width: 468px) {
+
+	.spotlight-single-post li {
+		max-width: 100%;
+	}
 }
 
-/* negate new tab icon for special cases*/
-:is(*, *[class*="is-style-reverse"]) .wp-block-button__link[target="_blank"]::after,
-:is(*, *[class*="is-style-reverse"]) .quicklinks-list a[target="_blank"]::after {
-	content: none;
+#content .faculty-staff-spotlight-page .wp-block-post-featured-image,
+.announcements-list figure {
+	background: var(--blue_2);
+}
+
+.announcements-list .wp-block-column:has(+.wp-block-column:hover) img,
+.announcements-list .wp-block-column:hover img {
+	opacity: 0.6;
+}
+
+.announcements-list .wp-block-column:hover + .wp-block-column a {
+	text-decoration: underline;
+}
+
+.spotlight-icon img,
+.spotlight-cards .spotlight-icon img {
+	width: auto;
+	object-fit: initial;
+}
+
+#content .featured-resource {
+	margin-bottom: 2rem;
+}
+
+.featured-resource figure {
+	width: 60px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	align-self: flex-start;
+}
+
+.featured-resource a[target="_blank"]:not(.is-style-no-link-icon, :has(img)) {
+	color: var(--blue_2);
+	background-image: var(--new-tab-primary);
+}
+
+.featured-resource a[target="_blank"]:not(.is-style-no-link-icon, :has(img)):hover {
+	color: var(--blue_1);
+}
+
+.announcements-list ul,
+.content .is-layout-flex .announcements-list ul {
+	margin-left: 0;
+}
+
+.spotlight-cards h2 {
+
+	/*homepage*/
+	margin: 50px 0 10px 0;
+}
+
+
+.announcement-feed figure.wp-block-post-featured-image {
+	aspect-ratio: 16 / 9;
+	height: auto;
+	text-align: left;
+}
+
+/*some pathway pages use the old '_' character.
+  pathway pages need to not wrap words,
+  use longsest word as min width 'Opportunities'
+  */
+:where(.pathway_page_grid, .pathway-page-grid) .wp-block-columns {
+	flex-wrap: wrap !important;
+}
+
+:where(.pathway_page_grid, .pathway-page-grid) .wp-block-column {
+	min-width: min-content;
+}
+
+:where(.pathway_page_grid, .pathway-page-grid) h2 {
+	margin: 10px 0;
+	min-width: 7.2em;
+}
+
+:where(.pathway_page_grid, .pathway-page-grid) .wp-block-image img {
+	width: 100%;
+	object-fit: initial;
+}
+
+/* inconsistency in the pattern needs the :where selector */
+:where(.pathway-grid, .pathway-grid-row) :is(h2, h3, h4) {
+
+	/* Makes the hover effect only apply on the heading */
+	display: table;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure {
+
+	/* set the figure to have a packground color and animate image opacity */
+	background: var(--blue_1);
+	width: 100%;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure a {
+	display: block;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure:hover img {
+	opacity: 0.6;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure:hover + :is(h2, h3, h4) a {
+
+	/* not all pathway tiles have a linked heading. Apply only to link */
+	text-decoration: underline;
+}
+
+ul.quicklinks-list li {
+	line-height: 1;
+	margin-bottom: 1rem;
+	padding-bottom: 0;
+	font-size: var(--callout);
+}
+
+.content-card-image-overlay:hover,
+.announcement-card-large .wp-block-post-featured-image:hover {
+
+	/* remove this from the plugin */
+	transform: translate(0);
+}
+
+.navigation-list-with-icons figure {
+	flex-shrink: 0;
+	flex-grow: 0;
+	align-self: start;
+}
+
+.navigation-list-with-icons .wp-block-group :is(h2,h3,p) {
+	margin-left: 0;
+	line-height: 1.05;
+	line-clamp: unset;
+}
+
+/* using a widget for the posts page instead of reusable content.
+ * Reusable content is better editing
+ * Widgets are better page width result
+ * Content is in secondary widget, switch column order with css
+ *
+ * .single = single post, not category page or catalogue view
+ *
+**/
+
+.spotlight-post,
+.spotlight_post,
+.spotlight_post_inline_photo {
+	margin-top: 40px;
+}
+
+.single.category-one-on-one div[role="main"] {
+
+	/* flex is needed to reorder the columns */
+	display: flex;
+}
+
+.single.category-one-on-one .content {
+	order: 1;
+	margin-left: 0;
+}
+
+.single.category-one-on-one #primary-secondary.sidebar {
+	order: 2;
+	margin-left: 2.564102564102564%;
+}
+
+.single.category-one-on-one .sidebar h2 a {
+	color: var(--blue_2);
+}
+
+.single.category-one-on-one .sidebar article {
+	padding: 1rem 0;
+}
+
+.single.category-one-on-one .sidebar h2 {
+	font-size: 25px;
+	line-height: 1.2;
+	letter-spacing: -1px;
+	font-weight: 700;
+	margin-top: 12px;
+}
+
+@media (min-width: 425px) {
+
+	.single-post #container .sidebar article h2 {
+		font-size: 21px;
+	}
+}
+
+.single .sidebar .post-categories,
+.single .sidebar .post-categories a {
+	margin: 0;
+	list-style-type: none;
+	color: var(--blue_2);
+	font-size: var(--small);
+}
+
+@media (max-width: 769px) {
+
+	.single.category-one-on-one div[role="main"] {
+		flex-wrap: wrap;
+	}
+
+	.single.category-one-on-one .content,
+	.single.category-one-on-one #primary-secondary.sidebar {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+/***********/
+
+/** Announcement Feed
+ *  This should be renamed. The pattern will be used beyond announcements
+**/
+.announcement-feed li > figure {
+
+	/* in pattern should be using the featured image */
+	margin: 0;
+	width: 100%;
+	height: 200px;
+}
+
+.announcement-feed li > figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.faculty-staff-spotlight-page .taxonomy-category a {
+	color: var(--blue_2);
+}
+
+.contact-block h2 {
+	font-size: var(--callout);
+	margin-bottom: 1rem;
+}
+
+.pathway_page_grid {
+	margin-bottom: 4rem;
+}
+
+h2.quicklinks {
+	font-size: 14px;
+	margin: 0 0 26px 0;
+}
+
+.pathway-page-grid h2,
+.pathway-page-grid h2 a,
+.pathway_page_grid h2,
+.pathway_page_grid h2 a {
+	color: var(--blue_2);
+}
+
+div.sidebar-block {
+	margin-bottom: 1rem; /*set to match style applied to featured resourece */
+}
+
+.feature-block-column {
+	background: var(--blue_2);
+	color: var(--white);
+	padding: 2.5rem;
+}
+
+.three-col-block-with-feature-box .wp-block-columns {
+	gap: 1rem !important;
+	padding: 0;
+}
+
+.is-style-introduction-paragraph + hr {
+	max-width: none;
+}
+
+.accordions-pattern :where(p,li,hr,td) {
+	max-width: 100%;
+}
+
+figure img,
+.pathway-block-image img {
+	transition: var(--transition-ease);
+}
+
+.pathway-block-image:hover img {
+	opacity: 0.45;
+}
+
+.pathways-feature-block > div > div > div {
+
+	/*remove this in the block pattern plugin*/
+	position: relative;
+	width: 100%;
+	max-width: unset;
+	background-color: unset;
+	isolation: unset;
+	transition: var(--transition-ease);
+}
+
+.content-card-image,
+.content-card-title,
+.content .content-card-description {
+	max-width: 100%;
 }

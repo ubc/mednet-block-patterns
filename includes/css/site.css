@@ -1,176 +1,3 @@
-*,
-#ubc7-unit-name {
-	font-family: var(--mbp-font-family);
-}
-
-body {
-	font-size: var(--default);
-}
-
-/* Full Width CLF
--------------------------------*/
-.full-width .full-width-container .expand {
-	max-width: 1600px;
-	position: relative;
-	margin: 0 auto;
-	padding: 0;
-	margin-bottom: 20px;
-}
-
-.home.full-width .full-width-container .expand {
-	max-width: none;
-}
-
-.home.full-width .homepage .wp-block-columns,
-.home.full-width .homepage .wp-block-group {
-	max-width: 1170px;
-	margin: 0 auto;
-}
-
-.is-style-introduction-paragraph {
-	font-size: var(--larger);
-	line-height: 1.4;
-}
-
-.entry-content {
-	max-width: 1000px;
-}
-
-h1 {
-	font-size: 2.5rem;
-	font-size: 2.25rem;
-	line-height: 1.16;
-}
-
-h2 {
-	font-size: var(--really-large);
-	line-height: 1.2;
-}
-
-h3 {
-	font-size: 1.5rem;
-	line-height: 1.16;
-}
-
-h4 {
-	font-size: 1rem;
-}
-
-a {
-	color: var(--blue_1);
-	text-decoration: none;
-}
-
-a:hover,
-a:focus,
-a:active {
-	color: var(--blue_1);
-	text-decoration: underline;
-}
-
-.has-white-color * {
-	color: inherit;
-}
-
-.has-medium-font-size {
-	line-height: 1.5;
-}
-
-/* Utilities */
-.fill-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	justify-content: stretch;
-}
-
-.no-bottom-space {
-	margin-bottom: 0;
-}
-
-.no-margin {
-	margin: 0;
-}
-
-hr,
-#editor hr,
-.wp-block-separator {
-	background-color: #e6e6e6;
-	color: #e6e6e6;
-	opacity: initial;
-}
-
-@media screen and (min-width: 767px) {
-
-	div[role="main"] {
-		display: flex;
-		justify-content: center;
-	}
-
-	#container,
-	#container div[role="main"] {
-		max-width: none;
-	}
-
-	#content {
-		max-width: 1200px;
-	}
-
-	#primary-secondary {
-		max-width: 350px;
-	}
-
-}
-
-.home.full-width h1 {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.home.full-width .full-width-container,
-.home #container,
-.home #container .expand,
-.home #container .full-width-container {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.full-bleed {
-	max-width: none;
-	padding-top: 5.4rem;
-	padding-bottom: 5.5rem;
-	box-shadow: 25vw 0 1px var(--blue_2), -25vw 0 1px var(--blue_2), 35vw 0 1px var(--blue_2), -35vw 0 1px var(--blue_2);
-}
-
-.full-bleed-gray {
-	margin-top: 0;
-	margin-bottom: 6rem;
-	box-shadow: 25vw 0 1px var(--gray_3), -25vw 0 1px var(--gray_3), 35vw 0 1px var(--gray_3), -35vw 0 1px var(--gray_3);
-}
-
-.circle-icon,
-.editor-styles-wrapper .circle-icon {
-	border: 1px solid var(--blue_1);
-	border-radius: 50%;
-	display: block;
-	width: 25px;
-	height: 25px;
-	text-align: center;
-	line-height: 25px;
-	box-sizing: border-box;
-	position: relative;
-}
-
-.circle-icon::before {
-	content: "!";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	font-family: var(--mbp-font-family);
-}
-
 .full-width {
 	background: #fff;
 }
@@ -191,255 +18,105 @@ ul.wp-block-list li,
 }
 
 
-@media screen and (min-width: 769px) {
-
-	/* stylelint-disable-next-line selector-class-pattern */
-	.page #utility-after-content .widget_subpages_navigation {
-		display: none;
-	}
-}
-
-/* CLF Overrides*/
-p {
-	font-size: var(--default);
-	line-height: 1.5;
-	color: var(--blue_2);
-}
-
-.wp-block-embed__wrapper > .responsive-media {
-	position: unset; /*CLF responsive media conflicts with WP class*/
-	padding-bottom: unset;
-	height: unset;
-	overflow: unset;
-}
-
-/* responsive media class conflicts with block editor css */
-.responsive-media iframe,
-.responsive-media object,
-.responsive-media embed {
-	position: unset;
-	top: unset;
-	left: unset;
-	width: unset;
-	height: unset;
-}
-
-
-/* WP Overrides */
-
-
-.wp-block-file,
-.wp-block-file a {
-	font-size: 1rem;
-}
-
-.wp-block-file {
-	display: inline-block;
-	margin: 0.5rem 0;
-}
-
-.wp-block-file .wp-element-button {
-	background: var(--blue_1);
-	color: #fff;
-	font-size: 0.75rem;
-}
-
-body .is-layout-flex {
-	gap: 1rem;
-}
-
-.featured-resource,
-.sidebar-block {
-	margin-bottom: 1rem;
-}
-
-.schema-faq-section {
-	border: 1px solid var(--gray_1);
-	margin: 1rem 0;
-	padding: 1rem;
-}
-
-.schema-faq-answer {
-	padding: 1rem 0;
-}
-
-#content th {
-	background: var(--blue_2);
-	color: var(--white);
-	line-height: 2.5;
-}
-
-#content table {
-	border: 2px solid var(--gray_3);
-}
-
-#content :is(th, td) {
-	padding: 0.75rem 1rem;
-}
-
-.wp-block-table {
-	margin: 0;
-}
-
-.wp-block-buttons > .wp-block-button {
-	margin: 20px 0;
-}
-
-/* layout */
-.entry-title,
-.entry-content {
-	max-width: none;
-}
-
-.two-column-page .wp-block-columns {
-	gap: 2.5%;
-}
-
-.l1-column .entry-content,
-.l1-column #content {
-	max-width: 1600px;
-}
-
-.wp-block-table.is-style-stripes {
-	margin: 0;
-}
-
-.has-larger-font-size {
-	font-size: 1.25rem;
-}
-
-h3.quicklinks {
-	font-size: 1rem;
-	line-height: 1.3;
-	margin-top: 0;
-}
-
-.quicklinks-list li > a {
-	color: var(--blue_1);
-}
-
-.panopto-iframe {
-	width: 100%;
-	min-height: 250px;
-}
-
-.wp-block-button__link,
-.wp-block-file__button.wp-element-button {
-	background: var(--blue_1);
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-}
-
-.wp-block-file__button.wp-element-button {
-	word-break: keep-all;
-	white-space: nowrap;
-	border-radius: 0;
-}
-
-.wp-block-button__link:hover,
-.wp-block-file__button.wp-element-button:hover {
-	background: var(--blue_2);
-	opacity: 12;
-}
-
 #primary {
 	position: sticky;
 	top: 1rem;
 }
 
-ul.shortcode.sidenav.simple {
-	padding: 0;
-	border: 0;
-}
 
-ul.shortcode.sidenav,
-ul.shortcode.sidenav li {
-	list-style-type: none;
-	margin: 0;
-
-}
-
-ul.shortcode.sidenav a {
-	color: var(--blue_2);
-	display: block;
+.devices-table td {
 	border: 1px solid var(--gray_1);
+	vertical-align: top;
 }
 
-ul.shortcode.sidenav a:hover,
-ul.shortcode.sidenav a:hover * {
-	color: var(--white);
-	background-color: var(--blue_2);
-	text-decoration: none;
-}
-
-ul.shortcode.sidenav p {
-	display: none;
-}
-
-ul.shortcode.sidenav div {
-	border: none;
-	padding: 8px 16px;
-}
-
-ul.shortcode.sidenav ul div {
-	color: var(--blue_2);
-	font-weight: 400;
-	display: inline-block;
-	display: block;
-	text-decoration: none;
-}
-
-.shortcode.sidenav ul {
-	padding: 0;
-	margin: 0;
-}
-
-.shortcode.sidenav ul li div {
-	padding-left: 32px;
-	margin: 0;
-}
-
-ul.shortcode.sidenav .right-arrow {
-	float: right;
-	margin-right: -4px;
-	margin-top: 4px;
-	padding: 0;
-}
-
-.shortcode.sidenav a:hover .right-arrow {
-	background-position: -1113px -227px;
-}
-
-.shortcode.sidenav li.current_page_item > a,
-#office-of-the-dean-nav a[href*="governance/committees"],
-#research-agency-specific-procedures-nav a[href*="/agency-specific-procedures/"] {
-	background-color: var(--gray_1);
-}
-
-.shortcode.sidenav li.current_page_item > a > div,
-#office-of-the-dean-nav a[href*="governance/committees"] > div {
+.devices-table td:first-child {
+	width: 150px;
 	font-weight: 700;
 }
 
-.wp-block-search__inside-wrapper button {
-	border: none;
-	background: var(--blue_1);
-	color: var(--white);
+.page-title {
+	margin-bottom: 2rem;
+	line-height: 1.1;
 }
 
-.wp-block-search__inside-wrapper input {
-	margin-bottom: 0;
+#content .has-background > * {
+	background-color: inherit;
 }
 
-.wp-block-search.aligncenter .wp-block-search__inside-wrapper {
-	margin-bottom: 10px;
+p:empty {
+	display: none;
 }
 
-figure.image-circle {
-	border-radius: 50%;
+figure img {
+
+	/* set a default of filling the set size and keep natural aspect ratio*/
+	object-fit: cover;
+}
+
+/* Query Loop image backgrounds */
+#content .wp-block-post-featured-image {
+	aspect-ratio: 16 / 9;
+	position: relative;
+	width: 100%;
+}
+
+#content .wp-block-post-featured-image img {
+	object-fit: unset;
+	object-position: unset;
+	height: 100%;
+	width: auto;
+	aspect-ratio: unset;
+}
+
+#content .wp-block-post-featured-image:hover img {
+	opacity: 1;
+}
+
+#content li:nth-child(4n - 3) .wp-block-post-featured-image {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 900 506'%3E%3Cdefs%3E%3Cstyle%3E .cls-1, .cls-2, .cls-3, .cls-4 %7B fill: none; %7D .cls-5 %7B clip-path: url(%23clippath); %7D .cls-6 %7B fill: %230055b7; %7D .cls-7 %7B fill: %230c2344; %7D .cls-2 %7B stroke: %236ec4e8; stroke-width: 5px; %7D .cls-2, .cls-3, .cls-4 %7B stroke-miterlimit: 10; %7D .cls-8 %7B clip-path: url(%23clippath-1); %7D .cls-3 %7B mix-blend-mode: multiply; stroke: %2300a7e1; stroke-width: 200px; %7D .cls-4 %7B stroke: %23fff; %7D .cls-9 %7B isolation: isolate; %7D %3C/style%3E%3CclipPath id='clippath'%3E%3Crect class='cls-1' x='940' width='900' height='506'/%3E%3C/clipPath%3E%3CclipPath id='clippath-1'%3E%3Crect class='cls-1' y='0' width='900' height='506.04'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg class='cls-9'%3E%3Cg id='Graphic_Pattern_2' data-name='Graphic Pattern 2'%3E%3Cg class='cls-5'%3E%3Cg%3E%3Cellipse class='cls-4' cx='996.05' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-4' cx='1135.53' cy='527.57' rx='254.26' ry='317.05'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg id='Graphic_Pattern_1' data-name='Graphic Pattern 1'%3E%3Crect class='cls-6' y='0' width='900' height='506.04'/%3E%3Cg class='cls-8'%3E%3Cpath class='cls-3' d='M-62.79-159.35c431.69,0,781.64,349.95,781.64,781.64'/%3E%3Ccircle class='cls-2' cx='463.52' cy='418.97' r='119.57'/%3E%3Ccircle class='cls-7' cx='805.97' cy='466.26' r='39.78'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#content li:nth-child(4n - 2) .wp-block-post-featured-image {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Graphic_Pattern_2' data-name='Graphic Pattern 2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 900 506'%3E%3Cdefs%3E%3Cstyle%3E .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 %7B fill: none; %7D .cls-6 %7B clip-path: url(%23clippath); %7D .cls-7 %7B fill: %23fff; %7D .cls-8 %7B fill: %2397d4e9; %7D .cls-9 %7B fill: %230c2344; %7D .cls-2 %7B stroke: %2397d4e9; stroke-width: 120px; %7D .cls-2, .cls-3, .cls-4, .cls-5 %7B stroke-miterlimit: 10; %7D .cls-3 %7B opacity: .4; stroke-width: 240px; %7D .cls-3, .cls-4 %7B stroke: %2300a7e1; %7D .cls-5 %7B stroke: %23fff; %7D %3C/style%3E%3CclipPath id='clippath'%3E%3Crect class='cls-1' width='900' height='506'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect class='cls-9' width='900' height='506'/%3E%3Cg class='cls-6'%3E%3Cline class='cls-3' x1='674.62' y1='-953.9' x2='674.62' y2='918.12'/%3E%3Cg%3E%3Ccircle class='cls-7' cx='224.56' cy='504.2' r='19.05'/%3E%3Cg%3E%3Cellipse class='cls-5' cx='56.05' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-5' cx='195.53' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-5' cx='335.02' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-5' cx='474.5' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-5' cx='613.99' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-5' cx='753.47' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-5' cx='892.96' cy='527.57' rx='254.26' ry='317.05'/%3E%3C/g%3E%3Ccircle class='cls-8' cx='553.09' cy='147.16' r='12'/%3E%3C/g%3E%3Cpath class='cls-2' d='M533.91,506.02h0c0-229.99,186.44-416.43,416.43-416.43h0'/%3E%3Cpath class='cls-4' d='M533.91,506.02h0c0-229.99,186.44-416.43,416.43-416.43h0'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#content li:nth-child(4n - 1) .wp-block-post-featured-image {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 900 506'%3E%3Cdefs%3E%3Cstyle%3E .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 %7B fill: none; %7D .cls-2 %7B stroke: %236ec4e8; stroke-width: 1.5px; %7D .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 %7B stroke-miterlimit: 10; %7D .cls-9 %7B clip-path: url(%23clippath); %7D .cls-10 %7B fill: %23fff; %7D .cls-11 %7B fill: %2397d4e9; %7D .cls-12 %7B fill: %230c2344; %7D .cls-3 %7B stroke: %2397d4e9; stroke-width: 120px; %7D .cls-13 %7B clip-path: url(%23clippath-1); %7D .cls-14 %7B clip-path: url(%23clippath-2); %7D .cls-4 %7B stroke-width: 240px; %7D .cls-4, .cls-5, .cls-7, .cls-8 %7B stroke: %23fff; %7D .cls-4, .cls-8 %7B opacity: .2; %7D .cls-5 %7B stroke-width: 2px; %7D .cls-6 %7B stroke: %2300a7e1; %7D .cls-8 %7B stroke-width: 200px; %7D %3C/style%3E%3CclipPath id='clippath'%3E%3Crect class='cls-1' x='940' width='900' height='506'/%3E%3C/clipPath%3E%3CclipPath id='clippath-1'%3E%3Crect class='cls-1' x='0' width='900' height='506' transform='translate(900 506) rotate(180)'/%3E%3C/clipPath%3E%3CclipPath id='clippath-2'%3E%3Crect class='cls-1' x='-940' width='900' height='506'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Graphic_Pattern_4' data-name='Graphic Pattern 4'%3E%3Cg class='cls-9'%3E%3Cg id='Grid'%3E%3Cline class='cls-2' x1='1282.49' y1='302.71' x2='823.08' y2='302.71'/%3E%3Cline class='cls-2' x1='1282.49' y1='405.79' x2='823.08' y2='405.79'/%3E%3Cline class='cls-2' x1='1282.49' y1='93.46' x2='823.08' y2='93.46'/%3E%3Cline class='cls-2' x1='1282.49' y1='196.54' x2='823.08' y2='196.54'/%3E%3C/g%3E%3Cg id='Overlays'%3E%3Cpath class='cls-8' d='M855.13,349.26c204.15,1.78,371.09-162.27,372.88-366.42'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg id='Graphic_Pattern_3' data-name='Graphic Pattern 3'%3E%3Crect class='cls-11' x='0' width='900' height='506'/%3E%3Cg class='cls-13'%3E%3Ccircle class='cls-12' cx='731.73' cy='337.73' r='168.27'/%3E%3Cpath id='Overlay_Path' data-name='Overlay Path' class='cls-4' d='M502.61,916h0c-229.46-545.34,26.61-1173.43,571.94-1402.9h0s1500.84-631.51,1500.84-631.51'/%3E%3Cpath id='Thin_White_Path' data-name='Thin White Path' class='cls-5' d='M446.44,622.21h0C410.49,396.28,198.2,242.26-27.73,278.21h0'/%3E%3Cg id='White_Circles' data-name='White Circles'%3E%3Ccircle class='cls-10' cx='246.72' cy='496.25' r='52.54'/%3E%3Ccircle class='cls-10' cx='246.72' cy='391.53' r='52.54'/%3E%3C/g%3E%3Cg id='Blue_Outline_Circles' data-name='Blue Outline Circles'%3E%3Ccircle class='cls-6' cx='286.94' cy='239.99' r='15.06'/%3E%3Ccircle class='cls-6' cx='334.38' cy='239.99' r='15.06'/%3E%3Ccircle class='cls-6' cx='286.94' cy='195.9' r='15.06'/%3E%3Ccircle class='cls-6' cx='334.38' cy='195.9' r='15.06'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg id='Graphic_Pattern_2' data-name='Graphic Pattern 2'%3E%3Cg class='cls-14'%3E%3Cg%3E%3Cellipse class='cls-7' cx='-186.53' cy='527.57' rx='254.26' ry='317.05'/%3E%3Cellipse class='cls-7' cx='-47.04' cy='527.57' rx='254.26' ry='317.05'/%3E%3C/g%3E%3Cpath class='cls-3' d='M-406.09,506.02h0c0-229.99,186.44-416.43,416.43-416.43h0'/%3E%3Cpath class='cls-6' d='M-406.09,506.02h0c0-229.99,186.44-416.43,416.43-416.43h0'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#content li:nth-child(4n) .wp-block-post-featured-image {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 900 506'%3E%3Cdefs%3E%3Cstyle%3E .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 %7B fill: none; %7D .cls-2 %7B stroke: %236ec4e8; stroke-width: 1.5px; %7D .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 %7B stroke-miterlimit: 10; %7D .cls-3 %7B stroke-width: 3px; %7D .cls-3, .cls-4, .cls-6, .cls-7 %7B stroke: %23fff; %7D .cls-8 %7B clip-path: url(%23clippath); %7D .cls-9 %7B fill: %230055b7; %7D .cls-10 %7B fill: %23fff; %7D .cls-11 %7B fill: %2300a7e1; %7D .cls-12 %7B clip-path: url(%23clippath-1); %7D .cls-4 %7B stroke-width: .75px; %7D .cls-5 %7B mix-blend-mode: multiply; stroke: %2397d4e9; %7D .cls-5, .cls-7 %7B stroke-width: 200px; %7D .cls-6 %7B stroke-width: 240px; %7D .cls-6, .cls-7 %7B opacity: .2; %7D .cls-13 %7B isolation: isolate; %7D %3C/style%3E%3CclipPath id='clippath'%3E%3Crect class='cls-1' x='0' width='900' height='506'/%3E%3C/clipPath%3E%3CclipPath id='clippath-1'%3E%3Crect class='cls-1' x='-940' width='900' height='506' transform='translate(-980 506) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg class='cls-13'%3E%3Cg id='Graphic_Pattern_4' data-name='Graphic Pattern 4'%3E%3Crect class='cls-11' x='0' width='900' height='506'/%3E%3Cg class='cls-8'%3E%3Cg id='Grid'%3E%3Cline class='cls-2' x1='342.49' y1='302.71' x2='-116.92' y2='302.71'/%3E%3Cline class='cls-2' x1='342.49' y1='405.79' x2='-116.92' y2='405.79'/%3E%3Cline class='cls-2' x1='342.49' y1='93.46' x2='-116.92' y2='93.46'/%3E%3Cline class='cls-2' x1='342.49' y1='196.54' x2='-116.92' y2='196.54'/%3E%3Cline class='cls-2' x1='98.49' y1='-248.46' x2='98.49' y2='1167.43'/%3E%3Cline class='cls-2' x1='220.49' y1='-248.46' x2='220.49' y2='1167.43'/%3E%3Cline class='cls-2' x1='342.49' y1='-248.46' x2='342.49' y2='1167.43'/%3E%3C/g%3E%3Cg id='Diagonal_Lines' data-name='Diagonal Lines'%3E%3Cg%3E%3Cline class='cls-4' x1='758.55' y1='66.17' x2='1313.88' y2='550.97'/%3E%3Cpath class='cls-10' d='M756.8,68.39c-1.17-1.02-1.29-2.81-.27-3.98,1.02-1.17,2.81-1.29,3.98-.27,1.17,1.02,1.29,2.81,.27,3.98-1.02,1.17-2.81,1.29-3.98,.27Z'/%3E%3C/g%3E%3Cg%3E%3Cline class='cls-4' x1='292.56' y1='263.55' x2='69.75' y2='68.96'/%3E%3Cpath class='cls-10' d='M294.31,261.33c1.17,1.02,1.29,2.81,.27,3.98-1.02,1.17-2.81,1.29-3.98,.27-1.17-1.02-1.29-2.81-.27-3.98,1.02-1.17,2.81-1.29,3.98-.27Z'/%3E%3Cpath class='cls-10' d='M71.71,66.93c-1.17-1.02-2.95-.9-3.98,.27-1.02,1.17-.9,2.95,.27,3.98,1.17,1.02,2.95,.9,3.98-.27,1.02-1.17,.9-2.95-.27-3.98Z'/%3E%3C/g%3E%3Cg%3E%3Cline class='cls-4' x1='97.08' y1='66.17' x2='652.42' y2='550.97'/%3E%3Cpath class='cls-10' d='M95.33,68.39c-1.17-1.02-1.29-2.81-.27-3.98,1.02-1.17,2.81-1.29,3.98-.27,1.17,1.02,1.29,2.81,.27,3.98-1.02,1.17-2.81,1.29-3.98,.27Z'/%3E%3C/g%3E%3C/g%3E%3Cg id='Overlays'%3E%3Cpath class='cls-7' d='M-84.87,349.26c204.15,1.78,371.09-162.27,372.88-366.42'/%3E%3Cline class='cls-5' x1='803.38' y1='-110.45' x2='803.25' y2='531.5'/%3E%3C/g%3E%3Cg id='Circles'%3E%3Ccircle class='cls-3' cx='329.15' cy='198.58' r='105.76'/%3E%3Ccircle class='cls-9' cx='220.07' cy='196.77' r='39.78'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg id='Graphic_Pattern_3' data-name='Graphic Pattern 3'%3E%3Cg class='cls-12'%3E%3Cpath id='Overlay_Path' data-name='Overlay Path' class='cls-6' d='M-437.39,916h0C-666.86,370.66-410.79-257.43,134.55-486.89h0s1500.84-631.51,1500.84-631.51'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* color for overlay */
+#content .wp-block-post-featured-image::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--blue_2);
+	transition: var(--transition-ease);
+	opacity: 0;
+	pointer-events: none;
+}
+
+#content .wp-block-post-featured-image:hover::before {
+	opacity: 0.35;
+}
+
+.wp-block-post-featured-image a {
+	display: block;
 	overflow: hidden;
+	aspect-ratio: 16 / 9;
 }
 
-figure.image-circle img {
-	object-fit: cover; /*can be overriden in editor*/
+.wp-block-post-featured-image,
+figure.wp-block-image {
+	position: relative;
+	display: inline-block; /*this makes the figure container only as wide as it's content. Positions icon*/
 }
+
+/*********************** Refactor below into plugin **********************************/
+

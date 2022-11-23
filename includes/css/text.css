@@ -1,0 +1,59 @@
+*,
+#ubc7-unit-name {
+	font-family: var(--mbp-font-family);
+}
+
+body {
+	font-size: var(--default);
+}
+
+:is(h1,h2,h3,h4) {
+	letter-spacing: -0.4px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-size: 2.25rem;
+	line-height: 1.16;
+}
+
+h2 {
+	font-size: var(--really-large);
+	line-height: 1.2;
+}
+
+h3 {
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+.has-white-color * {
+	color: inherit;
+}
+
+.has-medium-font-size {
+	line-height: 1.5;
+}
+
+.has-larger-font-size {
+	font-size: 1.25rem;
+}
+
+/* this should be applying without this rule */
+#content .has-callout-font-size {
+	font-size: var(--callout);
+}
+
+.content h2 {
+	/*27px matches spotlight h2's not sure about rest of site*/
+	font-size: 27px;
+	margin: 25px 0 10px 0;
+}
+
+#content .has-text-color > * {
+	color: inherit;
+}

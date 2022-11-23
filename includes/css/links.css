@@ -1,3 +1,15 @@
+a {
+	color: var(--blue_1);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: var(--blue_1);
+	text-decoration: underline;
+}
+
 .is-style-reverse-group .wp-block-button__link:hover {
 	background: var(--gray_1);
 	color: var(--blue_2);
@@ -24,7 +36,9 @@ a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
 a[href*=".mp4" i] {
-	display: inline-table;
+	position: relative;
+	display: inline-block;
+	overflow-wrap: anywhere;
 }
 
 a[target="_blank"] {
@@ -35,22 +49,6 @@ a[target="_blank"] {
 #content th a {
 	color: var(--white);
 	font-size: 0.75rem;
-}
-
-/* open in new tab icon with a background for visibility on image */
-.wp-block-post-featured-image a[target="_blank"]::after,
-figure.wp-block-image > a[target="_blank"]::after {
-	position: absolute;
-	right: 0;
-	height: 1rem;
-	width: 1rem;
-	z-index: 999;
-	color: #fff;
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.87 12.88'%3E%3Cpath d='M12.42 12.87H6.04c-.25 0-.45-.2-.45-.45s.2-.45.45-.45h5.94V.9H.9v5.94c0 .25-.2.45-.45.45S0 7.09 0 6.84V.45C0 .2.2 0 .45 0h11.97c.25 0 .45.2.45.45v11.97c0 .25-.2.45-.45.45ZM.77 12.74 4.8 8.71v2.51c0 .25.2.45.45.45s.45-.2.45-.45V7.63c0-.06-.01-.11-.04-.17a.42.42 0 0 0-.09-.14s-.09-.08-.14-.1c-.05-.02-.11-.03-.16-.04H1.66c-.25 0-.45.2-.45.45s.2.45.45.45h2.5L.13 12.11c-.17.18-.17.46 0 .63.08.09.2.13.32.13s.23-.05.32-.14Z' style='fill:%23fff'/%3E%3C/svg%3E");
-	background: rgba(0, 0, 0, 0.25);
-	padding: 0.25rem;
-	line-height: 1;
-	box-shadow: 0 0 0.25rem 0 rgb(0 0 0 / 25%);
 }
 
 /* AFTER */
@@ -74,11 +72,11 @@ a[target="_blank"]::after {
 p.has-white-color a[target="_blank"]::after,
 .is-style-reverse-group a[target="_blank"]::after {
 	content: "";
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.87 12.88'%3E%3Cpath d='M12.42 12.87H6.04c-.25 0-.45-.2-.45-.45s.2-.45.45-.45h5.94V.9H.9v5.94c0 .25-.2.45-.45.45S0 7.09 0 6.84V.45C0 .2.2 0 .45 0h11.97c.25 0 .45.2.45.45v11.97c0 .25-.2.45-.45.45ZM.77 12.74 4.8 8.71v2.51c0 .25.2.45.45.45s.45-.2.45-.45V7.63c0-.06-.01-.11-.04-.17a.42.42 0 0 0-.09-.14s-.09-.08-.14-.1c-.05-.02-.11-.03-.16-.04H1.66c-.25 0-.45.2-.45.45s.2.45.45.45h2.5L.13 12.11c-.17.18-.17.46 0 .63.08.09.2.13.32.13s.23-.05.32-.14Z' style='fill:%23fff'/%3E%3C/svg%3E");
+	background-image: var(--new-tab-white);
 }
+
 .is-style-reverse-group .wp-block-button__link:hover::after {
-	content: "";
-	background-image: url("/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg");
+	content: none;
 }
 
 /* BEFORE */
@@ -183,4 +181,342 @@ a.wp-block-file__button::before,
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		font-style: normal !important;
+}
+
+*[class*="is-style-reverse"] :is(h1, h2, h3, h4) a,
+*[class*="is-style-reverse"] .wp-block-button__link {
+	text-decoration: none;
+}
+
+
+/*
+ * Link styles
+ */
+a[href$=".pdf"]::before {
+	content: "\f1c1";
+	margin-right: 1ch;
+	display: inline-block;
+	/* stylelint-disable-next-line */
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal !important;
+}
+
+/* Open in new tab icon */
+
+.components-external-link::after {
+	content: none;
+}
+
+/* negate new tab icon for special cases*/
+:is(*, *[class*="is-style-reverse"]) .wp-block-button__link[target="_blank"]::after,
+:is(*, *[class*="is-style-reverse"]) .quicklinks-list a[target="_blank"]::after {
+	content: none;
+}
+
+.wp-element-button .fa-external-link {
+	background-image: var(--new-tab-white);
+	width: 1em;
+	height: 1em;
+}
+
+figure:hover:has(a) + :is(*:has(>a),a) {
+	text-decoration: underline;
+}
+
+figure:has(a:hover) img {
+	opacity: 0.65;
+}
+
+/* for images in columns, make the pseudo element have opacity */
+#content *:has(.wp-block-post-featured-image):has(+ div>:is(h2,h3,h4, p) a:hover) figure::before {
+	opacity: 0.35;
+}
+
+#content *:has(.wp-block-post-featured-image):has(+ * a:hover) figure img {
+	opacity: 1;
+}
+
+.wp-block-post-featured-image:has(+h2:hover) img {
+	opacity: 1;
+}
+
+#content .wp-block-post-featured-image:has(+h2:hover)::before {
+	opacity: 0.35; /*query loop featured images used different transition */
+}
+
+.wp-block-post-title:has(+ figure) {
+	text-decoration: underline;
+}
+
+#content li a {
+	display: block !important; /* Fixes issue where list bullet is at bottom of element */
+	width: fit-content; /* needed for fix */
+}
+
+.wp-block-button__link,
+.is-style-blue-btn .wp-block-button__link {
+	background-color: var(--blue_1);
+}
+
+a.wp-block-button__link:hover,
+a.wp-block-file__button.wp-element-button:hover {
+	background-color: var(--blue_2);
+}
+
+/* ******************************************************************************** */
+
+/**
+ * Links with icons
+ *
+ * Icons from FontAwesome glyphs
+ * Position absolutely with padding on the first letter of a link
+ * Prevent icon from wrapping on a new line
+ **/
+a::before {
+	font: inherit;
+	line-height: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: FontAwesome;
+}
+
+:is(a[href^="mailto" i],
+a[href*=".xls" i],
+a[href*=".doc" i],
+a[href*=".pdf" i],
+a[href="#top" i],
+a[href^="telto"],
+a[href*="panopto" i],
+a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*=".mp4" i]):not(.is-style-no-link-icon)::first-letter {
+	padding-left: 1.25em;
+}
+
+:is(a[href^="mailto" i],
+a[href*=".xls" i],
+a[href*=".doc" i],
+a[href*=".pdf" i],
+a[href="#top" i],
+a[href^="telto"],
+a[href*="panopto" i],
+a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*=".mp4" i])::before {
+	position: absolute;
+	margin-right: unset;
+	left: 0;
+	top: 0;
+	line-height: inherit;
+}
+
+/* Set link icons */
+a[href*=".pdf"]::before {
+	content: "\f1c1";
+}
+
+a[href^="telto"]::before {
+	content: "\f098";
+}
+
+a[href*=".mp4" i]::before,
+a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*="https://ubc.ca.panopto.com/"]::before,
+a[href*="https://ubc.zoom.us/rec/"]::before {
+	content: "\f1c8" !important;
+
+	/*remove !important when adding to the plugin, not necessary */
+}
+
+/* ******************************************************************************** */
+
+.fa-external-link::before {
+	content: "" !important;
+}
+
+#content th a::before,
+#content th a::after,
+a.wp-block-file__button::before,
+a[href*="panopto"]::before {
+	background-image: unset; /*hide the panopto logo, remove this from the plugin*/
+	content: unset;
+}
+
+/* ******************************************************************************** */
+
+/**
+ * Links in new tab
+ *
+ * Background image used to stop icon from wrapping to new line.
+ * link has right padding and a background image applied.
+ * a[target="_blank"]:not(.is-style-no-link-icon, :has(img)) = new tab links that don't have the no link icon style and aren't images
+ **/
+
+a[target="_blank"]:not(.is-style-no-link-icon, :has(img)) {
+	padding-right: 1em;
+	background-image: var(--new-tab-secondary);
+	background-repeat: no-repeat;
+	background-size: 0.7em;
+	background-position: calc(100% - 1px);
+}
+
+a[target="_blank"]:not(.is-style-no-link-icon, :has(img)):hover {
+	background-image: var(--new-tab-secondary);
+}
+
+/* Hide new tab icon */
+#content a[target="_blank" i]:is(
+a[href^="mailto" i],
+a[href*=".xls" i],
+a[href*=".doc" i],
+a[href*=".pdf" i],
+a[href="#top" i],
+a[href^="telto"],
+a[href*="panopto" i],
+a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*=".mp4" i]) {
+	padding-right: 0;
+	background-image: none;
+}
+
+.sidenav a[target="_blank"] {
+	background-image: unset;
+}
+
+/* Use white icon */
+:is(p.has-white-color,
+.is-style-accent,
+.is-style-accent-group,
+.is-style-reverse-group,
+.blue-feature-blocks,
+.blue-feature-blocks:hover) a[target="_blank"] {
+	background-image: var(--new-tab-white);
+	background-repeat: no-repeat;
+}
+
+/* White icon hover */
+:is(p.has-white-color a[target="_blank"],
+.is-style-accent a[target="_blank"],
+.is-style-reverse-group a[target="_blank"]):hover {
+	background-image: var(--new-tab-secondary);
+}
+
+/* Overwrite CSS on ::after
+	remove link icons in background image
+*/
+a[target="_blank"]::after,
+a[target="_blank" i]:is(
+	[href^="mailto" i],
+	[href$=".xls" i],
+	[href$=".xlsx" i],
+	[href$=".doc" i],
+	[href$=".docx" i],
+	[href="#top" i],
+	[href$=".pdf" i],
+	[href^="mailto" i])::after,
+.wp-block-cover__inner-container a[target="_blank"],
+a[href*=".pdf"][target="_blank"],
+a[href*="mediasite.audiovisual.ubc.ca" i][target="_blank"],
+a[href$="mp4"][target="_blank"] {
+	content: none; /*don't have a open in new tab icon on pdf's*/
+	padding-right: unset;
+	background-image: unset;
+}
+
+.wp-block-post-featured-image a[target="_blank"] {
+	padding-right: unset;
+}
+
+/* Image with link to new tab */
+.wp-block-post-featured-image a[target="_blank"]::after,
+figure.wp-block-image > a[target="_blank"]::after {
+	/* feature image open in new tab.
+	* @link https://med-fom-mednet.sites.olt.ubc.ca/office-of-the-dean/leadership/one-on-one/ Dermot*/
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	height: 1rem;
+	width: 1rem;
+	z-index: 999;
+	background-image: var(--new-tab-white);
+	background-size: 1em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.25);
+	padding: 0.25rem;
+	line-height: 1;
+	box-shadow: 0 0 0.25rem 0 rgb(0 0 0 / 25%);
+}
+
+.wp-block-buttons a.wp-block-button__link[target="_blank"] {
+	background-size: 1em;
+	background-position: calc(100% - 0.6em) 50%;
+	padding-right: 2rem;
+	background-image: var(--new-tab-white);
+	background-repeat: no-repeat;
+}
+
+:is(.is-style-reverse-group,
+.is-style-accent-group,
+.blue-feature-blocks)
+.wp-block-button__link:hover {
+	background-color: var(--gray_1) !important;
+	color: var(--blue_2) !important;
+	background-image: var(--new-tab-primary) !important;
+}
+
+:where(.pathway-page-grid,
+.is-style-reverse-group)
+a[target="_blank"]:not(.is-style-no-link-icon, :has(img)) {
+	background-image: var(--new-tab-primary);
+}
+
+:where(.pathway-page-grid,
+.is-style-reverse-group)
+a[target="_blank"]:not(.is-style-no-link-icon, :has(img)):hover {
+	background-image: var(--new-tab-primary);
+}
+
+figure:has(+*>a:hover):has(a) img {
+	opacity: 0.65;
+}
+
+.content-card .wp-block-cover:has(+ .content-card-title:hover) .has-background-dim {
+	opacity: 0.65;
+}
+
+.content-card .wp-block-cover:hover + :has(a) {
+	text-decoration: underline;
+}
+
+:is(.mbp-blue, .mbp-dark-blue) a[target="_blank"]::after {
+	content: var(--new-tab-white);
+	background-image: none;
+}
+
+/*firefox doesn't support :has, fix to make link icons work*/
+@supports not selector(:not(:has(*))) {
+
+	a[target="_blank"] {
+		background-position: right;
+		padding-right: 1em;
+		background-size: 0.75em;
+	}
+
+	#content a:is(
+	[href*="mailto" i],
+	[href*=".xls" i],
+	[href*=".doc" i],
+	[href*=".pdf" i],
+	[href="#top" i],
+	[href^="telto"],
+	[href*="panopto" i],
+	[href*="mediasite.audiovisual.ubc.ca" i],
+	[href*=".mp4" i]) {
+		padding-left: 1.1em;
+	}
 }

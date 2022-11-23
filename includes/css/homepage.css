@@ -1,0 +1,159 @@
+.home.full-width .full-width-container .expand {
+	max-width: none;
+}
+
+.home.full-width .homepage .wp-block-columns,
+.home.full-width .homepage .wp-block-group {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.home.full-width h1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home.full-width .full-width-container,
+.home #container,
+.home #container .expand,
+.home #container .full-width-container {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.homepage h2 {
+	text-align: left;
+	letter-spacing: 0.9px;
+	color: #002145;
+	opacity: 1;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	font-weight: 600;
+	margin: 0 0 1rem 0;
+}
+
+.homepage *[class*="is-style-reverse"] h2 { /* groups, columns whatever. Add compensations for dark background */
+	color: var(--white);
+}
+
+.homepage .announcements-list h2,
+.homepage .announcements-list h2 a {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.homepage .announcement-block {
+	gap: 30px;
+	padding-bottom: 83px;
+}
+
+.homepage .announcement-block > .wp-block-column:first-of-type {
+	padding-right: 0;
+	border: 0;
+}
+
+.homepage .announcement-divider {
+	margin-bottom: 40px;
+}
+
+
+#content .homepage .pathways-feature-block a::after {
+	height: auto;
+	width: 80px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: none;
+	opacity: 0;
+	transition: var(--transition-ease);
+	content: var(--new-tab-white);
+}
+
+#content .homepage .pathways-feature-block a:hover::after {
+	opacity: 1;
+}
+
+.homepage .pathways-feature-block figure {
+	background-color: var(--blue_2);
+}
+
+.homepage .content-card-title {
+	font-weight: 400;
+	display: inline-block; /* make only the text a link a link trigger */
+}
+
+.homepage h2.quicklinks {
+	text-transform: uppercase;
+}
+
+.homepage .spotlight-cards .wp-block-column ul {
+	margin: 0;
+}
+
+.homepage .spotlight-cards {
+	padding: 80px 0;
+	margin-bottom: 40px;
+}
+
+.home.full-width .full-width-container {
+	margin: 0 15px;
+}
+
+.homepage .events-list figure {
+
+	/* Distance from top should be 82px; */
+	margin-bottom: 28px;
+}
+
+.homepage .news-honours-section h2 {
+	font-size: 18px;
+	font-size: var(--larger);
+	line-height: 1;
+	margin-top: 0;
+}
+
+.homepage .events-list h2,
+.homepage .spotlight-cards h2 {
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+@media screen and (min-width: 940px) and (max-width: 1024px) {
+
+	#container .homepage .announcements-list :is(h2, h3, h4, a) {
+		line-height: 1.2;
+		font-size: 1rem;
+		-webkit-line-clamp: 6;
+	}
+}
+
+@media (max-width: 350px) {
+
+	.home .content-card-image {
+		min-height: 280px !important;
+	}
+}
+
+/*homepage*/
+
+.homepage .alert-banner {
+	margin-bottom: 40px;
+}
+
+.homepage h1 {
+	line-height: 60px;
+}
+
+.homepage h3.quicklinks {
+	margin-top: 0;
+}
+
+.homepage .content-card {
+	margin: 0 auto;
+}
+
+.homepage hr {
+	margin: 60px 0;
+}

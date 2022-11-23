@@ -1,0 +1,170 @@
+p {
+	font-size: var(--default);
+	line-height: 1.5;
+	color: var(--blue_2);
+}
+
+.wp-block-embed__wrapper > .responsive-media {
+	position: unset; /*CLF responsive media conflicts with WP class*/
+	padding-bottom: unset;
+	height: unset;
+	overflow: unset;
+}
+
+/* responsive media class conflicts with block editor css */
+.responsive-media iframe,
+.responsive-media object,
+.responsive-media embed {
+	position: unset;
+	top: unset;
+	left: unset;
+	width: unset;
+	height: unset;
+}
+
+/* WP Overrides */
+.wp-block-file,
+.wp-block-file a {
+	font-size: 1rem;
+}
+
+.wp-block-file {
+	display: inline-block;
+	margin: 0.5rem 0;
+}
+
+.wp-block-file .wp-element-button {
+	background: var(--blue_1);
+	color: #fff;
+	font-size: 0.75rem;
+}
+
+body .is-layout-flex {
+	gap: clamp(1rem, 2vw, 2rem);
+}
+
+.schema-faq-section {
+	border: 1px solid var(--gray_1);
+	margin: 0.25rem 0 0 0.5rem;
+	padding: 1rem;
+	border-left-width: 4px;
+}
+
+.schema-faq-answer {
+	padding: 1rem 0;
+}
+
+.wp-block-buttons > .wp-block-button {
+	margin: 20px 0;
+}
+
+@media screen and (min-width: 769px) {
+
+	.page #utility-after-content .widget_subpages_navigation {
+		display: none;
+	}
+}
+
+.wp-block-button__link,
+.wp-block-file__button.wp-element-button {
+	background: var(--blue_1);
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.wp-block-file__button.wp-element-button {
+	word-break: keep-all;
+	white-space: nowrap;
+	border-radius: 0;
+}
+
+.wp-block-button__link:hover,
+.wp-block-file__button.wp-element-button:hover {
+	background: var(--blue_2);
+	opacity: 12;
+}
+
+.wp-block-search__inside-wrapper button {
+	border: none;
+	background: var(--blue_1);
+	color: var(--white);
+}
+
+.wp-block-search__inside-wrapper input {
+	margin-bottom: 0;
+}
+
+.wp-block-search.aligncenter .wp-block-search__inside-wrapper {
+	margin-bottom: 10px;
+}
+
+figure.image-circle {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+figure.image-circle img {
+	object-fit: cover; /*can be overriden in editor*/
+}
+
+.c-accordion__item .c-accordion__title {
+	font-size: 1rem;
+	margin: 0 0 2px 0;
+}
+
+.wp-block-image .alignleft {
+	margin: 1.5em 1.5em 1em 0;
+}
+
+.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tab-list {
+	margin-bottom: 1em;
+}
+
+/* spotlight list result
+ * @link: https://med-fom-mednet.sites.olt.ubc.ca/research/strategic-initiatives/precision-health/spotlight/#
+ */
+#content figure.image-circle,
+#content figure.image-circle * {
+	aspect-ratio: 1/1;
+}
+
+.alignfull {
+	width: 100%;
+	display: block;
+}
+
+.wp-block-quote {
+
+	/* font-family: Helvetica neue, helvetica, arial, sans-serif; */
+	font-weight: 200;
+	letter-spacing: -0.15px;
+	margin: 2rem 2rem 5rem 2rem;
+	word-break: break-word;
+}
+
+.content-column hr {
+	max-width: 100%;
+}
+li {
+	color: var(--blue_2); /* make color match p elements was b*/
+	line-height: 2;
+}
+
+.is-layout-flex ul:not(.quicklinks-list) {
+	margin: 0 0 10px 25px;
+}
+
+.entry-title {
+	margin-top: 0; /* align heading with primary menu */
+}
+
+.wp-block-quote,
+.wp-block-quote p {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	letter-spacing: -0.2px;
+}
+
+.logged-in #primary {
+	top: 3rem;/* make the sidenav below the black admin bar when logged in */
+}

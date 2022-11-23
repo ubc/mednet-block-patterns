@@ -1,0 +1,118 @@
+/* Full Width CLF
+-------------------------------*/
+.full-width .full-width-container .expand {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.entry-content {
+	max-width: 1000px;
+}
+
+@media screen and (min-width: 767px) {
+
+	div[role="main"] {
+		display: flex;
+		justify-content: center;
+	}
+
+	#container,
+	#container div[role="main"] {
+		max-width: none;
+	}
+
+	#content {
+		max-width: 1200px;
+	}
+
+	#primary-secondary {
+		max-width: 350px;
+	}
+
+}
+
+.entry-title,
+.entry-content {
+	max-width: none;
+}
+
+.two-column-page .wp-block-columns {
+	gap: 2.5%;
+}
+
+.l1-column .entry-content,
+.l1-column #content {
+	max-width: 1600px;
+}
+
+@media screen and (min-width: 1200px) {
+
+	#body-container .full-width-container:has(.two-column-page) .content-column,
+	.full-width-container:has(.two_column_page) .content-column {
+		min-width: 768px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	#body-container .full-width-container {
+		width: 1170px;
+		margin: 0 auto;
+		max-width: calc(100% - 30px);
+	}
+
+	#body-container .full-width-container:has(.two-column-page),
+	.full-width-container:has(.two_column_page) {
+		width: 1400px;
+		margin: 0 auto;
+		max-width: calc(100% - 30px);
+	}
+
+	#body-container .full-width-container:has(.two-column-page) .content-column,
+	.full-width-container:has(.two_column_page) .content-column {
+		min-width: 600px;
+	}
+}
+
+@media screen and (min-width: 940px) and (max-width: 1024px) {
+
+	#body-container .full-width-container {
+		width: 940px;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	#body-container .full-width-container:has(.two-column-page) .content-column,
+	.full-width-container:has(.two_column_page) .content-column {
+		min-width: 400px;
+	}
+}
+
+/* force two column page to use all space.
+ *  sidebar has a max-width of 350px;
+*/
+.content-column {
+	flex-basis: 100% !important;
+	max-width: none;
+}
+
+.sidebar-column {
+	flex-basis: auto !important;
+}
+
+/**********/
+
+/** @experiment
+ * Content Width experiment
+ * Content is too wide.
+ * set max content width similar to old mednet
+ * target individual flow elements and general page content
+**/
+
+li,
+p:not(.is-style-introduction-paragraph),
+li + hr {
+	max-width: 960px;
+}

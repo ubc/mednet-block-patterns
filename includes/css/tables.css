@@ -1,0 +1,81 @@
+#content th {
+	padding: 0.5rem;
+	background: var(--blue_2);
+	color: var(--white);
+	line-height: 2.5;
+}
+
+#content th a {
+	color: var(--white);
+	font-size: 0.75rem;
+}
+
+#content table {
+	border: 2px solid var(--gray_3);
+}
+
+#content :is(th, td) {
+	padding: 0.5rem 0.5rem;
+	min-width: 50px;
+	white-space: pre;
+}
+
+.wp-block-table {
+	margin: 0;
+}
+
+.wp-block-table.is-style-stripes {
+	margin: 0;
+}
+
+table {
+	max-width: none;
+	table-layout: auto !important;
+}
+
+.is-style-stripes tr:nth-child(odd) {
+	background: var(--gray_1);
+}
+
+.is-style-stripes td {
+	border-color: var(--gray_2);
+	border-width: 2px;
+	border-style: solid;
+}
+
+.responsive-tables,
+*:has(>table) {
+	overflow: auto;
+}
+
+.responsive-tables::-webkit-scrollbar,
+*:has(>table)::-webkit-scrollbar {
+	-webkit-appearance: none;
+	height: 7px;
+	width: 7px;
+}
+
+.responsive-tables::-webkit-thumb,
+*:has(>table)::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+#content .table-text-wrap :where(th, td) {
+	white-space: initial;
+}
+
+@media (max-width: 426px) {
+
+	/* stack text tables on small screens */
+	.table-text-wrap tbody tr {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.table-text-wrap :where(th, td) {
+		display: block;
+	}
+
+}
