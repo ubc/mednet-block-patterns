@@ -1,7 +1,7 @@
 <!-- wp:group {"className":"content-card"} -->
 <div class="wp-block-group content-card">
-    <!-- wp:cover {"useFeaturedImage":true,"customOverlayColor":"#002145","className":"content-card-image-overlay"} -->
-    <div class="wp-block-cover content-card-image-overlay">
+    <!-- wp:cover {"useFeaturedImage":true,"customOverlayColor":"#002145","className":"content-card-image-overlay content-card-image"} -->
+    <div class="wp-block-cover content-card-image-overlay content-card-image">
         <span
             aria-hidden="true"
             class="wp-block-cover__background has-background-dim-100 has-background-dim"
