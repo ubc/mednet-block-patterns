@@ -1,0 +1,58 @@
+/* Alert banner component*/
+
+.alert-banner {
+	min-height: 46px;
+	border: 1px solid var(--blue_1);
+	color: var(--blue_1);
+	padding: 10px;
+}
+
+.alert-banner * {
+	color: inherit;
+}
+
+.alert-banner p {
+	margin: 0;
+}
+
+.alert-banner .alert-icon {
+	padding-right: 10px;
+	font-size: 1.5em;
+	line-height: 0.75;
+	vertical-align: -0.0667em;
+	padding-left: 2px;
+}
+
+.closebtn {
+	margin-left: 22px;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: var(--transition-ease);
+	width: 22px;
+	margin-top: 4px !important;
+}
+
+.alert-banner .icon {
+	position: relative;
+	top: 3px;
+	margin-left: 12px;
+	margin-right: 10px;
+	font-size: 1.5rem;
+}
+
+/*add spacing between banner and nav */
+.utility .alert-banner {
+	margin-top: 1rem !important;
+}
+
+@media screen and (max-width: 767px) {
+	.alert-banner {
+		height: auto;
+	}
+
+	.alert-banner .icon-exclamation-sign {
+		padding-left: 0 !important;
+	}
+}

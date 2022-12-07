@@ -1,0 +1,46 @@
+.accordions-pattern :where(p,li,hr,td) {
+	max-width: 100%;
+}
+.accordions-pattern {
+	margin: 1rem 0;
+}
+
+.c-accordion__title {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	padding: 13px 18px 11px 18px;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	margin-top: 2px;
+}
+
+.c-accordion__title,
+.c-accordion__title:focus {
+	background: var(--gray_2);
+	color: var(--blue_2);
+}
+
+.c-accordion__item.is-open .c-accordion__title {
+	background: var(--blue_2);
+	color: var(--white);
+}
+
+.c-accordion__item .c-accordion__title:hover {
+	background: var(--blue_1);
+	color: var(--white);
+}
+
+.c-accordion__item .c-accordion__title::after {
+	content: none;
+}
+
+.c-accordion__content {
+	padding: 0 18px;
+	margin: 20px 0 0 0;
+	padding-bottom: 0;
+}
+
+.c-accordion__content + .c-accordion__content {
+	padding-top: 0;
+}

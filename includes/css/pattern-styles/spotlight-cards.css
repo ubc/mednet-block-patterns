@@ -1,0 +1,114 @@
+/* Spotlight Cards */
+.spotlight-cards {
+	padding: 3rem 4rem;
+}
+
+.spotlight-cards .wp-block-column:first-of-type {
+	align-self: center;
+}
+
+.spotlight-cards .wp-block-post-featured-image {
+	display: block;
+	background-image: unset;
+	background-color: unset;
+	text-align: center;
+	height: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	isolation: isolate;
+	aspect-ratio: 1/1;
+}
+
+.spotlight-cards .wp-block-post-excerpt {
+	overflow: hidden;
+	line-height: 1;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.spotlight-cards .wp-block-post-title {
+	font-size: 1.75rem;
+	height: auto;
+	line-height: 1.25;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.spotlight-cards .wp-block-post-featured-image:hover img {
+	opacity: 0.65;
+}
+
+.spotlight-cards .wp-block-post-terms {
+	text-align: center;
+	margin-top: 26px;
+	margin-bottom: 1rem;
+	color: #002145;
+}
+
+.spotlight-cards .wp-block-post-title > a:hover {
+	text-decoration: underline;
+	color: var(--blue_1);
+}
+
+.spotlight-cards .wp-block-post-featured-image img {
+	object-fit: cover;
+	transition: var(--transition-ease);
+}
+
+#content .spotlight-cards figure {
+	max-width: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+#content .spotlight-cards figure a {
+	display: block;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+#content .spotlight-cards img {
+	max-height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+
+.spotlight-cards .spotlight-icon {
+	margin-top: -2rem;
+	padding-bottom: 2rem;
+
+	/* remove setting the values for this icon */
+	width: 48px;
+	height: 51px;
+}
+
+.spotlight-icon img,
+.spotlight-cards .spotlight-icon img {
+	width: auto;
+	object-fit: initial;
+}
+
+.spotlight-cards h2 {
+
+	/*homepage*/
+	margin: 50px 0 10px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1624px) {
+
+	.spotlight-cards {
+		padding: 3rem 4rem;
+	}
+
+	.spotlight-cards > div > div > div:nth-child(2) > div > ul
+	li
+	.wp-block-post-featured-image > a > img {
+		height: auto;
+	}
+
+	.spotlight-cards > div > div > div:nth-child(2) > div > ul {
+		margin: 0;
+	}
+}

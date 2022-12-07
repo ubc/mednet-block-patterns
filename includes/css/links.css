@@ -1,3 +1,18 @@
+/* Links that need icons */
+/*
+	[href^="mailto" i],
+	[href*=".xls" i],
+	[href*=".doc" i],
+	[href*=".pdf" i],
+	[href="#top" i],
+	[href^="telto"],
+	[href*="panopto" i],
+	[href*="mediasite.audiovisual.ubc.ca" i],
+	[href*=".mp4" i]
+	
+	[target="_blank"]
+*/
+
 a {
 	color: var(--blue_1);
 	text-decoration: none;
@@ -27,6 +42,21 @@ a.wp-block-file__button {
 	padding-right: 20px;
 }
 
+.wp-block-buttons .wp-block-button__link:where(
+	[href^="mailto" i],
+	[href*=".xls" i],
+	[href*=".doc" i],
+	[href*=".pdf" i],
+	[href="#top" i],
+	[href^="telto"],
+	[href*="panopto" i],
+	[href*="mediasite.audiovisual.ubc.ca" i],
+	[href*="https://ubc.zoom.us/rec/" i]
+	[href*=".mp4" i])[target="_blank"] {
+	padding-right: 20px !important;
+	background-image: none !important;
+}
+
 a[href^="mailto" i],
 a[href*=".xls" i],
 a[href*=".doc" i],
@@ -35,15 +65,11 @@ a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*="https://ubc.zoom.us/rec/" i],
 a[href*=".mp4" i] {
 	position: relative;
 	display: inline-block;
 	overflow-wrap: anywhere;
-}
-
-a[target="_blank"] {
-	padding-right: 0.25em;
-	display: inline-table;
 }
 
 #content th a {
@@ -69,12 +95,6 @@ a[target="_blank"]::after {
 	margin-top: 5px;
 }
 
-p.has-white-color a[target="_blank"]::after,
-.is-style-reverse-group a[target="_blank"]::after {
-	content: "";
-	background-image: var(--new-tab-white);
-}
-
 .is-style-reverse-group .wp-block-button__link:hover::after {
 	content: none;
 }
@@ -88,6 +108,7 @@ a[href="#top" i]::before,
 a[href^="telto"]::before,
 a[href*="panopto" i]::before,
 a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*="https://ubc.zoom.us/rec/" i]::before,
 a[href*=".mp4" i]::before {
 	margin-right: 0.25em;
 	display: inline-block;
@@ -99,6 +120,33 @@ a[href*=".mp4" i]::before {
 	-moz-osx-font-smoothing: grayscale;
 	font-style: normal !important;
 }
+
+li :is(a[href^="mailto" i],
+a[href*=".xls" i],
+a[href*=".doc" i],
+a[href*=".pdf" i],
+a[href="#top" i],
+a[href^="telto"],
+a[href*="panopto" i],
+a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*=".mp4" i])::before {
+	display: inline;
+	position: static;
+	margin-right: 0.25em;
+}
+
+li :is(a[href^="mailto" i],
+a[href*=".xls" i],
+a[href*=".doc" i],
+a[href*=".pdf" i],
+a[href="#top" i],
+a[href^="telto"],
+a[href*="panopto" i],
+a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*=".mp4" i])::first-letter {
+	padding-left: initial;
+}
+
 
 a[href="#top" i]::before,
 :is(h1, h2, h3) a[href="#top" i]::after {
@@ -122,9 +170,11 @@ a[href^="mailto" i]::before,
 
 a[href*="panopto" i]::before,
 a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*="https://ubc.zoom.us/rec/" i]::before,
 a[href*=".mp4" i]::before,
 :is(h1, h2, h3) a[href*="panopto" i]::after,
 :is(h1, h2, h3) a[href*="mediasite.audiovisual.ubc.ca" i]::after,
+:is(h1, h2, h3) a[href*="https://ubc.zoom.us/rec/" i]::after,
 :is(h1, h2, h3) a[href*=".mp4" i]::after {
 	content: "\f1c8";
 }
@@ -149,6 +199,7 @@ a[href="#top" i]::after,
 a[href^="telto"]::after,
 a[href*="panopto" i]::after,
 a[href*="mediasite.audiovisual.ubc.ca" i]::after,
+a[href*="https://ubc.zoom.us/rec/" i]::after,
 a[href*=".mp4" i]::after,
 a.wp-block-file__button::before,
 #content th a::before,
@@ -172,6 +223,7 @@ a.wp-block-file__button::before,
 	a[href^="telto"],
 	a[href*="panopto" i],
 	a[href*="mediasite.audiovisual.ubc.ca" i],
+	a[href*="https://ubc.zoom.us/rec/" i],
 	a[href*=".mp4" i])::after {
 		margin-right: 0.25em;
 		display: inline-block;
@@ -252,11 +304,6 @@ figure:has(a:hover) img {
 	text-decoration: underline;
 }
 
-#content li a {
-	display: block !important; /* Fixes issue where list bullet is at bottom of element */
-	width: fit-content; /* needed for fix */
-}
-
 .wp-block-button__link,
 .is-style-blue-btn .wp-block-button__link {
 	background-color: var(--blue_1);
@@ -293,6 +340,7 @@ a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*="https://ubc.zoom.us/rec/" i],
 a[href*=".mp4" i]):not(.is-style-no-link-icon)::first-letter {
 	padding-left: 1.25em;
 }
@@ -305,12 +353,18 @@ a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+a[href*="https://ubc.zoom.us/rec/" i],
 a[href*=".mp4" i])::before {
 	position: absolute;
 	margin-right: unset;
 	left: 0;
 	top: 0;
 	line-height: inherit;
+}
+
+.wp-block-button__link.wp-element-button::before {
+	position: unset;
+	margin-right: 0.25em;
 }
 
 /* Set link icons */
@@ -369,17 +423,27 @@ a[target="_blank"]:not(.is-style-no-link-icon, :has(img)):hover {
 
 /* Hide new tab icon */
 #content a[target="_blank" i]:is(
-a[href^="mailto" i],
-a[href*=".xls" i],
-a[href*=".doc" i],
-a[href*=".pdf" i],
-a[href="#top" i],
-a[href^="telto"],
-a[href*="panopto" i],
-a[href*="mediasite.audiovisual.ubc.ca" i],
-a[href*=".mp4" i]) {
+	a[href^="mailto" i],
+	a[href*=".xls" i],
+	a[href*=".doc" i],
+	a[href*=".pdf" i],
+	a[href="#top" i],
+	a[href^="telto"],
+	a[href*="panopto" i],
+	a[href*="mediasite.audiovisual.ubc.ca" i],
+	a[href*=".mp4" i]),
+#content a[target="_blank" i]:is(
+	a[href^="mailto" i],
+	a[href*=".xls" i],
+	a[href*=".doc" i],
+	a[href*=".pdf" i],
+	a[href="#top" i],
+	a[href^="telto"],
+	a[href*="panopto" i],
+	a[href*="mediasite.audiovisual.ubc.ca" i],
+	a[href*=".mp4" i]):hover {
 	padding-right: 0;
-	background-image: none;
+	background-image: none !important;
 }
 
 .sidenav a[target="_blank"] {
@@ -464,9 +528,19 @@ figure.wp-block-image > a[target="_blank"]::after {
 .is-style-accent-group,
 .blue-feature-blocks)
 .wp-block-button__link:hover {
+    background-color: var(--gray_1);
+	color: var(--blue_2);
+	background-image: var(--new-tab-primary) !important;
+}
+
+
+:is(.is-style-reverse-group,
+.is-style-accent-group,
+.blue-feature-blocks)
+.wp-block-button__link[target="_blank"]:not(.is-style-no-link-icon):hover {
 	background-color: var(--gray_1) !important;
 	color: var(--blue_2) !important;
-	background-image: var(--new-tab-primary) !important;
+	background-image: var(--new-tab-primary);
 }
 
 :where(.pathway-page-grid,
@@ -507,16 +581,24 @@ figure:has(+*>a:hover):has(a) img {
 		background-size: 0.75em;
 	}
 
-	#content a:is(
-	[href*="mailto" i],
-	[href*=".xls" i],
-	[href*=".doc" i],
-	[href*=".pdf" i],
-	[href="#top" i],
-	[href^="telto"],
-	[href*="panopto" i],
-	[href*="mediasite.audiovisual.ubc.ca" i],
-	[href*=".mp4" i]) {
-		padding-left: 1.1em;
-	}
+}
+
+#content .wp-block-buttons a.wp-block-button__link[target="_blank"]{
+	padding-right: 2.5rem;
+	background-position: calc(100% - 1em) 50%;
+}
+
+figure.wp-block-post-featured-image a {
+	/*https://med-fom-mednet.sites.olt.ubc.ca/in-memoriam/?query-8-page=2&cst#
+	the aspect ratio is causing th image to round down one pixel in some cases.*/
+	aspect-ratio: unset;
+	height: 100%; /* need to fit image in container https://med-fom-mednet.sites.olt.ubc.ca/office-of-the-dean/leadership/one-on-one/# */
+}
+
+.wp-block-query .wp-block-post-title a[target="_blank"]:not(.is-style-no-link-icon) {
+	background-image: var(--new-tab-primary);
+}
+
+.wp-block-query li:has(.wp-block-post-title a[target="_blank"]) figure a[target="_blank"]::after {
+	content: none; /* don't show the new tab icon on the image if there is one in the title*/
 }

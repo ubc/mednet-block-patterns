@@ -1,0 +1,50 @@
+/*featured resource*/
+
+.featured-resource {
+	width: 100%;
+	padding-left: 28px;
+	padding-bottom: 80px;
+	padding-right: 16px;
+	border-radius: 10px;
+}
+
+.featured-resource h3 {
+	align-self: center;
+	font-size: 0.875rem;
+	letter-spacing: 1.4px;
+	line-height: 1.125;
+}
+
+.featured-resource {
+	margin-bottom: 1rem;
+}
+
+#content .featured-resource {
+	margin-bottom: 2rem;
+}
+/* Featured Resources needs a heading and top margin. */
+.featured-resource .wp-block-group__inner-container .is-layout-flow.wp-block-group .wp-block-group__inner-container figure + p {
+	margin-top: 40px;
+}
+
+.featured-resource figure {
+	width: 60px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	align-self: flex-start;
+}
+
+.featured-resource a[target="_blank"]:not(.is-style-no-link-icon, :has(img)) {
+	color: var(--blue_2);
+	background-image: var(--new-tab-primary);
+}
+
+.featured-resource a[target="_blank"]:not(.is-style-no-link-icon, :has(img)):hover {
+	color: var(--blue_1);
+}
+
+@media screen and (max-width: 767px) {
+	.featured-resource {
+		max-width: none;
+	}
+}

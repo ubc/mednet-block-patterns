@@ -116,3 +116,15 @@ p:not(.is-style-introduction-paragraph),
 li + hr {
 	max-width: 960px;
 }
+
+@media screen and (max-width: 425px) {
+
+	#container,
+	#container > .row-fluid {
+		padding: 0;
+	}
+
+	#container {
+		margin-bottom: 25vw;
+	}
+}

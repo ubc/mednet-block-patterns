@@ -1,0 +1,77 @@
+/* QuickLinks List */
+
+.quicklinks-list {
+	list-style-type: none;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.quicklinks-list li {
+	margin: 0;
+}
+
+.quicklinks-list li > a {
+	color: var(--blue_1);
+	text-decoration: none;
+}
+
+.quicklinks-list li > a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*quicklinks-one-col*/
+
+.quicklinks-one-col > div > h4 {
+	margin-bottom: 1.5rem;
+}
+
+.quicklinks-one-col > div > ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.quicklinks-one-col > div > ul > li {
+	padding-bottom: 1rem;
+}
+
+/*quicklinks-two-col*/
+
+.quicklinks-two-col h4,
+.quicklinks-three-columns h4 {
+	margin-bottom: 1.5rem;
+}
+
+.quicklinks-two-col ul,
+.quicklinks-three-columns ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.quicklinks-two-col li,
+.quicklinks-three-columns li {
+	padding-bottom: 1rem;
+}
+
+h2.quicklinks {
+	font-size: 14px;
+	margin: 0 0 26px 0;
+}
+
+ul.quicklinks-list li {
+	line-height: 1;
+	margin-bottom: 1rem;
+	padding-bottom: 0;
+	font-size: var(--callout);
+}
+
+h3.quicklinks {
+	color: var(--blue_2);
+	font-size: 1rem;
+	line-height: 1.3;
+	margin-top: 0;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+}

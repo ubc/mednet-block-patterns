@@ -47,10 +47,12 @@ p:empty {
 	display: none;
 }
 
-figure img {
-
-	/* set a default of filling the set size and keep natural aspect ratio*/
-	object-fit: cover;
+hr,
+#editor hr,
+.wp-block-separator {
+	background-color: #e6e6e6;
+	color: #e6e6e6;
+	opacity: initial;
 }
 
 /* Query Loop image backgrounds */

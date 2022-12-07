@@ -1,0 +1,401 @@
+.announcement-block ul,
+.announcement-block figure {
+	margin: 0;
+}
+
+/* Announcements Block */
+.announcements-block h2 {
+	font-size: 1.125rem;
+	color: var(--blue_2);
+}
+
+div.announcement-block {
+	gap: 1rem;
+	margin-top: 26px;
+}
+
+.announcement-block .featured-announcement h3,
+.announcement-block .featured-announcement h3 > a {
+	font-size: 1.75rem;
+	font-weight: 400;
+	color: var(--blue_1);
+	margin: 0.75rem 0;
+}
+
+.announcement-block > .wp-block-column:first-of-type {
+	padding-right: 1rem;
+	border-right: 1px solid #ccc;
+	position: relative;
+	padding-bottom: 5rem;
+}
+
+.announcement-block > .wp-block-column:last-of-type {
+	padding-left: 1px solid #ccc;
+}
+
+.announcement-block-btn {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+}
+
+.announcements-list div,
+.announcements-list li,
+.announcements-list h3.wp-block-post-title {
+	margin: 0;
+}
+
+.announcements-list li {
+	font-size: 12px; /* used for em value gaps */
+	overflow: hidden;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.announcements-list li h3 {
+	font-size: 1rem;
+}
+
+/* Cards */
+.card-title,
+.card-title > a {
+	font-weight: 400;
+	font-size: 1.75rem;
+	line-height: 2;
+}
+
+/* Announcement Card - Large */
+
+.announcement-card-large {
+	width: 100%;
+	max-width: 490px;
+	transition: var(--transition-ease);
+}
+
+.announcement-card-large .wp-block-post-featured-image {
+	background-color: var(--blue_2);
+	isolation: isolate;
+	aspect-ratio: 4/3;
+	transition: var(--transition-ease);
+}
+
+.announcement-card-large img:hover {
+	opacity: 0.65;
+}
+
+.announcement-card-large .wp-block-post-featured-image a > img {
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: unset;
+}
+
+
+.announcement-card-large ul li h2 {
+	font-weight: 400;
+	padding: 0;
+	letter-spacing: -0.14px;
+	/*fix bad heading spacing */
+	margin: clamp(20px, 1em, 28px) 0;
+}
+
+.announcement-card-large ul li h2 > a {
+	color: var(--blue_1);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.announcement-card-large ul li h2 > a:hover {
+	text-decoration: underline;
+}
+
+/*Announcement Card - Small*/
+
+.announcement-list .wp-block-columns {
+	gap: 0;
+	display: flex;
+	flex-wrap: wrap !important;
+	margin-bottom: 0;
+}
+
+.announcement-list li {
+	border-bottom: 1px solid var(--gray_2);
+	margin-bottom: 1rem;
+}
+
+.announcement-list ul li .wp-block-columns > div:first-child {
+	max-width: 160px;
+}
+
+.announcement-list ul li .wp-block-columns > div:last-child {
+	align-self: stretch;
+	padding-left: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+.announcement-list .wp-block-post-featured-image {
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+	isolation: isolate;
+	aspect-ratio: 4/3;
+	transition: var(--transition-ease);
+}
+
+.announcement-list img:hover {
+	opacity: 0.65;
+}
+
+.announcement-list .wp-block-post-featured-image > a > img {
+	height: auto;
+	min-height: 120px;
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: 4/3;
+}
+
+.announcement-list h2 > a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Announcement feed (Small) */
+
+.announcement-feed ul {
+	margin: 0;
+}
+
+.announcement-feed ul li h2 {
+	line-height: 1.5;
+	margin-top: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.announcement-feed ul li h2 > a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	color: var(--blue_2) !important;
+}
+
+.announcement-feed ul li h2 > a:hover {
+	text-decoration: underline;
+	color: var(--blue_2) !important;
+}
+
+.announcement-feed
+ul
+li
+.wp-block-post-excerpt
+.wp-block-post-excerpt__excerpt {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.announcement-feed .wp-block-post-featured-image {
+	background-color: var(--blue_2);
+	transition: var(--transition-ease);
+}
+
+.announcement-feed .wp-block-post-featured-image img {
+	height: 100%;
+	width: 100%;
+	aspect-ratio: 16/9;
+	transition: var(--transition-ease);
+	object-fit: contain;
+	object-position: left;
+}
+
+.announcement-feed .wp-block-post-featured-image:hover img {
+	opacity: 0.65;
+}
+
+.announcement-feed .wp-block-post-featured-image:hover + h2 a {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+
+	.announcement-card-large ul li h2 {
+		font-size: var(--large) !important;
+		line-height: 22px;
+		letter-spacing: -0.1px !important;
+	}
+
+	.announcement-card-large ul li .wp-block-post-excerpt {
+		font-size: 14px !important;
+		line-height: 20px;
+	}
+
+	.announcements-post > div .wp-block-query ul {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.announcement-block
+	.wp-block-column:first-child
+	.wp-block-query
+	ul
+	li
+	.wp-block-post-excerpt
+	.wp-block-post-excerpt__excerpt {
+		font-size: 14px !important;
+		line-height: 20px;
+	}
+
+	.announcement-block .wp-block-column:first-child .wp-block-query ul li h2 {
+		font-size: var(--large);
+		line-height: 22px;
+		letter-spacing: -0.1px;
+	}
+
+	.announcement-block
+	.wp-block-column:last-child
+	.wp-block-query
+	ul
+	li
+	.wp-block-columns
+	.wp-block-column:first-child {
+		flex-basis: 35% !important;
+	}
+
+	.announcement-block
+	.wp-block-column:last-child
+	.wp-block-query
+	ul
+	li
+	.wp-block-columns
+	.wp-block-column:last-child {
+		flex-basis: 55% !important;
+	}
+
+	.announcement-block .wp-block-column:last-child .wp-block-query ul {
+		border-left: none;
+		padding-left: 0;
+	}
+
+	.announcement-block
+	.wp-block-column:last-child
+	.wp-block-query
+	ul
+	li
+	.wp-block-columns
+	.wp-block-column:first-child
+	.wp-block-post-featured-image > a > img {
+		min-height: initial;
+	}
+
+	.announcement-block
+	.wp-block-column:last-child
+	.wp-block-query
+	ul
+	li
+	.wp-block-columns
+	.wp-block-column:last-child
+	h1 {
+		line-height: 20px;
+		letter-spacing: 0;
+		font-size: 1rem;
+	}
+
+	.announcement-block
+	.wp-block-column:last-child
+	.wp-block-query
+	ul
+	li
+	.wp-block-columns
+	.wp-block-column:last-child
+	h1 > a {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.announcement-card-large {
+		max-width: 100%;
+	}
+
+	.announcements-list figure {
+		max-width: 100%;
+	}
+
+	.announcements-list img {
+		object-fit: contain !important;
+		height: auto !important;
+	}
+
+	#content .announcements-list h2,
+	#content .announcements-list h2 a {
+		font-size: 1rem;
+		letter-spacing: -0.4px;
+		line-height: 1.2;
+		height: 5em;
+		-webkit-line-clamp: 4;
+	}
+}
+
+.announcements-list figure {
+	background: var(--blue_2);
+}
+
+.announcements-list .wp-block-column:has(+.wp-block-column a:hover) img,
+.announcements-list .wp-block-column a:hover img {
+	opacity: 0.6;
+}
+
+.announcements-list .wp-block-column:hover + .wp-block-column a {
+	text-decoration: underline;
+}
+
+.announcements-list ul,
+.content .is-layout-flex .announcements-list ul {
+	margin-left: 0;
+}
+
+.announcement-feed figure.wp-block-post-featured-image {
+	aspect-ratio: 16 / 9;
+	height: auto;
+	text-align: left;
+}
+
+/***********/
+
+/** Announcement Feed
+ *  This should be renamed. The pattern will be used beyond announcements
+**/
+.announcement-feed li > figure {
+
+	/* in pattern should be using the featured image */
+	margin: 0;
+	width: 100%;
+	height: 200px;
+}
+
+.announcement-feed li > figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}

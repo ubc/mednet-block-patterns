@@ -168,3 +168,16 @@ li {
 .logged-in #primary {
 	top: 3rem;/* make the sidenav below the black admin bar when logged in */
 }
+
+wp-block-query ul.wp-block-post-template li{ margin-bottom: 1rem;} .wp-block-query li.has-post-thumbnail .wp-block-post-title { margin-top: 0; margin-bottom: 0.5rem; line-height: 1.5; }
+
+.wp-block-post-title {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+figure img {
+	transition: var(--transition-ease);
+}
+

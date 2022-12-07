@@ -14,14 +14,6 @@
 	margin: 0;
 }
 
-hr,
-#editor hr,
-.wp-block-separator {
-	background-color: #e6e6e6;
-	color: #e6e6e6;
-	opacity: initial;
-}
-
 .full-bleed {
 	max-width: none;
 	padding-top: 5.4rem;
@@ -70,7 +62,7 @@ hr,
  * Intended to be applied to elements ad hoc
  *
  *****/
- .content .margin-top-none {
+.content .margin-top-none {
 	margin-top: 0;
 }
 
@@ -109,4 +101,17 @@ hr,
 .mbp-blue {
 	background: var(--blue_1);
 	color: var(--white);
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.red-text {
+	color: red;
+}
+
+.align-stretch {
+	display: flex;
+	align-items: stretch;
 }

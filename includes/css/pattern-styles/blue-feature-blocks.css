@@ -1,0 +1,27 @@
+/* Blue feature blocks - side by side */
+.blue-feature-blocks {
+	gap: 1rem !important;
+}
+
+.blue-feature-blocks a,
+.blue-feature-blocks a:hover {
+	color: var(--white);
+}
+
+.blue-feature-blocks > div {
+	padding: 40px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.blue-feature-blocks {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.blue-feature-blocks > div {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+}

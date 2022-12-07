@@ -58,27 +58,6 @@
 	margin-bottom: 40px;
 }
 
-
-#content .homepage .pathways-feature-block a::after {
-	height: auto;
-	width: 80px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: none;
-	opacity: 0;
-	transition: var(--transition-ease);
-	content: var(--new-tab-white);
-}
-
-#content .homepage .pathways-feature-block a:hover::after {
-	opacity: 1;
-}
-
-.homepage .pathways-feature-block figure {
-	background-color: var(--blue_2);
-}
-
 .homepage .content-card-title {
 	font-weight: 400;
 	display: inline-block; /* make only the text a link a link trigger */
@@ -156,4 +135,13 @@
 
 .homepage hr {
 	margin: 60px 0;
+}
+
+.home #content li figure.wp-block-post-featured-image {
+	background-image: unset;
+	background-color: unset;
+}
+
+.homepage .featured-resource {
+	padding-bottom: 2rem;
 }

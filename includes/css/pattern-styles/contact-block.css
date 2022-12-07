@@ -1,0 +1,64 @@
+/* Contact Block */
+
+.contact-block {
+	padding: 40px;
+}
+
+.contact-block .wp-block-image figure {
+	width: 200px;
+	height: 200px;
+	margin-left: 0;
+	min-height: 200px;
+}
+
+.contact-block h3 {
+	font-size: 1.875rem;
+	margin-top: 18px;
+	margin-bottom: 8px;
+}
+
+.contact-block :where(h2, h3, h4) {
+	margin-top: 10px !important;
+	line-height: 1.01;
+}
+
+
+.contact-block .wp-block-column:has(.wp-block-image) {
+	flex-shrink: 0;
+	flex-basis: 210px !important; /*pattern defines 25% width for this column. Images are 210px. Overwrite inline style */
+}
+
+.contact-block h2 {
+	font-size: var(--callout);
+	margin-bottom: 1rem;
+}
+
+.contact-block :where(h2, h3, h4):first-of-type {
+	margin-top: 10px !important;
+	line-height: 1.01;
+}
+
+#content .contact-block :where(h2, h3, h4) {
+	margin-top: 1.5rem;
+	line-height: 1.2;
+}
+
+#content .contact-block :where(h2, h3, h4) + p {
+	margin-block-start: unset;
+}
+
+.sidebar-column .contact-block .aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+
+	.contact-block .wp-block-image figure {
+		margin-left: 0;
+	}
+
+	.contact-block {
+		margin: auto 0;
+	}
+}

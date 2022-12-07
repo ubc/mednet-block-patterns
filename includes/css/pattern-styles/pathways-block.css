@@ -1,0 +1,44 @@
+
+.pathways-feature-block figure {
+	position: relative;
+	transition: var(--transition-ease);
+	background-color: var(--blue_2);
+}
+
+.pathway-block-image img {
+	transition: var(--transition-ease);
+}
+
+.pathway-block-image:hover img {
+	opacity: 0.45;
+}
+
+.pathways-feature-block a::after {
+	height: auto;
+	width: 80px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: none;
+	opacity: 0;
+	transition: var(--transition-ease);
+	content: var(--new-tab-white);
+}
+
+.pathways-feature-block a:hover::after {
+	opacity: 1;
+}
+
+.pathways-feature-block figure {
+	background-color: unset !important;
+}
+
+.pathways-feature-block figure a {
+	background-color: var(--blue_2);
+	display: block;
+}
+
+#content .pathways-feature-block a::after {
+	margin: 0;
+	box-shadow: unset;
+}

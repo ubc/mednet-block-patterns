@@ -1,0 +1,91 @@
+:where(.pathway-grid, .pathway-grid-row) figure a {
+	display: block;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure:hover img {
+	opacity: 0.6;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure:hover + :is(h2, h3, h4) a {
+
+	/* not all pathway tiles have a linked heading. Apply only to link */
+	text-decoration: underline;
+}
+
+.pathway_page_grid {
+	margin-bottom: 4rem;
+}
+
+.pathway-page-grid h2,
+.pathway-page-grid h2 a,
+.pathway_page_grid h2,
+.pathway_page_grid h2 a {
+	color: var(--blue_2);
+}
+
+/* inconsistency in the pattern needs the :where selector */
+:where(.pathway-grid, .pathway-grid-row) :is(h2, h3, h4) {
+
+	/* Makes the hover effect only apply on the heading */
+	display: table;
+}
+
+:where(.pathway-grid, .pathway-grid-row) figure {
+
+	/* set the figure to have a packground color and animate image opacity */
+	background: var(--blue_1);
+	width: 100%;
+}
+
+/*some pathway pages use the old '_' character.
+  pathway pages need to not wrap words,
+  use longsest word as min width 'Opportunities'
+  */
+  :where(.pathway_page_grid, .pathway-page-grid) .wp-block-columns {
+	flex-wrap: wrap !important;
+}
+
+:where(.pathway_page_grid, .pathway-page-grid) .wp-block-column {
+	min-width: min-content;
+}
+
+:where(.pathway_page_grid, .pathway-page-grid) h2 {
+	margin: 10px 0;
+	min-width: 7.2em;
+}
+
+:where(.pathway_page_grid, .pathway-page-grid) .wp-block-image img {
+	width: 100%;
+	object-fit: initial;
+}
+
+.pathway-page > div > h1 {
+	margin-bottom: 1.5rem;
+}
+
+.pathway-page > div > p {
+	line-height: 30px;
+}
+
+.pathway-page > div > hr {
+	margin: 40px 0;
+}
+
+.pathway-page > div .pathway-page-grid {
+	margin-bottom: 40px;
+}
+
+.pathway-page > div .quicklinks-three-columns {
+	margin: 40px 0;
+}
+
+/*Pathway Page */
+.pathway-page-grid > div > div > div > p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.pathway-page-grid h2,
+.pathway-page-grid h2 a {
+	color: var(--blue_2);
+}
