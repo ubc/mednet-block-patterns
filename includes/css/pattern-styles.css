@@ -1,3 +1,17 @@
+@import url("./pattern-styles/accordions.css");
+@import url("./pattern-styles/alert-banner.css");
+@import url("./pattern-styles/all-announcements.css");
+@import url("./pattern-styles/announcement-block.css");
+@import url("./pattern-styles/blue-feature-blocks.css");
+@import url("./pattern-styles/contact-block.css");
+@import url("./pattern-styles/events-list.css");
+@import url("./pattern-styles/featured-resource.css");
+@import url("./pattern-styles/pathway-grid.css");
+@import url("./pattern-styles/pathways-block.css");
+@import url("./pattern-styles/quicklinks.css");
+@import url("./pattern-styles/sidebar-block.css");
+@import url("./pattern-styles/spotlight-cards.css");
+
 /* CSS for all block patterns */
 
 /* MedNet Components*/
@@ -280,72 +294,6 @@ overview-pages > div > div {
 
 /* Facilities Page*/
 
-
-/*Staff Spotlight Page*/
-
-.faculty-staff-spotlight-page {
-	text-align: center;
-}
-
-.faculty-staff-spotlight-page > div > p {
-	margin: 1.5rem 0 60px;
-	padding: 0 15%;
-}
-
-.faculty-staff-spotlight-page > div > div > ul > li > h2 {
-	margin: 0.5rem 0 5px;
-}
-
-.faculty-staff-spotlight-page > div > div > ul > li > h2 > a {
-
-	/* font tweaks to get closer to designs */
-	color: var(--blue_2);
-	font-size: 1.3rem;
-	font-weight: 600;
-	line-height: 1.5;
-}
-
-.faculty-staff-spotlight-page > div > div > ul > li > div > a {
-	font-weight: 100;
-	font-size: 0.8rem;
-}
-
-.faculty-staff-spotlight-page > div > div > ul > li > .wp-block-post-excerpt {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	line-clamp: 3;
-	-webkit-box-orient: vertical;
-}
-
-.faculty-staff-spotlight-page .wp-block-post-featured-image {
-	background-color: var(--blue_2);
-	isolation: isolate;
-	aspect-ratio: 16/9;
-	transition: var(--transition-ease);
-}
-
-.faculty-staff-spotlight-page .wp-block-post-featured-image img {
-	width: 100%;
-	object-fit: cover;
-	opacity: 1;
-	aspect-ratio: 16/9;
-}
-
-.faculty-staff-spotlight-page img:hover {
-	opacity: 0.65;
-}
-
-.faculty-staff-spotlight-page .wp-block-query-pagination {
-	margin-top: 60px;
-}
-
-.spotlight_title_with_big_bio_photo_page ul {
-
-	/* remove indent for query*/
-	margin-left: 0;
-}
 
 .spotlight-single-post {
 	flex-direction: row;
