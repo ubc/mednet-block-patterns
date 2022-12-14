@@ -328,31 +328,11 @@ overview-pages > div > div {
 	max-width: 100%;
 }
 
-.spotlight-post-full-width-photo > div > h1 {
-	margin-bottom: 40px;
-}
-
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column > div > ul {
-	margin: 0;
-}
-
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column:nth-child(2) > div > ul > li > h2 > a,
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column:nth-child(2) > div > ul > li > h2 > a {
 	color: var(--blue_2);
 }
 
-
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column:nth-child(1) > div > ul > li
-.wp-block-post-excerpt {
-	margin-top: 1.5rem;
-}
-
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column:nth-child(1) > h2,
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column:nth-child(1) > h2 {
 	margin: 40px 0 1.5rem;
@@ -364,23 +344,14 @@ overview-pages > div > div {
 	line-height: 36px;
 }
 
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column > hr,
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column > hr {
 	margin: 40px 0;
 }
 
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column:nth-child(2) > p:nth-child(2),
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column:nth-child(2) > p:nth-child(2) {
 	margin: 18px 0;
-}
-
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column:nth-child(2) > h2:nth-child(1) {
-	margin-top: 8px;
 }
 
 .spotlight-post-inline-photo > div > .wp-block-columns
@@ -388,18 +359,12 @@ overview-pages > div > div {
 	margin-top: 0;
 }
 
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column > p > a,
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column > p > a {
 	color: var(--blue_1);
 	text-decoration: none;
 }
 
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column
-.wp-block-buttons
-.wp-block-button > a,
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column
 .wp-block-buttons
@@ -407,9 +372,6 @@ overview-pages > div > div {
 	padding: 11px 20px;
 }
 
-.spotlight-post-full-width-photo > div > .wp-block-columns
-.wp-block-column:nth-child(1)
-.wp-block-buttons,
 .spotlight-post-inline-photo > div > .wp-block-columns
 .wp-block-column:nth-child(1)
 .wp-block-buttons {
@@ -494,8 +456,6 @@ overview-pages > div > div {
 		margin: 0;
 	}
 
-	.spotlight-post-full-width-photo > div > .wp-block-columns
-	.wp-block-column:nth-child(2) > h2:nth-child(1),
 	.spotlight-post-inline-photo > div > .wp-block-columns
 	.wp-block-column:nth-child(2) > h2:nth-child(1) {
 		margin-top: 60px;
