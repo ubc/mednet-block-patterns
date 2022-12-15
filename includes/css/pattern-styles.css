@@ -1,16 +1,4 @@
-@import url("./pattern-styles/accordions.css");
-@import url("./pattern-styles/alert-banner.css");
-@import url("./pattern-styles/all-announcements.css");
-@import url("./pattern-styles/announcement-block.css");
-@import url("./pattern-styles/blue-feature-blocks.css");
-@import url("./pattern-styles/contact-block.css");
-@import url("./pattern-styles/events-list.css");
-@import url("./pattern-styles/featured-resource.css");
-@import url("./pattern-styles/pathway-grid.css");
-@import url("./pattern-styles/pathways-block.css");
-@import url("./pattern-styles/quicklinks.css");
-@import url("./pattern-styles/sidebar-block.css");
-@import url("./pattern-styles/spotlight-cards.css");
+
 
 /* CSS for all block patterns */
 
@@ -68,7 +56,7 @@
 }
 
 .content-card-image-overlay .wp-block-cover__background {
-	background: url("/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Pattern_Overlay.svg") no-repeat;
+	background: url("/includes/assets/images/svgs/Pattern_Overlay.svg") no-repeat;
 	background-size: cover;
 	background-color: initial !important;
 }

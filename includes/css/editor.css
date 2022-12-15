@@ -27,7 +27,6 @@
 	display: inline;
 	width: auto;
 	height: auto;
-	/* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
 	font-family: FontAwesome;
 	font-weight: 400;
 	font-style: normal;

@@ -1,8 +1,8 @@
 {
-  "extends": "@wordpress/stylelint-config/index.js",
-  "rules": {
-    "selector-class-pattern": null,
-    "function-url-quotes": "always",
-    "no-descending-specificity": null
-  }
+	"extends": "@wordpress/stylelint-config/index.js",
+	"rules": {
+		"selector-class-pattern": null,
+		"function-url-quotes": "always",
+		"no-descending-specificity": null
+	}
 }

@@ -84,7 +84,7 @@ a[target="_blank"]::after {
 	width: 1.1ch;
 	height: 1.1ch;
 	margin-left: 0.5ch;
-	background-image: url(/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Icon_External_Link.svg);
+	background-image: url("/includes/assets/images/svgs/Icon_External_Link.svg");
 	background-repeat: no-repeat;
 	background-size: auto;
 }
