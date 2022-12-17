@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58"><defs><style>.cls-1{fill:#0055b7;}.cls-2{fill:#002147;}.cls-3,.cls-4{fill:#fff;}.cls-5{fill:#40b4e5;}.cls-4{font-family:Whitney-Semibold, Whitney;font-size:20px;font-weight:700;}.cls-6{fill:none;stroke:#0055b7;stroke-linecap:round;stroke-miterlimit:10;stroke-width:.75px;}</style></defs><g id="Icon_Background"><g><rect class="cls-5" x="0" y="0" width="58" height="58" rx="28.99" ry="28.99" transform="translate(58 58) rotate(180)"/><polyline class="cls-1" points="0 29 0 0 58 0 58 29"/></g></g><g id="Icon"><circle class="cls-3" cx="21.5" cy="27.95" r="14.78"/><polygon class="cls-2" points="46.31 21.41 25.54 21.41 46.31 39.95 46.31 21.41"/><polygon class="cls-3" points="13.55 27.94 34.31 27.94 13.55 46.48 13.55 27.94"/><g><line class="cls-6" x1="16.85" y1="36.9" x2="27.12" y2="36.9"/><line class="cls-6" x1="13.77" y1="31.63" x2="29.12" y2="31.63"/><line class="cls-6" x1="13.77" y1="26.36" x2="29.12" y2="26.36"/><line class="cls-6" x1="15.66" y1="21.1" x2="29.12" y2="21.1"/></g><rect class="cls-2" x="21.5" y="7.04" width="30.16" height="27.03" rx="2.63" ry="2.63"/><rect class="cls-2" x="23.68" y="9.64" width="25.71" height="21.83" rx="1.24" ry="1.24"/><text class="cls-4" transform="translate(31.46 27.59)"><tspan x="0" y="0">?</tspan></text></g></svg>
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58">
+	<defs>
+		<style>
+			.cls-1 {
+				fill: #0055b7;
+			}
+
+			.cls-2 {
+				fill: #002147;
+			}
+
+			.cls-3,
+			.cls-4 {
+				fill: #fff;
+			}
+
+			.cls-5 {
+				fill: #40b4e5;
+			}
+
+			.cls-4 {
+				font-family: Whitney-Semibold, Whitney;
+				font-size: 20px;
+				font-weight: 700;
+			}
+
+			.cls-6 {
+				fill: none;
+				stroke: #0055b7;
+				stroke-linecap: round;
+				stroke-miterlimit: 10;
+				stroke-width: .75px;
+			}
+		</style>
+	</defs>
+	<g id="Icon_Background">
+		<g>
+			<rect class="cls-5" x="0" y="0" width="58" height="58" rx="28.99" ry="28.99"
+				transform="translate(58 58) rotate(180)" />
+			<polyline class="cls-1" points="0 29 0 0 58 0 58 29" />
+		</g>
+	</g>
+	<g id="Icon">
+		<circle class="cls-3" cx="21.5" cy="27.95" r="14.78" />
+		<polygon class="cls-2" points="46.31 21.41 25.54 21.41 46.31 39.95 46.31 21.41" />
+		<polygon class="cls-3" points="13.55 27.94 34.31 27.94 13.55 46.48 13.55 27.94" />
+		<g>
+			<line class="cls-6" x1="16.85" y1="36.9" x2="27.12" y2="36.9" />
+			<line class="cls-6" x1="13.77" y1="31.63" x2="29.12" y2="31.63" />
+			<line class="cls-6" x1="13.77" y1="26.36" x2="29.12" y2="26.36" />
+			<line class="cls-6" x1="15.66" y1="21.1" x2="29.12" y2="21.1" />
+		</g>
+		<rect class="cls-2" x="21.5" y="7.04" width="30.16" height="27.03" rx="2.63" ry="2.63" />
+		<rect class="cls-2" x="23.68" y="9.64" width="25.71" height="21.83" rx="1.24" ry="1.24" /><text class="cls-4"
+			transform="translate(31.46 27.59)">
+			<tspan x="0" y="0">?</tspan>
+		</text>
+	</g>
+</svg>
